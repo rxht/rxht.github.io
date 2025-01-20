@@ -3,11 +3,15 @@ import DefaultTheme from 'vitepress/theme';
 import { useData, useRoute } from 'vitepress';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 
+import 'viewerjs/dist/viewer.min.css';
+import imageViewer from 'vitepress-plugin-image-viewer';
+import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
+
 export default {
     ...DefaultTheme,
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
-        // ...
+        ctx.app.component('vImageViewer', vImageViewer);
     },
     setup() {
         // Get frontmatter and route
@@ -28,5 +32,8 @@ export default {
             // ...
         }
         giscusTalk(props, { frontmatter, route }, true);
+
+        // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
+        imageViewer(route);
     }
 };

@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { chineseSearchOptimize as customSearchQuery, pagefindPlugin } from 'vitepress-plugin-pagefind';
+import { license } from '../package.json'
+import { nav, sidebar, socialLinks } from './route/index.mts';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,26 +12,50 @@ export default defineConfig({
   cleanUrls: true, // 当设置为 true 时，VitePress 将从 URL 中删除 .html 后缀。
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
   themeConfig: {
+    // outlineTitle: '本页目录',
+    // lastUpdatedText: '上次修改时间',
+    // darkModeSwitchLabel: '主题',
+    // sidebarMenuLabel: '菜单',
+    // returnToTopLabel: '返回顶部',
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    nav,
+    sidebar,
     search: { // 得益于 minisearch，VitePress 支持使用浏览器内索引进行模糊全文搜索。
       provider: 'local'
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/rxht/wiki' }
-    ],
+    editLink: {
+      pattern: 'https://github.com/rxht/wiki/edit/main/src/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+    socialLinks,
+
+    footer: {
+      message: `基于 ${license} 许可发布`,
+      copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`
+    },
+
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+
+    outline: {
+      label: '页面导航'
+    },
+
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
   },
   markdown: {
     lineNumbers: true,
@@ -51,7 +77,7 @@ export default defineConfig({
       placeholder: '搜索文档',
       emptyText: '空空如也',
       heading: '共: {{searchResult}} 条结果',
-      excludeSelector: ['img', 'a.header-anchor'], 
+      excludeSelector: ['img', 'a.header-anchor'],
       forceLanguage: 'zh-cn',
       customSearchQuery,
       filter(searchItem, idx, originArray) {
