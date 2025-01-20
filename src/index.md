@@ -21,6 +21,10 @@ features:
     details: 基于开源 [MolStar](https://molstar.org)的编辑器版本
     link: molstar
     linkText: 点击查看
+  - title: 代码片段
+    details: 一些小方法、小功能的代码片段
+    link: code-segment
+    linkText: 点击查看
 ---
 
 <Confetti />

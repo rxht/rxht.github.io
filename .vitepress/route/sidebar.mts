@@ -1,27 +1,25 @@
 import { DefaultTheme } from "vitepress";
 import { generateSidebar } from 'vitepress-sidebar';
+import { VitePressSidebarOptions } from "vitepress-sidebar/types";
 
-const options = [{
+// see: https://vitepress-sidebar.cdget.com/zhHans/guide/options#frontmattertitlefieldname
+const def = {
     documentRootPath: 'src',
-    scanStartPath: 'molstar',
-    basePath: '/molstar/',
-    resolvePath: '/molstar/',
-    useTitleFromFileHeading: true
-},
-{
-    documentRootPath: 'src',
-    scanStartPath: 'guide',
-    basePath: '/guide/',
-    resolvePath: '/guide/',
-    useTitleFromFileHeading: true
-},
-{
-    documentRootPath: 'src',
-    scanStartPath: 'config',
-    resolvePath: '/config/',
-    useTitleFromFrontmatter: true
-}];
+    useTitleFromFileHeading: true,
+    useFolderTitleFromIndexFile: true,
+    useFolderLinkFromIndexFile: true,
+    collapsed: true, // 分组折叠/展开
+}
+function getOption(name: string, options: Partial<VitePressSidebarOptions> = {}) {
+    return { scanStartPath: name, basePath: `/${name}/`, resolvePath: `/${name}/`, ...def, options }
+}
+
+const options = [
+    getOption('molstar'),
+    getOption('code-segment')
+];
+
 /**
  * @param 侧边栏菜单项的配置。
  */
-export const sidebar: DefaultTheme.Sidebar = generateSidebar(options)
+export const sidebar: DefaultTheme.Sidebar = generateSidebar(options);
