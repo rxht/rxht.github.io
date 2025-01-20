@@ -3,6 +3,13 @@ import { generateSidebar } from 'vitepress-sidebar';
 
 const options = [{
     documentRootPath: 'src',
+    scanStartPath: 'molstar',
+    basePath: '/molstar/',
+    resolvePath: '/molstar/',
+    useTitleFromFileHeading: true
+},
+{
+    documentRootPath: 'src',
     scanStartPath: 'guide',
     basePath: '/guide/',
     resolvePath: '/guide/',
