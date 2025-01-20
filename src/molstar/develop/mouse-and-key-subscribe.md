@@ -11,7 +11,7 @@
 
 ```
 
-事件回调函数
+## 事件回调函数
 
 ```typescript
 // 鼠标点击回调事件
@@ -49,7 +49,8 @@ const interactionKey = async (event: KeyInput) => {
 };
 ```
 
-事件取消监听
+## 事件取消监听
+
 ```typescript
 // 开启监听
 const clickSub = this.plugin.behaviors.interaction.click.subscribe(() => { });

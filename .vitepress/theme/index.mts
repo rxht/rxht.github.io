@@ -8,6 +8,8 @@ import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 
 import Confetti from "./components/Confetti.vue";
+import AsideBottomTips from "./components/AsideBottomTips.vue";
+import { h } from 'vue';
 
 export default {
     ...DefaultTheme,
@@ -41,5 +43,10 @@ export default {
 
         // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
         imageViewer(route);
+    },
+    Layout() {
+        return h(DefaultTheme.Layout, null, {
+          'aside-bottom': () => h(AsideBottomTips)
+        })
     }
 };
