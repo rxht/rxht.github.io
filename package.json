@@ -8,7 +8,7 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "cz": "git add . && git czg",
-    "release": "bumpp --tag 'release:v'"
+    "release": "bumpp --tag version_v"
   },
   "keywords": [],
   "author": "Mol* Contributors",
