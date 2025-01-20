@@ -2,7 +2,19 @@
   "name": "wiki",
   "version": "0.0.2-beta.4",
   "description": "",
-  "main": "index.js",
+  "author": "Mol* Contributors",
+  "contributors": [
+    "RXHT <brf9577@163.com>"
+  ],
+  "homepage": "https://rxht.github.io/wiki",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiki/wiki"
+  },
+  "bugs": {
+    "url": "https://github.com/wiki/wiki/issues"
+  },
+  "license": "ISC",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
@@ -10,12 +22,6 @@
     "cz": "git add . && git czg",
     "release": "bumpp"
   },
-  "keywords": [],
-  "author": "Mol* Contributors",
-  "contributors": [
-    "RXHT <brf9577@163.com>"
-  ],
-  "license": "ISC",
   "devDependencies": {
     "canvas-confetti": "^1.9.3",
     "markdown-it-mathjax3": "^4.3.2",

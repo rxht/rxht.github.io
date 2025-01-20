@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress';
 import { chineseSearchOptimize as customSearchQuery, pagefindPlugin } from 'vitepress-plugin-pagefind';
-import { license } from '../package.json'
+import { license, repository } from '../package.json'
 import { nav, sidebar, socialLinks } from './route/index.mts';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "rxh wiki",
+  title: "WIKI",
   description: "A VitePress Site",
   base: '/wiki/', // base 会自动添加到其他选项中以 / 开头的所有 URL 前面，因此只需指定一次。
   srcDir: 'src', // 相对于项目根目录的 markdown 文件所在的文件夹。
@@ -24,7 +24,7 @@ export default defineConfig({
       provider: 'local'
     },
     editLink: {
-      pattern: 'https://github.com/rxht/wiki/edit/main/src/:path',
+      pattern: `${repository.url}/edit/main/src/:path`,
       text: '在 GitHub 上编辑此页面'
     },
     socialLinks,

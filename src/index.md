@@ -15,12 +15,12 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: MolStar
+    icon: 
+     src: ./assets/molstar-logo.png
+    details: 基于开源 [MolStar](https://molstar.org)的编辑器版本
+    link: molstar
+    linkText: 点击查看
 ---
 
 <Confetti />
