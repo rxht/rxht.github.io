@@ -78,7 +78,7 @@ export default defineConfig({
       emptyText: '空空如也',
       heading: '共: {{searchResult}} 条结果',
       excludeSelector: ['img', 'a.header-anchor'],
-      forceLanguage: 'zh-cn',
+      forceLanguage: 'en',
       customSearchQuery,
       filter(searchItem, idx, originArray) {
         return !searchItem.route.includes('404')
