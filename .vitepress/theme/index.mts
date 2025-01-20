@@ -7,11 +7,17 @@ import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 
+import Confetti from "./components/Confetti.vue";
+
 export default {
     ...DefaultTheme,
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
+        
+        // 图片预览
         ctx.app.component('vImageViewer', vImageViewer);
+        // 五彩纸屑
+        ctx.app.component("Confetti", Confetti);
     },
     setup() {
         // Get frontmatter and route
