@@ -27,4 +27,6 @@ features:
     linkText: 点击查看
 ---
 
-<Confetti />
+<ClientOnly>
+  <Confetti />
+</ClientOnly>
