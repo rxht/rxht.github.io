@@ -5,14 +5,15 @@ name: Deploy VitePress site to Pages
 on:
   push:
     tags: 
-      - 'v*'
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
 permissions:
-  contents: read
+  contents: write
+  discussions: write
   pages: write
   id-token: write
 
@@ -50,6 +51,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
+      - name: Release
+        uses: softprops/action-gh-release@v2
 
   # 部署工作
   deploy:
