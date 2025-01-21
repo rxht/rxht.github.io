@@ -126,7 +126,7 @@ export default defineConfig({
 
 ```typescript
 import { defineConfig } from 'vitepress';
-import { chineseSearchOptimize as customSearchQuery, pagefindPlugin } from 'vitepress-plugin-pagefind';
+import { pagefindPlugin } from 'vitepress-plugin-pagefind';
 import { license, repository } from '../package.json'
 import { DefaultTheme } from "vitepress";
 import { generateSidebar } from 'vitepress-sidebar';

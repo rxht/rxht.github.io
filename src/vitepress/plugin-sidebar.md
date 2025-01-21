@@ -94,7 +94,7 @@ const def = {
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
     useFolderLinkFromIndexFile: true,
-    collapsed: true, // 分组折叠/展开
+    collapsed: false, // 分组折叠/展开
 }
 function getOption(name: string, options: Partial<VitePressSidebarOptions> = {}) {
     return { scanStartPath: name, basePath: `/${name}/`, resolvePath: `/${name}/`, ...def, options }

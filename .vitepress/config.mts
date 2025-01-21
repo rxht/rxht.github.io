@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import { chineseSearchOptimize as customSearchQuery, pagefindPlugin } from 'vitepress-plugin-pagefind';
+import { pagefindPlugin } from 'vitepress-plugin-pagefind';
 import { license, repository } from '../package.json'
 import { nav, sidebar, socialLinks } from './route/index.mts';
 
