@@ -78,8 +78,15 @@ export default defineConfig({
       emptyText: '空空如也',
       heading: '共: {{searchResult}} 条结果',
       excludeSelector: ['img', 'a.header-anchor'],
-      forceLanguage: 'en',
-      customSearchQuery,
+      forceLanguage: 'zh-cn',
+      customSearchQuery: (input: string) => {
+        const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
+        const result: string[] = []
+        for (const it of segmenter.segment(input)) {
+            it.isWordLike && result.push(it.segment)
+        }
+        return result.join(' ');
+      },
       filter(searchItem, idx, originArray) {
         return !searchItem.route.includes('404')
       }

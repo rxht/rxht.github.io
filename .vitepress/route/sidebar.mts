@@ -16,7 +16,8 @@ function getOption(name: string, options: Partial<VitePressSidebarOptions> = {})
 
 const options = [
     getOption('molstar'),
-    getOption('code-segment')
+    getOption('code-segment'),
+    getOption('vitepress')
 ];
 
 /**

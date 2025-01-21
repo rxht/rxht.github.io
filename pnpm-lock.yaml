@@ -11,6 +11,9 @@ importers:
       bumpp:
         specifier: ^9.10.1
         version: 9.10.1
+      canvas-confetti:
+        specifier: ^1.9.3
+        version: 1.9.3
       czg:
         specifier: ^1.11.0
         version: 1.11.0
@@ -33,9 +36,6 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13
     devDependencies:
-      canvas-confetti:
-        specifier: ^1.9.3
-        version: 1.9.3
       markdown-it-mathjax3:
         specifier: ^4.3.2
         version: 4.3.2
