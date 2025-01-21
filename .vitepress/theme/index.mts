@@ -7,6 +7,9 @@ import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 
+
+import 'virtual:group-icons.css'
+
 import Confetti from "./components/Confetti.vue";
 import AsideBottomTips from "./components/AsideBottomTips.vue";
 import { h } from 'vue';

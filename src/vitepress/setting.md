@@ -83,6 +83,12 @@ export default defineConfig({
 })
 ```
 
+## 配置 `vitepress-plugin-group-icons`
+
+> 分组代码块提供不同的图标样式
+
+详情可查看 [vitepress-plugin-group-icons](./plugin-group-icons.md)
+
 
 ## 配置 `vitepress-plugin-pagefind`
 

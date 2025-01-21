@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { pagefindPlugin } from 'vitepress-plugin-pagefind';
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { license, repository } from '../package.json'
 import { nav, sidebar, socialLinks } from './route/index.mts';
 
@@ -76,28 +77,34 @@ export default defineConfig({
     image: {
       // 默认禁用；设置为 true 可为所有图片启用懒加载。
       lazyLoading: true
-    }
+    },
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
   },
   vite: {
-    plugins: [pagefindPlugin({
-      btnPlaceholder: '搜索',
-      placeholder: '搜索文档',
-      emptyText: '空空如也',
-      heading: '共: {{searchResult}} 条结果',
-      excludeSelector: ['img', 'a.header-anchor'],
-      forceLanguage: 'zh-cn',
-      customSearchQuery: (input: string) => {
-        const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
-        const result: string[] = []
-        for (const it of segmenter.segment(input)) {
-            it.isWordLike && result.push(it.segment)
+    plugins: [
+      groupIconVitePlugin(),
+      pagefindPlugin({
+        btnPlaceholder: '搜索',
+        placeholder: '搜索文档',
+        emptyText: '空空如也',
+        heading: '共: {{searchResult}} 条结果',
+        excludeSelector: ['img', 'a.header-anchor'],
+        forceLanguage: 'zh-cn',
+        customSearchQuery: (input: string) => {
+          const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
+          const result: string[] = []
+          for (const it of segmenter.segment(input)) {
+              it.isWordLike && result.push(it.segment)
+          }
+          return result.join(' ');
+        },
+        filter(searchItem, idx, originArray) {
+          return !searchItem.route.includes('404')
         }
-        return result.join(' ');
-      },
-      filter(searchItem, idx, originArray) {
-        return !searchItem.route.includes('404')
-      }
-    })],
+      })
+    ],
   },
   sitemap: {
     hostname: 'https://rxht.github.io/wiki/'
