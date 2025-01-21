@@ -91,5 +91,8 @@ export default defineConfig({
         return !searchItem.route.includes('404')
       }
     })],
+  },
+  sitemap: {
+    hostname: 'https://rxht.github.io/wiki/'
   }
 })
