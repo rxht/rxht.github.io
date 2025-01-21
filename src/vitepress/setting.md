@@ -1,3 +1,7 @@
+---
+title: 1.配置 VitePress
+---
+
 # 配置 VitePress
 
 ## 配置基础信息
