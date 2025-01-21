@@ -2,6 +2,11 @@
 
 > 基于 giscus 的 vitepress 评论区插件
 
+
+## 最终效果如下
+
+![giscus](./assets/giscus.png)
+
 ## 前置条件
 
 1. 此仓库是公开的（如果没有开源项目，无法集成该评论系统，请转身离开），否则访客将无法查看 discussion。
