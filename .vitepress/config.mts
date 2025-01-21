@@ -13,6 +13,7 @@ export default defineConfig({
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
   head: [
     ["meta", { name: "google-site-verification", content: "0F9InGQokC5QJgzFqyZHxxkKrGdA0zAAWOWOgKmtT00" }], // google 收录
+    ["meta", { name: "msvalidate.01", content: "9AC86FD1DE0C9B5003A7EC062D6CCAFA"}], // bing 收录
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "zh-cn" }],
     ["meta", { name: "og:site_name", content: "RXHT-博客" }],
