@@ -83,50 +83,9 @@ export default defineConfig({
 })
 ```
 
-## 配置 `vitepress-plugin-group-icons`
+## 插件配置
 
-> 分组代码块提供不同的图标样式
-
-详情可查看 [vitepress-plugin-group-icons](./plugin-group-icons.md)
-
-
-## 配置 `vitepress-plugin-pagefind`
-
-> 基于pagefind实现的离线全文搜索插件
-
-详情可查看 [vitepress-plugin-pagefind](./plugin-pagefind.md)
-
-
-## 配置 `vitepress-sidebar`
-
-> 通过简单的设置自动配置和管理页面的侧边栏插件
-
-详情可查看 [vitepress-sidebar](./plugin-sidebar.md)
-
-
-## 配置 `vitepress-plugin-image-viewer`
-
-> 基于 viewerjs 的 vitepress 图像查看器插件
-
-详情可查看 [vitepress-plugin-image-viewer](./plugin-image-viewer.md)
-
-
-## 配置 `canvas-confetti`
-
-> 🎉 浏览器中的高性能五彩纸屑动画
-
-详情可查看 [canvas-confetti](./plugin-canvas-confetti.md)
-
-
-## 配置 `vitepress-plugin-comment-with-giscus`
-
-> 基于 giscus 的 vitepress 评论区插件
-
-详情可查看 [vitepress-plugin-comment-with-giscus](./plugin-comment-with-giscus.md)
-
-
-
-
+详情可查看 [Vitepress Plugin](./plugin/index.md)
 
 
 

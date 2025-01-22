@@ -1,3 +1,7 @@
+---
+title: 自动侧边栏
+---
+
 # 配置 vitepress-sidebar
 
 ## 导言

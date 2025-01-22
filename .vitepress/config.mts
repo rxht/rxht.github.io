@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress';
 import { pagefindPlugin } from 'vitepress-plugin-pagefind';
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-import { license, repository } from '../package.json'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
+import { license, repository } from '../package.json';
 import { nav, sidebar, socialLinks } from './route/index.mts';
+import { RssPlugin } from 'vitepress-plugin-rss';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,7 +15,7 @@ export default defineConfig({
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
   head: [
     ["meta", { name: "google-site-verification", content: "0F9InGQokC5QJgzFqyZHxxkKrGdA0zAAWOWOgKmtT00" }], // google 收录
-    ["meta", { name: "msvalidate.01", content: "9AC86FD1DE0C9B5003A7EC062D6CCAFA"}], // bing 收录
+    ["meta", { name: "msvalidate.01", content: "9AC86FD1DE0C9B5003A7EC062D6CCAFA" }], // bing 收录
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "zh-cn" }],
     ["meta", { name: "og:site_name", content: "RXHT-博客" }],
@@ -96,13 +97,18 @@ export default defineConfig({
           const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
           const result: string[] = []
           for (const it of segmenter.segment(input)) {
-              it.isWordLike && result.push(it.segment)
+            it.isWordLike && result.push(it.segment)
           }
           return result.join(' ');
         },
         filter(searchItem, idx, originArray) {
           return !searchItem.route.includes('404')
         }
+      }),
+      RssPlugin({
+        title: 'WIKI',
+        baseUrl: 'https://rxht.github.io',
+        copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`
       })
     ],
   },

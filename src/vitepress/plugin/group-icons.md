@@ -1,3 +1,7 @@
+---
+title: 分组代码块图标
+---
+
 # 配置 vitepress-plugin-group-icons
 
 > 分组代码块提供不同的图标样式

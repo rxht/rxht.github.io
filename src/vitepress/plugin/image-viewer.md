@@ -1,3 +1,7 @@
+---
+title: 图像查看器
+---
+
 # 配置 vitepress-plugin-image-viewer
 
 > 基于 viewerjs 的 vitepress 图像查看器插件

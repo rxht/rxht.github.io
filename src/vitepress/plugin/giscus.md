@@ -1,3 +1,7 @@
+---
+title: 评论区
+---
+
 # 配置 vitepress-plugin-comment-with-giscus
 
 > 基于 giscus 的 vitepress 评论区插件
@@ -90,3 +94,18 @@ export default {
     },
 };
 ```
+
+
+
+
+::: tip
+
+如果不想让指定文章出现 <b>Giscus</b> 评论，可以在文章顶部添加 `comment: false`
+
+```md
+---
+comment: false
+---
+```
+
+:::

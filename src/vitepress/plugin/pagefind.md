@@ -1,6 +1,10 @@
+---
+title: 离线全文搜索
+---
+
 # 配置 vitepress-plugin-pagefind
 
-> 基于 pagefind 实现的离线全文搜索。
+> 基于 pagefind 实现的离线全文搜索
 
 ## 最终效果如下
 
