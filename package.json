@@ -24,6 +24,8 @@
     "release": "bumpp"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.5.0",
     "vitepress-sidebar": "^1.30.2"
