@@ -34,24 +34,24 @@ this.plugin = new PluginContext(spec);
 ## 2. 在官方默认的案例中设置单选
 
 1. 首先设置为选中模式
-```typescript
-    this.plugin.selectionMode = true;
+```typescript:no-line-numbers
+this.plugin.selectionMode = true;
 ```
 
 2. 更新PluginBehaviors参数
 ```typescript{7}
-    const state = this.plugin.state.behaviors;
-    const update = state.build();
-    const highlightLoci = state.select(StateSelection.Generators.ofTransformer(PluginBehaviors.Representation.HighlightLoci));
-    const selectLoci = state.select(StateSelection.Generators.ofTransformer(PluginBehaviors.Representation.SelectLoci));
-    const selections = [...highlightLoci, ...selectLoci];
-    for (const selection of selections) {
-        update.to(selection).update({ ...selection.params?.values, preferAtoms: true });
-    }
-    PluginCommands.State.Update(this.plugin, { state, tree: update, options: { doNotLogTiming: true } });
+const state = this.plugin.state.behaviors;
+const update = state.build();
+const highlightLoci = state.select(StateSelection.Generators.ofTransformer(PluginBehaviors.Representation.HighlightLoci));
+const selectLoci = state.select(StateSelection.Generators.ofTransformer(PluginBehaviors.Representation.SelectLoci));
+const selections = [...highlightLoci, ...selectLoci];
+for (const selection of selections) {
+    update.to(selection).update({ ...selection.params?.values, preferAtoms: true });
+}
+PluginCommands.State.Update(this.plugin, { state, tree: update, options: { doNotLogTiming: true } });
 ```
 
 2. 更新interactivity层级为element
 ```typescript
-    this.plugin.managers.interactivity.setProps({ granularity: 'element' });
+this.plugin.managers.interactivity.setProps({ granularity: 'element' });
 ```

@@ -3,19 +3,11 @@
 layout: home
 
 hero:
-  name: "rxh wiki"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "文档"
+  text: "简单的文档说明"
   image:
       src: 'assets/logo.png'
       alt: 'LOGO'
-  actions:
-    - theme: brand
-      text: 开始 VitePress
-      link: /vitepress
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: MolStar
@@ -25,6 +17,13 @@ features:
     icon: 
       src: 'assets/molstar-logo.png'
       alt: 'MolStar'
+
+  - title: VitePress
+    icon: 
+      src: 'assets/vitepress-logo.svg'
+    details: VitePress 搭建博客
+    link: vitepress
+    linkText: 点击查看
 
   - title: 代码片段
     icon: 📝
