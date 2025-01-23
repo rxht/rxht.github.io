@@ -13,12 +13,15 @@ export default defineConfig({
   srcDir: 'src', // 相对于项目根目录的 markdown 文件所在的文件夹。
   cleanUrls: true, // 当设置为 true 时，VitePress 将从 URL 中删除 .html 后缀。
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
+  lang: "zh-CN",
   head: [
     ["meta", { name: "google-site-verification", content: "0F9InGQokC5QJgzFqyZHxxkKrGdA0zAAWOWOgKmtT00" }], // google 收录
     ["meta", { name: "msvalidate.01", content: "9AC86FD1DE0C9B5003A7EC062D6CCAFA" }], // bing 收录
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "zh-cn" }],
     ["meta", { name: "og:site_name", content: "RXHT-博客" }],
+    ['meta', { name: "description", content: "分享一些技术文章" }],
+    ["link", { rel: "icon", href: "/wiki/favicon.ico" }]
   ],
   themeConfig: {
     // outlineTitle: '本页目录',

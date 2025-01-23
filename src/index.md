@@ -6,6 +6,9 @@ hero:
   name: "rxh wiki"
   text: "A VitePress Site"
   tagline: My great project tagline
+  image:
+      src: 'assets/logo.png'
+      alt: 'LOGO'
   actions:
     - theme: brand
       text: 开始 VitePress
