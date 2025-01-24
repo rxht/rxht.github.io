@@ -25,6 +25,11 @@ features:
     link: vitepress
     linkText: 点击查看
 
+  - title: Docker
+    icon: 📝
+    link: docker
+    linkText: 点击查看
+
   - title: 代码片段
     icon: 📝
     details: 一些小方法、小功能的代码片段
