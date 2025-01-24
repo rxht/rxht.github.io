@@ -85,7 +85,7 @@ export default defineConfig({
 
 ## 插件配置
 
-详情可查看 [Vitepress Plugin](./plugin/index.md)
+详情可查看 [Vitepress Plugin](./plugin/index)
 
 
 

@@ -1,9 +1,8 @@
-# 常见使用函数
+# 常用方法
 
 ## 日志打印
 
-> 插件底部中心的内置控制台显示日志条目。日志级别包括： info 、 warn 和 error 
-
+> 插件底部中心的内置控制台显示日志条目
 
 ::: code-group
 
@@ -90,4 +89,30 @@ plugin.managers.interactivity.lociHighlights.highlightOnly({ loci });
 
 ```typescript [interactivity.ts 清除高亮]
 plugin.managers.interactivity.clearHighlights();
+```
+
+
+## 查询
+
+```typescript
+import { Script } from 'molstar/lib/mol-script/script';
+import { StructureSelection } from 'molstar/lib/mol-model/structure/query';
+
+const data = plugin.managers.structure.hierarchy.current.structures[0]?.cell.obj?.data;
+if (!data) return;
+
+const selection = Script.getStructureSelection(Q => Q.struct.generator.atomGroups({
+    'chain-test': Q.core.rel.eq(['B', Q.ammp('label_asym_id')])
+}), data);
+const loci = StructureSelection.toLociWithSourceUnits(selection);
+```
+
+## 设置基础属性
+
+```typescript
+import { ColorNames } from 'molstar/lib/mol-util/color/names';
+import { PluginCommands } from 'molstar/lib/mol-plugin/commands';
+
+const renderer = plugin.canvas3d!.props.renderer;
+PluginCommands.Canvas3D.SetSettings(plugin, { settings: { renderer: { ...renderer, backgroundColor: ColorNames.red /* or: 0xff0000 as Color */ } } });
 ```
