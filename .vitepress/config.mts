@@ -85,7 +85,7 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true, // 可以在代码块中添加 :line-numbers / :no-line-numbers 标记来覆盖在配置中的设置。
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
