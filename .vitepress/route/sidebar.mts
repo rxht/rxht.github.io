@@ -12,7 +12,7 @@ const def: Partial<VitePressSidebarOptions> = {
     sortMenusByName: true,
     prefixSeparator: '.',
     removePrefixAfterOrdering: true,
-    collapsed: false, // 分组折叠/展开
+    collapsed: false, // 分组折叠 / 展开
 }
 function getOption(name: string, options: Partial<VitePressSidebarOptions> = {}) {
     return { scanStartPath: name, basePath: `/${name}/`, resolvePath: `/${name}/`, ...def, options }
@@ -22,7 +22,8 @@ const options = [
     getOption('molstar'),
     getOption('code-segment'),
     getOption('vitepress'),
-    getOption('docker')
+    getOption('docker'),
+    getOption('ai')
 ];
 
 /**

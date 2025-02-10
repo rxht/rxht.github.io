@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/wiki/wiki/issues"
   },
-  "license": "ISC",
+  "license": "CC BY-NC-SA 4.0",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",

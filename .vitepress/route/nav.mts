@@ -13,8 +13,8 @@ export const nav: DefaultTheme.NavItem[] = [
         link: "https://heshiqi1.github.io/blog/"
       },
       {
-        text: "前端 - Chatty garden",
-        link: "https://yyi0708.github.io/chatty-garden/"
+        text: "前端 - yyi0708",
+        link: "https://github.com/yyi0708"
       }
     ]
   },

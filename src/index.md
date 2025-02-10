@@ -30,6 +30,12 @@ features:
     link: docker
     linkText: 点击查看
 
+  - title: AI
+    icon: 📝
+    details: 安装教程
+    link: ai
+    linkText: 点击查看
+
   - title: 代码片段
     icon: 📝
     details: 一些小方法、小功能的代码片段

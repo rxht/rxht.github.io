@@ -104,4 +104,4 @@ __粗体__
 
 ## 扩展语法
 
-> [官方文档](https://vitepress.dev/guide/markdown#github-style-tables)
+> [官方文档](https://vitepress.dev/zh/guide/markdown)
