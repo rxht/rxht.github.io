@@ -9,6 +9,14 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: "友情链接", items: [
       {
+        text: "dechinphy",
+        link: "https://www.cnblogs.com/dechinphy"
+      },
+      {
+        text: "ZHANG Jun's",
+        link: "https://zhjun-sci.com/index.html "
+      },
+      {
         text: "测试 - Balance",
         link: "https://heshiqi1.github.io/blog/"
       },
