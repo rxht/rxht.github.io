@@ -7,7 +7,7 @@
 ::: code-group
 
 ```bash:no-line-numbers [linux]
-$ uname -a
+$ uname -a # 查看内核/OS/CPU信息
 $ lsb_release -a
 ```
 
@@ -23,7 +23,7 @@ $ msinfo32
 ::: code-group
 
 ```bash:no-line-numbers [linux]
-$ uname -r
+$ uname -r # 查看内核版本
 ```
 
 ```bash:no-line-numbers [win]
@@ -38,7 +38,7 @@ $ VER
 ::: code-group
 
 ```bash:no-line-numbers [linux]
-$ uname -m
+$ uname -m # 查看系统架构
 ```
 
 ```bash:no-line-numbers [win]
@@ -296,4 +296,18 @@ $ cat /etc/passwd
 
 ```bash:no-line-numbers
 $ cat /etc/group
+```
+
+## 关机/重启/注销
+```bash:no-line-numbers
+$ shutdown -h now # 立即关机
+$ shutdown -r now # 立即重启
+$ shutdown -h 10 # 10分钟后关机
+$ shutdown -h 11:00	# 11:00关机
+$ shutdown -r 10 # 10分钟后重启
+$ shutdown -r 11:00 # 定时重启
+$ shutdown -c # 取消关机/重启
+$ logout # 注销当前用户
+$ reboot # 重启
+$ poweroff # 关机
 ```
