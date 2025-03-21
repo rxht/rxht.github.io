@@ -23,7 +23,8 @@ const options = [
     getOption('code-segment'),
     getOption('vitepress'),
     getOption('docker'),
-    getOption('ai')
+    getOption('ai'),
+    getOption('linux')
 ];
 
 /**

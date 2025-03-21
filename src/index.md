@@ -30,6 +30,12 @@ features:
     link: docker
     linkText: 点击查看
 
+  - title: Linux
+    icon: 📝
+    details: 安装教程
+    link: linux
+    linkText: 点击查看
+
   - title: AI
     icon: 📝
     details: 安装教程

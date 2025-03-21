@@ -68,7 +68,7 @@ $ vim.env
 - ragflow:nightly                ---               【≈9GB|Unstable nightly build】
 - ragflow:nightly-slim           ---               【≈2GB|Unstable nightly build】
 
-```env 2
+```text 2
 ...
 RAGFLOW_IMAGE=infiniflow/ragflow:v0.17.2-slim
 ...

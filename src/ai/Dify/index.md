@@ -74,7 +74,7 @@ $ vim .env
 ```
 
 3. 找到 `Docker Compose Service Expose Host Port Configurations` 部分，替换对应的端口号例如：`8080`
-```env 5,6
+```text 5,6
 ...
 # ------------------------------
 # Docker Compose Service Expose Host Port Configurations
