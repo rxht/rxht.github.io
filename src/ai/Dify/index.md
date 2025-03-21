@@ -1,7 +1,7 @@
 # Dify
 > Version: 1.1.1
 
-![logo](./assets/logo.webp)
+![logo](./assets/logo.png)
 
 ## 克隆 Dify 代码仓库
 克隆 Dify 源代码至本地环境，假设所要安装的版本为 <b>V1.1.1</b>, 则执行如下命令：
@@ -13,7 +13,7 @@
 $ git clone https://github.com/langgenius/dify.git --branch 1.1.1
 ```
 
-# 配置 Dify
+## 配置 Dify
 
 1. 进入 Dify 源代码的 Docker 目录
 
@@ -26,7 +26,9 @@ $ cd dify/docker
 $ cp .env.example .env
 ```
 
-3. 启动 Docker 容器
+## 启动 Dify 容器
+
+1. 启动 Dify
 
 ```bash:no-line-numbers
 $ docker-compose up -d
@@ -40,11 +42,11 @@ $ docker-compose up -d
 
 ![running](./assets/running.png)
 
-4. 查看 docker 容器运行情况，执行命令 `docker ps`，得到如下结果
+2. 查看 docker 容器运行情况，执行命令 `docker ps`，得到如下结果
 
 ![docker-ps](./assets/docker-ps.png)
 
-5. 访问 `127.0.0.1:8080` 即可进入 Dify 页面
+3. 访问 `127.0.0.1:8080` 即可进入 Dify 页面
 
 ![login](./assets/login.png)
 
@@ -158,9 +160,3 @@ volumes:
 ```
 
 5. 执行命令 `:wqa` 保存并退出，重新执行 `docker compose up -d` 命令即可。
-
-## <span style="color:red;">ERROR：</span> 504 Gateway Time-out
-
-如果完成了配置启动容器后访问 `http://127.0.0.1:8080/install` 出现如下情况
-
-![504](./assets/504.png)
