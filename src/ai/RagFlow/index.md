@@ -130,7 +130,15 @@ $ docker-compose up -d
 
 ![install](./assets/install.png)
 
-2. 服务器启动成功后再次确认服务器状态：
+执行完 `docker compose up -d` 命令后，会有如下结果
+
+![running](./assets/running.png)
+
+2. 查看 docker 容器运行情况，执行命令 `docker ps`，得到如下结果
+
+![docker-ps](./assets/docker-ps.png)
+
+3. 服务器启动成功后再次确认服务器状态：
 
 ```bash:no-line-numbers
 $ docker logs -f ragflow-server
@@ -150,7 +158,9 @@ $ docker logs -f ragflow-server
 > [!TIP] 提示
 > 如果您在没有看到上面的提示信息出来之前，就尝试登录 RAGFlow，你的浏览器有可能会提示 network anormal 或 网络异常。
 
-3. 访问 `127.0.0.1:8080` 即可进入 RagFlow 页面
+4. 访问 `127.0.0.1:8080` 即可进入 RagFlow 页面
+
+![login](./assets/login.png)
 
 
 > [!TIP] 注意⚠️
