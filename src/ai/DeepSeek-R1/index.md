@@ -9,19 +9,19 @@
 
 验证安装是否完成
 
-```bash
+```bash:no-line-numbers
 C:\Users\xxxx> ollama --version
 ollama version is 0.5.7
 ```
 
 查看当前本地的模型列表
-```bash
+```bash:no-line-numbers
 C:\Users\xxxx> ollama list
 NAME    ID    SIZE    MODIFIED
 ```
 
 查看帮助信息
-```bash
+```bash:no-line-numbers
 C:\Users\xxxx> ollama --help
 Large language model runner
 
@@ -57,7 +57,7 @@ Use "ollama [command] --help" for more information about a command.
 
 执行命令 `ollama run deepseek-r1` 即可完成下载 <b>deepseek-r1</b>的默认版本，如果需要下载指定版本则执行如下命令
 
-```bash
+```bash:no-line-numbers
 ollama run deepseek-r1:671b   # 官方 671b 版本模型
 
 ollama run deepseek-r1:1.5b  # 经过 Qwen 蒸馏过后的 1.5b 版本模型  -> DeepSeek-R1-Distill-Qwen-1.5B
