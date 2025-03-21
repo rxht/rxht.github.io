@@ -20,7 +20,7 @@ C:\Users\xxx>wsl --shutdown Ubuntu-24.04
 此过程可能会比较慢，需要耐心等待。
 
 ```sh:no-line-numbers
-C:\Users\RXHT>wsl --export Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04.tar
+C:\Users\xxx>wsl --export Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04.tar
 正在导出，这可能需要几分钟时间。 (19971 MB)
 
 操作成功完成。
@@ -48,7 +48,7 @@ C:\Users\xxx>wsl -l -v
 此过程可能会比较慢，需要耐心等待。当进度条执行到 100% 后会提示`操作成功完成。`
 
 ```sh:no-line-numbers
-C:\Users\RXHT>wsl --import Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04.tar
+C:\Users\xxx>wsl --import Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04 E:\Ubuntu\Ubuntu-24.04.tar
 操作成功完成。
 ```
 
