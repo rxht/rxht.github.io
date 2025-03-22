@@ -1,4 +1,4 @@
-# docker 使用 gpu 报错
+# Docker 使用 GPU 报错
 
 ## 问题
 
