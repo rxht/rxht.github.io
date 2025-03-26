@@ -52,3 +52,5 @@ features:
 <ClientOnly>
   <Confetti />
 </ClientOnly>
+
+<Article />

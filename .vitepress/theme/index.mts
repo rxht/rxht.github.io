@@ -8,6 +8,7 @@ import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 import Confetti from "./components/Confetti.vue";
 import BackToTop from './components/BackToTop.vue';
 import AsideBottomTips from "./components/AsideBottomTips.vue";
+import Article from "./components/Article/index.vue";
 import 'virtual:group-icons.css';
 import 'viewerjs/dist/viewer.min.css';
 
@@ -21,6 +22,8 @@ export default {
         ctx.app.component("Confetti", Confetti);
         // 回到顶部
         ctx.app.component('BackToTop', BackToTop);
+        // 文章页
+        ctx.app.component('Article', Article);
     },
     setup() {
         // Get frontmatter and route
