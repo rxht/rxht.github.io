@@ -1,47 +1,45 @@
 // .vitepress/theme/index.js
+import { h } from 'vue';
 import DefaultTheme from 'vitepress/theme';
 import { useData, useRoute } from 'vitepress';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-
-import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
-
-
-import 'virtual:group-icons.css'
-
 import Confetti from "./components/Confetti.vue";
+import BackToTop from './components/BackToTop.vue';
 import AsideBottomTips from "./components/AsideBottomTips.vue";
-import { h } from 'vue';
+import 'virtual:group-icons.css';
+import 'viewerjs/dist/viewer.min.css';
 
 export default {
     ...DefaultTheme,
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
-        
         // 图片预览
         ctx.app.component('vImageViewer', vImageViewer);
         // 五彩纸屑
         ctx.app.component("Confetti", Confetti);
+        // 回到顶部
+        ctx.app.component('BackToTop', BackToTop);
     },
     setup() {
         // Get frontmatter and route
         const { frontmatter, isDark } = useData();
         const route = useRoute();
-        
+
         // Obtain configuration from: https://giscus.app/
         const props = {
-            repo: 'rxht/wiki', 
-            repoId: 'R_kgDONsocXw',   
+            repo: 'rxht/wiki',
+            repoId: 'R_kgDONsocXw',
             category: 'General', // default: `General` 
-            categoryId: 'DIC_kwDONsocX84CmKve', 
+            categoryId: 'DIC_kwDONsocX84CmKve',
             mapping: 'pathname', // default: `pathname`
             inputPosition: 'top', // default: `top`
             lang: 'zh-CN', // default: `zh-CN`
-            lightTheme: isDark.value ? 'transparent_light': 'light', // default: `light`
-            darkTheme: isDark.value ? 'dark': 'transparent_dark', // default: `transparent_dark`
+            lightTheme: isDark.value ? 'transparent_light' : 'light', // default: `light`
+            darkTheme: isDark.value ? 'dark' : 'transparent_dark', // default: `transparent_dark`
             // ...
-        }
+        };
         giscusTalk(props, { frontmatter, route }, true);
 
         // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
@@ -49,7 +47,8 @@ export default {
     },
     Layout() {
         return h(DefaultTheme.Layout, null, {
-          'aside-bottom': () => h(AsideBottomTips)
-        })
+            'aside-bottom': () => h(AsideBottomTips),
+            'layout-bottom': () => h(BackToTop)
+        });
     }
 };
