@@ -1,0 +1,25 @@
+{
+    "editor.formatOnSave": true,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "fileheader.customMade": {
+        "Date": "Do not edit", // 设置后默认设置文件生成时间
+        "LastEditTime": "Do not edit", // 设置后，保存文件更改默认更新最后编辑时间
+    },
+    "fileheader.configObj": {
+        "autoAdd": true, // 自动添加头部注释开启才能自动添加
+        "supportAutoLanguage": [
+            "md"
+        ], // 设置过后只有该数组里面的文件 才会自动添加头部注释
+        "createHeader": true, // 默认关闭
+        "autoAlready": true, // 默认开启
+        "throttleTime": 1000, // 对同一个文件 需要过1分钟再次修改文件并保存才会更新注释
+        "language": {
+            "md": {
+                "head": "---",
+                "middle": "",
+                "end": "---",
+            }
+        }
+    },
+}

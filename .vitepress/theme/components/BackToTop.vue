@@ -1,6 +1,5 @@
 <template>
-    <button class="back-to-top" :class="{ visible: isVisible, hover: isHovered }" @click="scrollToTop"
-        @mouseenter="isHovered = true" @mouseleave="isHovered = false" aria-label="返回顶部">
+    <button class="back-to-top" :class="{ visible: isVisible, hover: isHovered }" @click="scrollToTop" @mouseenter="isHovered = true" @mouseleave="isHovered = false" aria-label="返回顶部">
         <div class="progress-ring">
             <svg class="ring" viewBox="0 0 48 48">
                 <circle class="ring-background" cx="24" cy="24" r="20" />
@@ -81,8 +80,8 @@ onUnmounted(() => {
 <style scoped>
 .back-to-top {
     position: fixed;
-    right: 8rem;
-    bottom: 12rem;
+    right: 4rem;
+    bottom: 4rem;
     width: 0;
     height: 0;
     border: none;
