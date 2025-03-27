@@ -1,3 +1,7 @@
+---
+Date: 2025-03-18 22:10:44
+LastEditTime: 2025-03-27 21:53:56
+---
 # 计算 Canvas 中文字渲染宽度
 
 ```javascript

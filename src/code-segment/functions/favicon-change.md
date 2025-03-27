@@ -1,3 +1,7 @@
+---
+Date: 2025-03-18 22:10:44
+LastEditTime: 2025-03-27 21:55:45
+---
 # 切换浏览器选项卡时更改favicon
 
 ```javascript

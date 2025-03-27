@@ -1,3 +1,7 @@
+---
+Date: 2025-03-21 20:52:22
+LastEditTime: 2025-03-27 21:57:41
+---
 # Widows 子系统 Ubuntu (WSL2) 安装 NVIDIA-SMI
 
 ## 前置条件

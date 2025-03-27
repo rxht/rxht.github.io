@@ -1,3 +1,7 @@
+---
+Date: 2025-03-18 22:10:44
+LastEditTime: 2025-03-27 21:54:09
+---
 # 文件格式校验（文件二进制内容校验）
 
 > [第三方库 file-type](https://github.com/sindresorhus/file-type)
