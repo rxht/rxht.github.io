@@ -11,47 +11,48 @@ import AsideBottomTips from "./components/AsideBottomTips.vue";
 import Article from "./components/Article/index.vue";
 import 'virtual:group-icons.css';
 import 'viewerjs/dist/viewer.min.css';
+import './tailwind.css';
 
 export default {
-    ...DefaultTheme,
-    enhanceApp(ctx) {
-        DefaultTheme.enhanceApp(ctx);
-        // 图片预览
-        ctx.app.component('vImageViewer', vImageViewer);
-        // 五彩纸屑
-        ctx.app.component("Confetti", Confetti);
-        // 回到顶部
-        ctx.app.component('BackToTop', BackToTop);
-        // 文章页
-        ctx.app.component('Article', Article);
-    },
-    setup() {
-        // Get frontmatter and route
-        const { frontmatter, isDark } = useData();
-        const route = useRoute();
+  ...DefaultTheme,
+  enhanceApp(ctx) {
+    DefaultTheme.enhanceApp(ctx);
+    // 图片预览
+    ctx.app.component('vImageViewer', vImageViewer);
+    // 五彩纸屑
+    ctx.app.component("Confetti", Confetti);
+    // 回到顶部
+    ctx.app.component('BackToTop', BackToTop);
+    // 文章页
+    ctx.app.component('Article', Article);
+  },
+  setup() {
+    // Get frontmatter and route
+    const { frontmatter, isDark } = useData();
+    const route = useRoute();
 
-        // Obtain configuration from: https://giscus.app/
-        const props = {
-            repo: 'rxht/wiki',
-            repoId: 'R_kgDONsocXw',
-            category: 'General', // default: `General` 
-            categoryId: 'DIC_kwDONsocX84CmKve',
-            mapping: 'pathname', // default: `pathname`
-            inputPosition: 'top', // default: `top`
-            lang: 'zh-CN', // default: `zh-CN`
-            lightTheme: isDark.value ? 'transparent_light' : 'light', // default: `light`
-            darkTheme: isDark.value ? 'dark' : 'transparent_dark', // default: `transparent_dark`
-            // ...
-        };
-        giscusTalk(props, { frontmatter, route }, true);
+    // Obtain configuration from: https://giscus.app/
+    const props = {
+      repo: 'rxht/wiki',
+      repoId: 'R_kgDONsocXw',
+      category: 'General', // default: `General` 
+      categoryId: 'DIC_kwDONsocX84CmKve',
+      mapping: 'pathname', // default: `pathname`
+      inputPosition: 'top', // default: `top`
+      lang: 'zh-CN', // default: `zh-CN`
+      lightTheme: isDark.value ? 'transparent_light' : 'light', // default: `light`
+      darkTheme: isDark.value ? 'dark' : 'transparent_dark', // default: `transparent_dark`
+      // ...
+    };
+    giscusTalk(props, { frontmatter, route }, true);
 
-        // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
-        imageViewer(route);
-    },
-    Layout() {
-        return h(DefaultTheme.Layout, null, {
-            'aside-bottom': () => h(AsideBottomTips),
-            'layout-bottom': () => h(BackToTop)
-        });
-    }
+    // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
+    imageViewer(route);
+  },
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'aside-bottom': () => h(AsideBottomTips),
+      'layout-bottom': () => h(BackToTop)
+    });
+  }
 };

@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress';
 import { pagefindPlugin } from 'vitepress-plugin-pagefind';
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
-import { license, repository } from '../package.json';
+import { license, repository, homepage } from '../package.json';
 import { nav, sidebar, socialLinks } from './route/index.mts';
 import { RssPlugin } from 'vitepress-plugin-rss';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -115,6 +116,7 @@ export default defineConfig({
   },
   vite: {
     plugins: [
+      tailwindcss(),
       groupIconVitePlugin(),
       pagefindPlugin({
         btnPlaceholder: '搜索',
@@ -143,6 +145,6 @@ export default defineConfig({
     ],
   },
   sitemap: {
-    hostname: 'https://rxht.github.io/wiki/'
+    hostname: homepage
   }
 });
