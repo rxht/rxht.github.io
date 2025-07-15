@@ -16,7 +16,7 @@
           </div>
         </div>
         <span class="text-sm">
-          最后更新于: {{ normalizeDate(article.frontmatter.LastEditTime) }}
+          最后更新于: {{ article.frontmatter.LastEditTime }}
         </span>
       </li>
     </ul>
@@ -51,10 +51,5 @@ for (let year in categorizedTimes) {
 // 按年降序排列
 const sortedYears = Object.keys(categorizedTimes).sort((a, b) => parseInt(b) - parseInt(a));
 
-const normalizeDate = (date: Date) => {
-  if (!date) return '';
-  const _date = new Date(date);
-  return `${_date.getFullYear()}/${_date.getMonth() + 1}/${_date.getDate()} ${_date.getHours()}:${_date.getMinutes()}:${_date.getSeconds()}`;
-}
 
 </script>

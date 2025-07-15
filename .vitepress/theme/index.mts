@@ -5,13 +5,13 @@ import { useData, useRoute } from 'vitepress';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
-import Confetti from "./components/Confetti.vue";
-import BackToTop from './components/BackToTop.vue';
-import AsideBottomTips from "./components/AsideBottomTips.vue";
-import Article from "./components/Article/index.vue";
+import Confetti from "./components/Confetti";
+import BackToTop from './components/BackToTop';
+import Article from "./components/Article";
 import 'virtual:group-icons.css';
 import 'viewerjs/dist/viewer.min.css';
 import './tailwind.css';
+import Layout from './Layout.vue';
 
 export default {
   ...DefaultTheme,
@@ -50,8 +50,7 @@ export default {
     imageViewer(route);
   },
   Layout() {
-    return h(DefaultTheme.Layout, null, {
-      'aside-bottom': () => h(AsideBottomTips),
+    return h(Layout, null, {
       'layout-bottom': () => h(BackToTop)
     });
   }
