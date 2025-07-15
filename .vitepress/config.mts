@@ -23,7 +23,7 @@ export default defineConfig({
     ["link", { rel: "icon", href: "/wiki/favicon.ico" }],
     [
       "script",
-      { type:"text/javascript" },
+      { type: "text/javascript" },
       `(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -33,9 +33,22 @@ export default defineConfig({
     ["script", { async: '', href: "https://www.googletagmanager.com/gtag/js?id=G-C73RJC1NJS" }], // Google Analytics
     [
       "script",
-      { type:"text/javascript" },
+      { type: "text/javascript" },
       `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-C73RJC1NJS');`,
     ],  // Google Analytics
+    [
+      "script",
+      { type: "text/javascript" },
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1c8747729d3e68104abbedf054aed8d2";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `
+    ]
   ],
   themeConfig: {
     // outlineTitle: '本页目录',
@@ -97,7 +110,7 @@ export default defineConfig({
       lazyLoading: true
     },
     config(md) {
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin);
     },
   },
   vite: {
@@ -111,15 +124,15 @@ export default defineConfig({
         excludeSelector: ['img', 'a.header-anchor'],
         forceLanguage: 'zh-cn',
         customSearchQuery: (input: string) => {
-          const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
-          const result: string[] = []
+          const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' });
+          const result: string[] = [];
           for (const it of segmenter.segment(input)) {
-            it.isWordLike && result.push(it.segment)
+            it.isWordLike && result.push(it.segment);
           }
           return result.join(' ');
         },
         filter(searchItem, idx, originArray) {
-          return !searchItem.route.includes('404')
+          return !searchItem.route.includes('404');
         }
       }),
       RssPlugin({
@@ -132,4 +145,4 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://rxht.github.io/wiki/'
   }
-})
+});
