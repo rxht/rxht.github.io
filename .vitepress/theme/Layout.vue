@@ -1,5 +1,9 @@
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template v-for="(slot, name) in $slots" #[name]>
+      <slot :name="name" />
+    </template>
+  </DefaultTheme.Layout>
 </template>
 
 <script setup lang="ts">

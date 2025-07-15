@@ -1,11 +1,11 @@
 <template>
   <button class="back-to-top" :class="{ visible: isVisible, hover: isHovered }" @click="scrollToTop" @mouseenter="isHovered = true" @mouseleave="isHovered = false" aria-label="返回顶部">
-    <div class="progress-ring">
+    <div class=" relative size-full">
       <svg class="ring-svg" viewBox="0 0 48 48">
         <circle class="ring-background" cx="24" cy="24" r="20" />
         <circle class="ring-progress" cx="24" cy="24" r="20" :style="{ 'stroke-dashoffset': progressOffset }" />
       </svg>
-      <svg class="icon" viewBox="0 0 1024 1024">
+      <svg class="absolute top-1/2  left-1/2 w-7/10 h-7/10 will-change-transform -translate-1/2" viewBox="0 0 1024 1024">
         <path class='icon-ring' d="M512 0A512 512 0 1 1 0 512 512 512 0 0 1 512 0z" />
         <path class='icon-arrow'
           d="M675.57181 542.524952a30.378667 30.378667 0 0 1-20.016762-7.533714l-145.627429-127.097905-140.970667 126.829715a30.47619 30.47619 0 0 1-40.764952-45.348572l161.060571-144.847238a30.47619 30.47619 0 0 1 40.423619-0.292571l165.961143 144.871619a30.47619 30.47619 0 0 1-20.065523 53.418666z" />
@@ -103,13 +103,6 @@ onUnmounted(() => {
 }
 
 
-.progress-ring {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-
 .ring-svg {
   position: absolute;
   top: 0;
@@ -138,16 +131,6 @@ onUnmounted(() => {
   will-change: stroke-dashoffset;
 }
 
-
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: 70%;
-  transform: translate(-50%, -50%);
-  will-change: transform;
-}
 
 
 .icon-ring {
