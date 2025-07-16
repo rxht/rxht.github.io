@@ -1,29 +1,30 @@
 // .vitepress/theme/index.js
-import { h } from 'vue';
-import DefaultTheme from 'vitepress/theme';
-import { useData, useRoute } from 'vitepress';
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import imageViewer from 'vitepress-plugin-image-viewer';
-import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
+import { h } from "vue";
+import DefaultTheme from "vitepress/theme";
+import { useData, useRoute } from "vitepress";
+import giscusTalk from "vitepress-plugin-comment-with-giscus";
+import imageViewer from "vitepress-plugin-image-viewer";
+import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
 import Confetti from "./components/Confetti";
-import BackToTop from './components/BackToTop';
+import BackToTop from "./components/BackToTop";
 import Article from "./components/Article";
-import DocInfo from './components/DocInfo';
-import 'virtual:group-icons.css';
-import 'viewerjs/dist/viewer.min.css';
-import './tailwind.css';
-import Layout from './Layout.vue';
+import DocInfo from "./components/DocInfo";
+import "virtual:group-icons.css";
+import "viewerjs/dist/viewer.min.css";
+import "./tailwind.css";
+import "./theme.css";
+import Layout from "./Layout.vue";
 
 export default {
   ...DefaultTheme,
   enhanceApp(ctx) {
     DefaultTheme.enhanceApp(ctx);
     // 图片预览
-    ctx.app.component('vImageViewer', vImageViewer);
+    ctx.app.component("vImageViewer", vImageViewer);
     // 五彩纸屑
     ctx.app.component("Confetti", Confetti);
     // 文章页
-    ctx.app.component('Article', Article);
+    ctx.app.component("Article", Article);
   },
   setup() {
     // Get frontmatter and route
@@ -32,15 +33,15 @@ export default {
 
     // Obtain configuration from: https://giscus.app/
     const props = {
-      repo: 'rxht/wiki',
-      repoId: 'R_kgDONsocXw',
-      category: 'General', // default: `General` 
-      categoryId: 'DIC_kwDONsocX84CmKve',
-      mapping: 'pathname', // default: `pathname`
-      inputPosition: 'top', // default: `top`
-      lang: 'zh-CN', // default: `zh-CN`
-      lightTheme: isDark.value ? 'transparent_light' : 'light', // default: `light`
-      darkTheme: isDark.value ? 'dark' : 'transparent_dark', // default: `transparent_dark`
+      repo: "rxht/wiki",
+      repoId: "R_kgDONsocXw",
+      category: "General", // default: `General`
+      categoryId: "DIC_kwDONsocX84CmKve",
+      mapping: "pathname", // default: `pathname`
+      inputPosition: "top", // default: `top`
+      lang: "zh-CN", // default: `zh-CN`
+      lightTheme: isDark.value ? "transparent_light" : "light", // default: `light`
+      darkTheme: isDark.value ? "dark" : "transparent_dark", // default: `transparent_dark`
       // ...
     };
     giscusTalk(props, { frontmatter, route }, true);
@@ -50,8 +51,8 @@ export default {
   },
   Layout() {
     return h(Layout, null, {
-      'layout-bottom': () => h(BackToTop),
-      'doc-before': () => h(DocInfo),
+      "layout-bottom": () => h(BackToTop),
+      "doc-before": () => h(DocInfo),
     });
-  }
+  },
 };
