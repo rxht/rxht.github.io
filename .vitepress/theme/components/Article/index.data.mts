@@ -2,6 +2,7 @@ import { ContentData, createContentLoader } from 'vitepress';
 import { statSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { join } from 'node:path';
+import { FormatDate } from '../../common/date.mts';
 
 export interface Article {
   frontmatter: {
@@ -40,7 +41,7 @@ export default createContentLoader("/**/*.md", {
     }).sort(normalizeSort);
     return {
       total: rawPosts.length,
-      articles: articles.slice(0, 20)
+      articles: articles
     };
   },
 });
@@ -61,7 +62,7 @@ function normalizeTitle(frontmatter: Record<string, any>, fileContent: string) {
 }
 function normalizeLastEditTime(frontmatter: Record<string, any>, url: string, cache: Map<string, string>, srcDir: string) {
   if (frontmatter.LastEditTime) {
-    frontmatter.LastEditTime = normalizeDate(frontmatter.LastEditTime);
+    frontmatter.LastEditTime = FormatDate(frontmatter.LastEditTims);
   } else {
     const filePath = normalizePath(url);
     if (!cache.has(filePath)) {
@@ -83,25 +84,8 @@ function normalizePath(filePath: string) {
 function getFileLastEditTime(filePath: string) {
   const command = `git --no-pager log -1 --follow --format=%ad --date=iso -- ${filePath}`;
   const gitFileInitTime = execSync(command, { encoding: 'utf8' });
-  if (gitFileInitTime) return normalizeDate(gitFileInitTime);
+  if (gitFileInitTime) return FormatDate(gitFileInitTime);
   const stat = statSync(filePath);
   const defTime = stat.birthtime.getFullYear() !== 1970 ? stat.birthtime : stat.atime;
-  return normalizeDate(defTime);
-}
-
-
-
-function normalizeDate(date: Date | string) {
-  if (typeof date === 'string') {
-    date = new Date(date);
-  }
-  const year = date.getFullYear(); // 年
-  const month = String(date.getMonth() + 1).padStart(2, '0'); // 月（补零）
-  const day = String(date.getDate()).padStart(2, '0'); // 日（补零）
-  const hours = String(date.getHours()).padStart(2, '0'); // 时（补零）
-  const minutes = String(date.getMinutes()).padStart(2, '0'); // 分（补零）
-  const seconds = String(date.getSeconds()).padStart(2, '0'); // 秒（补零）
-
-  // 格式化输出
-  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  return FormatDate(defTime);
 }

@@ -27,9 +27,11 @@
 import { Article } from './index.data.mts';
 import { data as posts } from './index.data.mts';
 
+const props = withDefaults(defineProps<{ size?: number; }>(), { size: 10 });
+
 // 解析时间并按年分类
 const categorizedTimes: { [key: string]: Article[]; } = {};
-posts.articles.forEach(item => {
+posts.articles.slice(0, props.size).forEach(item => {
   const { frontmatter } = item;
   const date = new Date(frontmatter.Date || frontmatter.LastEditTime);
   const year = date.getFullYear();
