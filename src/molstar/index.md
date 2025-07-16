@@ -6,7 +6,9 @@ tags:
 ---
 
 
-# MolStar 
+# Q-MolStar
+
+> 基于开源 [MolStar](https://molstar.org)的编辑器版本
 
 > [!tip]
 > 后续的文档说明会更新到[文档](http://molstar.szbl.ac.cn/docs/)，最新的功能会更新到[molstar](http://molstar.szbl.ac.cn/viewer/)。

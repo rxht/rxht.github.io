@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-03-27 10:53:36
+LastEditTime: 2025-07-16 10:06:55
 
 # 首页
 
@@ -15,31 +15,37 @@ hero:
       alt: 'LOGO'
 
 features:
-  - title: MolStar
-    details: 基于开源 [MolStar](https://molstar.org)的编辑器版本
+  - title: Q-Mol*
+    details: 基于开源 MolStar 的编辑器版本
     link: molstar
     linkText: 点击查看
     icon: 
-      src: 'assets/molstar-logo.png'
-      alt: 'MolStar'
+      src: 'assets/molstar.png'
+      alt: 'Q-Mol*'
 
   - title: VitePress
-    icon: 
-      src: 'assets/vitepress-logo.svg'
-    details: VitePress 搭建博客
+    details: VitePress 搭建教程
     link: vitepress
     linkText: 点击查看
+    icon: 
+      src: 'assets/vitepress.svg'
+      alt: 'vitepress'
 
   - title: Docker
-    icon: 📝
+    details: Docker 部分功能教程
     link: docker
     linkText: 点击查看
+    icon: 
+      src: 'assets/docker.svg'
+      alt: 'docker'
 
   - title: Linux
-    icon: 📝
     details: 安装教程
     link: linux
     linkText: 点击查看
+    icon: 
+      src: 'assets/linux.svg'
+      alt: 'linux'
 
   - title: AI
     icon: 📝
