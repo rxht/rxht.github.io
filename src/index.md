@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-07-16 10:06:55
+LastEditTime: 2025-07-23 21:55:07
 
 # 首页
 
@@ -52,6 +52,12 @@ features:
     icon: 📝
     details: 安装教程
     link: ai
+    linkText: 点击查看
+
+  - title: 化学部分
+    icon: 🧪
+    details: 化学相关的内容
+    link: chemical
     linkText: 点击查看
 
   - title: 代码片段
