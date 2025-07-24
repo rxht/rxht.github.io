@@ -9,10 +9,11 @@ import Confetti from "./components/Confetti";
 import BackToTop from "./components/BackToTop";
 import Article from "./components/Article";
 import DocInfo from "./components/DocInfo";
+import Symbols from "./components/Symbols";
 import "virtual:group-icons.css";
 import "viewerjs/dist/viewer.min.css";
-import "./tailwind.css";
 import "./theme.css";
+import "./tailwind.css";
 import Layout from "./Layout.vue";
 
 export default {
@@ -25,6 +26,8 @@ export default {
     ctx.app.component("Confetti", Confetti);
     // 文章页
     ctx.app.component("Article", Article);
+    // 特殊符号组件
+    ctx.app.component("Symbols", Symbols);
   },
   setup() {
     // Get frontmatter and route

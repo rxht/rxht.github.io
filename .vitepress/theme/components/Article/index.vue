@@ -1,7 +1,7 @@
 <template>
   <p>共计 {{ posts.total }} 篇文章</p>
-  <div v-for="year in sortedYears" :key="year">
-    <span class="font-bold text-2xl">{{ year }}</span>
+  <div v-for="year in sortedYears" :key="year" class="bg-gradient-to-r w-fit bg-clip-text leading-normal from-[#263482] to-[#6bcfe4]">
+    <span class="font-bold text-6xl hover:tracking-wide duration-500 text-transparent">{{ year }}</span>
     <ul class="space-y-4">
       <li v-for="article in categorizedTimes[year]" :key="article.url">
         <div class="flex items-center flex-wrap space-x-2 space-y-2">
