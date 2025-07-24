@@ -62,7 +62,7 @@ function normalizeTitle(frontmatter: Record<string, any>, fileContent: string) {
 }
 function normalizeLastEditTime(frontmatter: Record<string, any>, url: string, cache: Map<string, string>, srcDir: string) {
   if (frontmatter.LastEditTime) {
-    frontmatter.LastEditTime = FormatDate(frontmatter.LastEditTims);
+    frontmatter.LastEditTime = FormatDate(frontmatter.LastEditTime);
   } else {
     const filePath = normalizePath(url);
     if (!cache.has(filePath)) {
