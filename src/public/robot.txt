@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: sitemap.xml
+Sitemap: https://rxht.github.io/wiki/sitemap.xml
 
-Disallow: /assets/
-Disallow: /pagefind/
+Disallow: /wiki/assets/
+Disallow: /wiki/pagefind/
