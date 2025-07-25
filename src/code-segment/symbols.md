@@ -1,11 +1,12 @@
 ---
 Date: 2025-07-24 17:34:45
-LastEditTime: 2025-07-24 21:15:09
+LastEditTime: 2025-07-25 21:34:54
 ---
 
 # 特殊字符
 
 <script lang="ts" setup>
+import Symbols from '../components/Symbols'
 const splitEmoji = s => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(s)].map(x => x.segment);
 
 // 常用符号
