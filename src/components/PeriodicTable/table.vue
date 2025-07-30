@@ -13,7 +13,7 @@
     <div class='col-start-3 col-span-1 row-start-6 row-span-2' />
     <div class='col-start-1 col-span-18 row-start-8 row-span-1' />
     <div class='col-start-1 col-span-3 row-start-9 row-span-2' />
-    <InfoComponent v-for='(atom, i) in data' :key='i' :atom :class='dynamicsClass(atom)' />
+    <InfoComponent v-for='(atom, i) in data' :key='i' :atom />
   </ol>
 </template>
 <script lang="ts" setup>
@@ -22,10 +22,9 @@ import ClassifyComponent from './classify.vue';
 import InfoComponent from './info.vue';
 import data, { AtomType } from './data';
 
-function dynamicsClass(atom: AtomType) {
-  // 镧系
-  if (atom.series === 'Lanthanoid') return 'row-start-9';
-  // 锕系
-  if (atom.series === 'Actinoid') return 'row-start-10';
-}
+defineProps<{
+  atom: AtomType,
+  temperature: number;
+}>()
+
 </script>

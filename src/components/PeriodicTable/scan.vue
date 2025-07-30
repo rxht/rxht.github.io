@@ -3,7 +3,7 @@
     <b>温度</b>
     <div class='space-x-1 flex justify-center items-center'>
       <button class='!border font-bold w-10 rounded-md cursor-pointer'>-</button>
-      <input type="range" min="-273" max="5727" value="0" class="w-60 h-2 rounded appearance-none cursor-pointer
+      <input type="range" min="-273" max="5727" :value="temperature" class="w-60 h-2 rounded appearance-none cursor-pointer
            bg-transparent
            /* 轨道渐变 */
            [&::-webkit-slider-runnable-track]:bg-[linear-gradient(to_right,rgb(100,100,255),rgb(238,238,238),yellow,orange,red)]
@@ -48,5 +48,9 @@
   </div>
 </template>
 <script setup lang="ts">
+
+defineProps<{
+  temperature: number;
+}>()
 
 </script>
