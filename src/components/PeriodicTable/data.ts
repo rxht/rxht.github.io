@@ -11,9 +11,9 @@ export const SeriesData = {
   Metalloid: '类金属',
   Nonmetal: '活泼非金属',
   Noble: '稀有气体',
-  Unknown: '未定义'
+  Unknown: ''
 } as const;
-type SeriesType = keyof typeof SeriesData;
+export type SeriesType = keyof typeof SeriesData;
 
 export const SeriesColor = {
   Alkali: 'bg-[#eace5d]',

@@ -15,13 +15,17 @@ import { StateOfMatter } from './common';
 const props = defineProps<{
   atom: AtomType,
   temperature: number;
+  highlightSeries: string[];
   click: () => void;
 }>();
 
 
 const className = computed(() => {
   const { series } = props.atom;
-  const classList = [SeriesColor[series]];
+  const isNoneHighlight = props.highlightSeries.length === 0;
+  const isHighlight = props.highlightSeries.includes(series);
+  const bgColor = (isNoneHighlight || isHighlight) ? SeriesColor[series] : undefined;
+  const classList = [bgColor];
   if (series === 'Lanthanoid') classList.push('row-start-9'); // 镧系
   if (series === 'Actinoid') classList.push('row-start-10'); // 锕系
   return classList.join(' ');

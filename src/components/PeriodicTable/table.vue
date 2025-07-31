@@ -7,13 +7,13 @@
         <MatterStateComponent />
       </div>
       <div class='w-78'>
-        <ClassifyComponent />
+        <ClassifyComponent v-model="highlightSeries" />
       </div>
     </div>
     <div class='col-start-3 col-span-1 row-start-6 row-span-2' />
     <div class='col-start-1 col-span-18 row-start-8 row-span-1' />
     <div class='col-start-1 col-span-3 row-start-9 row-span-2' />
-    <InfoComponent v-for='(atom, i) in data' :key='i' :atom :temperature :click="() => curr = atom" />
+    <InfoComponent v-for='(atom, i) in data' :key='i' :atom :temperature :highlightSeries :click="() => curr = atom" />
   </ol>
 </template>
 <script lang="ts" setup>
@@ -21,11 +21,13 @@ import MatterStateComponent from './matter-state.vue';
 import ClassifyComponent from './classify.vue';
 import InfoComponent from './info.vue';
 import data, { AtomType } from './data';
+import { shallowRef } from 'vue';
 
 const curr = defineModel<AtomType>({ required: true, default: data[0] });
-
 defineProps<{
   temperature: number;
-}>()
+}>();
+
+const highlightSeries = shallowRef<string[]>([])
 
 </script>
