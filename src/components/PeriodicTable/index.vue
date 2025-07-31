@@ -1,8 +1,8 @@
 <template>
   <div class='w-full mt-10 space-y-8'>
     <DetailsComponent :atom :temperature />
-    <ScanComponent :temperature />
-    <TableComponent :temperature :atom />
+    <ScanComponent v-model="temperature" />
+    <TableComponent :temperature v-model="atom" />
   </div>
 </template>
 

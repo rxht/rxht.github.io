@@ -1,3 +1,46 @@
+
+export const DEFAULE_K = 273;
+
+export const SeriesData = {
+  Alkali: '碱金属',
+  Alkaline: '碱土金属',
+  Lanthanoid: '镧系元素',
+  Actinoid: '锕系元素',
+  Transition: '过渡金属',
+  Poor: '贫金属',
+  Metalloid: '类金属',
+  Nonmetal: '活泼非金属',
+  Noble: '稀有气体',
+  Unknown: '未定义'
+} as const;
+type SeriesType = keyof typeof SeriesData;
+
+export const SeriesColor = {
+  Alkali: 'bg-[#eace5d]',
+  Alkaline: 'bg-[#f1f165]',
+  Lanthanoid: 'bg-[#e8d19c]',
+  Actinoid: 'bg-[#f5ccda]',
+  Transition: 'bg-[#fac5b7]',
+  Poor: 'bg-[#acdfec]',
+  Metalloid: 'bg-[#9ee5d4]',
+  Nonmetal: 'bg-[#8ced8c]',
+  Noble: 'bg-[#e5bde5]',
+  Unknown: 'bg-[#eeeeee]'
+};
+export const MatterColor = {
+  Gaseous: 'bg-[#ff0000]',
+  Liquid: 'bg-[#0000ff]',
+  Solid: 'bg-[#000000]',
+  Unknown: '',
+};
+export const MatterAbbreviation = {
+  Gaseous: '气',
+  Liquid: '液',
+  Solid: '固',
+  Unknown: '',
+};
+
+
 type RadiusType = {
   calculated?: string;
   empirical?: string;
@@ -48,7 +91,7 @@ export type AtomType = {
   ename: string;
   weight: string;
   electronstring: string;
-  series: string;
+  series: SeriesType;
   melt?: string;
   boil?: string;
   electroneg?: string;
