@@ -1,6 +1,7 @@
 <template>
   <div class='w-full flex flex-wrap gap-4'>
-    <div class='relative size-40 border rounded-sm !mt-0 p-0.5 hover:scale-110 duration-300 cursor-pointer space-y-0.5' :class="SeriesColor[props.atom.series]">
+    <div class='relative size-40 border rounded-sm !mt-0 p-0.5 hover:scale-110 duration-300 cursor-pointer space-y-0.5'
+      :class="SeriesColor[props.atom.series]">
       <b v-text='props.atom.atomic' class='block' />
       <abbr v-text='props.atom.symbol' class='block font-bold text-4xl' />
       <em v-text='props.atom.name' class='block text-3xl' />
@@ -40,7 +41,8 @@
         <div class="font-bold text-sm">{{ `电离能(${ionizes.length})` }}</div>
         <div class="text-sm">
           <select name="ionize" class="cursor-pointer">
-            <option v-for="ionize in ionizes" :key="ionize[0]" :value="ionize[1]">{{ `${ionize[0]}: ${ionize[1]}` }}</option>
+            <option v-for="ionize in ionizes" :key="ionize[0]" :value="ionize[1]">{{ `${ionize[0]}: ${ionize[1]}` }}
+            </option>
           </select>
         </div>
       </div>
@@ -71,6 +73,9 @@
         <div class="text-sm">{{ props.atom?.conductivity?.electric || 'N/A' }}</div>
       </div>
     </div>
+    <!-- <div class='w-60 border rounded-sm p-0.5'>
+      asd
+    </div> -->
   </div>
 </template>
 <script setup lang="ts">

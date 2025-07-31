@@ -1,45 +1,53 @@
+export const ConfigurationColor = {
+  s: "bg-[#38bdf8]",
+  p: "bg-[#34d399]",
+  d: "bg-[#facc15]",
+  f: "bg-[#fb7185]",
+};
+export type Block = keyof typeof ConfigurationColor;
+export type ConfigurationColorType = keyof typeof ConfigurationColor;
 
 export const DEFAULE_K = 273;
 
 export const SeriesData = {
-  Alkali: '碱金属',
-  Alkaline: '碱土金属',
-  Lanthanoid: '镧系元素',
-  Actinoid: '锕系元素',
-  Transition: '过渡金属',
-  Poor: '贫金属',
-  Metalloid: '类金属',
-  Nonmetal: '活泼非金属',
-  Noble: '稀有气体',
-  Unknown: ''
+  Alkali: "碱金属",
+  Alkaline: "碱土金属",
+  Lanthanoid: "镧系元素",
+  Actinoid: "锕系元素",
+  Transition: "过渡金属",
+  Poor: "贫金属",
+  Metalloid: "类金属",
+  Nonmetal: "活泼非金属",
+  Noble: "稀有气体",
+  Unknown: "",
 } as const;
 export type SeriesType = keyof typeof SeriesData;
 
 export const SeriesColor = {
-  Alkali: 'bg-[#eace5d]',
-  Alkaline: 'bg-[#f1f165]',
-  Lanthanoid: 'bg-[#e8d19c]',
-  Actinoid: 'bg-[#f5ccda]',
-  Transition: 'bg-[#fac5b7]',
-  Poor: 'bg-[#acdfec]',
-  Metalloid: 'bg-[#9ee5d4]',
-  Nonmetal: 'bg-[#8ced8c]',
-  Noble: 'bg-[#e5bde5]',
-  Unknown: 'bg-[#eeeeee]'
+  Alkali: "bg-[#eace5d]",
+  Alkaline: "bg-[#f1f165]",
+  Lanthanoid: "bg-[#e8d19c]",
+  Actinoid: "bg-[#f5ccda]",
+  Transition: "bg-[#fac5b7]",
+  Poor: "bg-[#acdfec]",
+  Metalloid: "bg-[#9ee5d4]",
+  Nonmetal: "bg-[#8ced8c]",
+  Noble: "bg-[#e5bde5]",
+  Unknown: "bg-[#eeeeee]",
 };
 export const MatterColor = {
-  Gaseous: 'bg-[#ff0000]',
-  Liquid: 'bg-[#0000ff]',
-  Solid: 'bg-[#000000]',
-  Unknown: '',
+  Gaseous: "bg-[#bae6fd]",
+  Liquid: "bg-[#06b6d4]",
+  Solid: "bg-[#dbee15]",
+  Unknown: "bg-[#818181]",
 };
 export const MatterAbbreviation = {
-  Gaseous: '气',
-  Liquid: '液',
-  Solid: '固',
-  Unknown: '',
+  Gaseous: "气",
+  Liquid: "液",
+  Solid: "固",
+  Unknown: "",
 };
-
+export type MatterType = keyof typeof MatterColor;
 
 type RadiusType = {
   calculated?: string;

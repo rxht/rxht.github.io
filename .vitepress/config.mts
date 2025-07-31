@@ -173,6 +173,9 @@ export default defineConfig({
         copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`,
       }),
     ],
+    server: {
+      host: "0.0.0.0",
+    },
   },
   sitemap: {
     hostname: homepage,
