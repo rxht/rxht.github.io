@@ -1,7 +1,8 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:01:18
+LastEditTime: 2025-08-01 23:35:22
 ---
+
 # bing 收录
 
 ## 检查网站是否被收录
@@ -14,20 +15,17 @@ site:https://rxht.github.io/
 
 ## 开始配置
 
-
 1. 进入 [Bing Webmasters](https://www.bing.com/webmasters/home) 网站，登录
-
 
 2. 点击添加网站，在弹框中选择 <b>手动添加网站</b>，然后将对应的网站输入，点击添加
 
-![Bing Source Type](./assets/bing-source-type.png)
+![Bing Source Type](./assets/bing-source-type.webp)
 
-3. 在 <b>添加并验证网站</b> 弹框中选择其他验证方式 <b>HTML Meta标记</b>，复制这个字符串后添加到文件 `config.mts` 的 `<head>` 中
+3. 在 <b>添加并验证网站</b> 弹框中选择其他验证方式 <b>HTML Meta 标记</b>，复制这个字符串后添加到文件 `config.mts` 的 `<head>` 中
 
-![google verify ownership](./assets/google-verify-ownership.png)
+![google verify ownership](./assets/google-verify-ownership.webp)
 
 4. 得到上述字符串后按照 VitePress 的 head 配置规则进行配置
-
 
 文件路径 `.vitepress/config.mts`
 
@@ -72,13 +70,12 @@ export default defineConfig({
 
 7. 部署完成后在 <b>添加并验证网站</b> 弹框中点击 <b>验证</b> 按钮，等待提示所有权验证成功
 
-
 8. 在 [Bing Webmasters](https://www.bing.com/webmasters/home) 网站中进入 <b>网站地图</b>
 
 9. 提交网站地图，如下图所示，输入完成后点击提交
 
-![bing add sitemap](./assets/bing-add-sitemap.png)
+![bing add sitemap](./assets/bing-add-sitemap.webp)
 
 ::: tip
-提交完sitemap.xml 文件以后，你的网页并不会立刻被 Bing 搜索引擎收录，第一次提交通常需要等待五六天左右甚至更长的时间。
+提交完 sitemap.xml 文件以后，你的网页并不会立刻被 Bing 搜索引擎收录，第一次提交通常需要等待五六天左右甚至更长的时间。
 :::

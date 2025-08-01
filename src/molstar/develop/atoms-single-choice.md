@@ -1,14 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:58:30
+LastEditTime: 2025-08-01 23:25:23
 ---
+
 # 设置原子只能单选
 
 设置场景中用户使用鼠标左键只能选中一个原子，不允许用户多选！
 
 效果如下：
 
-![Atoms Single-choice](./assets/atoms-single-choice.png)
+![Atoms Single-choice](./assets/atoms-single-choice.webp)
 
 ## 1：场景只支持单选原子的情况
 
@@ -38,11 +39,13 @@ this.plugin = new PluginContext(spec);
 ## 2. 在官方默认的案例中设置单选
 
 1. 首先设置为选中模式
+
 ```typescript:no-line-numbers
 this.plugin.selectionMode = true;
 ```
 
-2. 更新PluginBehaviors参数
+2. 更新 PluginBehaviors 参数
+
 ```typescript{7}
 const state = this.plugin.state.behaviors;
 const update = state.build();
@@ -55,7 +58,8 @@ for (const selection of selections) {
 PluginCommands.State.Update(this.plugin, { state, tree: update, options: { doNotLogTiming: true } });
 ```
 
-2. 更新interactivity层级为element
+2. 更新 interactivity 层级为 element
+
 ```typescript
-this.plugin.managers.interactivity.setProps({ granularity: 'element' });
+this.plugin.managers.interactivity.setProps({ granularity: "element" });
 ```

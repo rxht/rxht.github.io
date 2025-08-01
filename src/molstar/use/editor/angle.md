@@ -1,13 +1,14 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-07-15 09:54:03
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:28:53
+tags: ["Molstar"]
 ---
+
 # 三个原子所构成的键角
 
 ## 主要功能界面
 
-![alt text](./assets/edit-angle-image.png)
+![alt text](./assets/edit-angle-image.webp)
 
 ## 操作步骤
 
@@ -19,6 +20,6 @@ tags: ['Molstar']
 
 > 说明： 更新键角只需要用户操作即可完成实时更新，无需点击其他类似 `Apply` 的按钮
 
-> 原子排序说明：在 <b>Modify</b> 模块下，可点击向上的箭头更新原子排序，点击删除按钮可删除原子的选中状态，编辑键连时所更新的为前2个原子，更新键角时所更新的为前3个原子，更新二面角时所更新的为前4个原子
+> 原子排序说明：在 <b>Modify</b> 模块下，可点击向上的箭头更新原子排序，点击删除按钮可删除原子的选中状态，编辑键连时所更新的为前 2 个原子，更新键角时所更新的为前 3 个原子，更新二面角时所更新的为前 4 个原子
 
-![alt text](./assets/edit-order-atom.png)
+![alt text](./assets/edit-order-atom.webp)

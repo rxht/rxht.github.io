@@ -1,6 +1,6 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:00:01
+LastEditTime: 2025-08-01 23:34:20
 title: 评论区
 ---
 
@@ -8,10 +8,9 @@ title: 评论区
 
 > 基于 giscus 的 vitepress 评论区插件
 
-
 ## 最终效果如下
 
-![giscus](./assets/giscus.png)
+![giscus](./assets/giscus.webp)
 
 ## 前置条件
 
@@ -25,7 +24,7 @@ title: 评论区
 
 ## 开启 Discussions
 
-进入github中项目中的 Setting，找到 Features，然后在其中勾选 Discussions 选项即可。
+进入 github 中项目中的 Setting，找到 Features，然后在其中勾选 Discussions 选项即可。
 
 ## 申请 giscus key
 
@@ -40,8 +39,8 @@ title: 评论区
 7. 主题（可以不选，之后会做主题切换，适配深/浅主题）。
 8. 复制你得到的那串 key。
 
-
 ## 下载依赖
+
 ::: code-group
 
 ```sh [npm]
@@ -58,47 +57,43 @@ $ yarn add vitepress-plugin-comment-with-giscus
 
 :::
 
-
 ## 使用插件
 
 文件路径 `.vitepress/theme/index`
 
 ```typescript
 // .vitepress/theme/index.js
-import DefaultTheme from 'vitepress/theme';
-import { useData, useRoute } from 'vitepress';
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import DefaultTheme from "vitepress/theme";
+import { useData, useRoute } from "vitepress";
+import giscusTalk from "vitepress-plugin-comment-with-giscus";
 
 export default {
-    ...DefaultTheme,
-    enhanceApp(ctx) {
-        DefaultTheme.enhanceApp(ctx);
-    },
-    setup() {
-        // Get frontmatter and route
-        const { frontmatter, isDark } = useData();
-        const route = useRoute();
-        
-        // Obtain configuration from: https://giscus.app/
-        const props = {
-            repo: '你的仓库地址',
-            repoId: '你的仓库id',
-            category: '你选择的分类', // 默认: `General`
-            categoryId: '你的分类id',
-            mapping: 'pathname', // default: `pathname`
-            inputPosition: 'top', // default: `top`
-            lang: 'zh-CN', // default: `zh-CN`
-            lightTheme: isDark.value ? 'transparent_light': 'light', // default: `light`
-            darkTheme: isDark.value ? 'dark': 'transparent_dark', // default: `transparent_dark`
-            // ...
-        }
-        giscusTalk(props, { frontmatter, route }, true);
-    },
+  ...DefaultTheme,
+  enhanceApp(ctx) {
+    DefaultTheme.enhanceApp(ctx);
+  },
+  setup() {
+    // Get frontmatter and route
+    const { frontmatter, isDark } = useData();
+    const route = useRoute();
+
+    // Obtain configuration from: https://giscus.app/
+    const props = {
+      repo: "你的仓库地址",
+      repoId: "你的仓库id",
+      category: "你选择的分类", // 默认: `General`
+      categoryId: "你的分类id",
+      mapping: "pathname", // default: `pathname`
+      inputPosition: "top", // default: `top`
+      lang: "zh-CN", // default: `zh-CN`
+      lightTheme: isDark.value ? "transparent_light" : "light", // default: `light`
+      darkTheme: isDark.value ? "dark" : "transparent_dark", // default: `transparent_dark`
+      // ...
+    };
+    giscusTalk(props, { frontmatter, route }, true);
+  },
 };
 ```
-
-
-
 
 ::: tip
 

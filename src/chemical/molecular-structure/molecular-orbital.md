@@ -1,6 +1,6 @@
 ---
 Date: 2025-07-23 22:54:37
-LastEditTime: 2025-07-23 23:45:12
+LastEditTime: 2025-08-01 23:22:38
 ---
 
 # 分子轨道
@@ -9,7 +9,7 @@ LastEditTime: 2025-07-23 23:45:12
 
 如下图所示，由 2 个原子轨道叠加形成的分子轨道示意
 
-![由2个原子轨道叠加形成的分子轨道示意](./assets/molecular-orbital-entry-level.png)
+![由2个原子轨道叠加形成的分子轨道示意](./assets/molecular-orbital-entry-level.webp)
 
 > [!TIP] 提示：基本规则
 > 在分子轨道中填充电子时仍然需要遵循原子轨道填充电子的基本规则：
@@ -32,31 +32,31 @@ LastEditTime: 2025-07-23 23:45:12
 
 - σ 轨道：沿键轴呈圆柱形对称。可由 s-s, s-p, px-px(头碰头) 组合形成。包括 σ 和 σ\*。
 
-![σ 轨道](./assets/molecular-orbital-σ.png)
+![σ 轨道](./assets/molecular-orbital-σ.webp)
 
 - π 轨道：包含垂直于键轴的节面。可由 pz-pz 或 py-py (肩并肩) 组合形成。包括 π 和 π\*。
 
-![π 轨道](./assets/molecular-orbital-π.png)
+![π 轨道](./assets/molecular-orbital-π.webp)
 
 ## 示例
 
 1. $H_2$ 分子中有 2 个电子，每个电子的轨道都是 $1s$ 轨道。根据基本规则，每个 $H$ 原子中的 1 个电子只能占据 $1s$ 轨道。因此，$H_2$ 分子的分子轨道图如下所示：
 
-![$H_2$ 分子的分子轨道图](./assets/molecular-orbital-h2.png)
+![$H_2$ 分子的分子轨道图](./assets/molecular-orbital-h2.webp)
 
 2. $He$ 是一种单原子分子，不存在$He_2$形式的分子存在，假设存在$He_2$分子，根据基本规则，每个 $He$ 原子中的 2 个电子只能 $1s$ 轨道。因此，$He_2$ 分子的分子轨道图如下所示：
 
-![$He_2$ 分子的分子轨道图](./assets/molecular-orbital-he2.png)
+![$He_2$ 分子的分子轨道图](./assets/molecular-orbital-he2.webp)
 
 假想的 $He_2$ 分子的电子排布是$(σ_{1s})^2(σ_{1s}^*)^2$，反键轨道中的两个电子能量高，抵消了电子填充在成键轨道中使分子能量降低的效果，因此$He_2$分子不能存在，而是会重新变成$He$原子。
 
 3. $O_2$ 分子的分子轨道图如下所示：
 
-![$O_2$ 分子的分子轨道图](./assets/molecular-orbital-o2.png)
+![$O_2$ 分子的分子轨道图](./assets/molecular-orbital-o2.webp)
 
 4. $F_2$ 分子的分子轨道图如下所示：
 
-![$F_2$ 分子的分子轨道图](./assets/molecular-orbital-f2.png)
+![$F_2$ 分子的分子轨道图](./assets/molecular-orbital-f2.webp)
 
 > [!TIP] 键级说明
 > 键级越大，键越强、越稳定。键级为 0 表示不能形成稳定分子。

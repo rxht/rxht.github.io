@@ -1,14 +1,14 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-07-15 09:55:46
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:31:46
+tags: ["Molstar"]
 ---
+
 # 显示 Dihedrals
 
 测量功能主界面
 
-![测量主界面](./assets/measurements.png)
-
+![测量主界面](./assets/measurements.webp)
 
 ## 操作步骤
 
@@ -20,4 +20,4 @@ tags: ['Molstar']
 
 ## 结果如下
 
-![Dihedrals](./assets/Dihedrals.png)
+![Dihedrals](./assets/Dihedrals.webp)

@@ -1,13 +1,14 @@
 ---
 Date: 2025-07-15 09:45:12
-LastEditTime: 2025-07-15 09:47:57
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:30:23
+tags: ["Molstar"]
 ---
+
 # 导出 Animation
 
 导出功能主要模块
 
-![export animation](./assets/export_animation.png)
+![export animation](./assets/export_animation.webp)
 
 所支持的 `Animation` 类型如下
 
@@ -19,13 +20,13 @@ tags: ['Molstar']
 - Spin Structure （转圈，可配置时长）
 - Animate State (experimental)
 
-![animation type](./assets/animation_type.png)
+![animation type](./assets/animation_type.webp)
 
 > <b>提示：</b>如果不清楚每个 `Animation` 类型的最终导出效果可以在主视图左上角的动画播放器中查看对应的 `Animation` 效果
-> ![animation option](./assets/animation_option.png)
+> ![animation option](./assets/animation_option.webp)
 
 > <b><mark>注意：</mark></b>如果出现如下问题的话则表示当前的 `Model` 不存在 `Trajectory` 信息，无法使用 `Animate Trajectory`，请切换其他的 `Animation` 类型
-> ![animation error tip](./assets/animation_error_tip.png)
+> ![animation error tip](./assets/animation_error_tip.webp)
 
 ## 操作步骤
 
@@ -33,7 +34,7 @@ tags: ['Molstar']
 2. 点击 `Render` 按钮，主界面中会提示所渲染的每一帧
 3. 渲染完成会出现如下界面
 
-![animation successful](./assets/animation_successful.png)
+![animation successful](./assets/animation_successful.webp)
 
 4. 选择对应的输出格式【MP4、AVI、GIF、MKV】
 5. 点击 `Save Animation` 按钮即可完成

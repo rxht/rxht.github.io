@@ -1,33 +1,32 @@
 ---
 Date: 2025-03-22 09:12:54
-LastEditTime: 2025-03-27 22:01:32
+LastEditTime: 2025-08-01 23:35:32
 ---
+
 # SEO 优化： IndexNow
 
-> 通过实时索引掌控您的SEO策略 - Take control of your SEO game with real-time indexing
-
+> 通过实时索引掌控您的 SEO 策略 - Take control of your SEO game with real-time indexing
 
 ## 介绍
 
-IndexNow是一种开源协议，可以让网站所有者在网站内容出现变化（添加、更新或删除）后通知搜索引擎，让搜索引擎立即索引这些页面和内容。这使搜索引擎能够在其搜索结果中快速反映这种变化，从而提高整体抓取效率。
+IndexNow 是一种开源协议，可以让网站所有者在网站内容出现变化（添加、更新或删除）后通知搜索引擎，让搜索引擎立即索引这些页面和内容。这使搜索引擎能够在其搜索结果中快速反映这种变化，从而提高整体抓取效率。
 
-## 生成API密钥
+## 生成 API 密钥
 
 可以在网站[Mocrosoft](https://www.bing.com/indexnow/getstarted)生成一个密钥，然后点击下载按钮将密钥下载到本地。
 
-![index-new-generate-api-key](./assets/index-new-generate-api-key.png)
+![index-new-generate-api-key](./assets/index-new-generate-api-key.webp)
 
-## 将API密钥添加到VitePress项目中
+## 将 API 密钥添加到 VitePress 项目中
 
-将所下载的API Key文件 `${API_KEY}.txt` 保存到 VitePress 项目的 public 目录下。
+将所下载的 API Key 文件 `${API_KEY}.txt` 保存到 VitePress 项目的 public 目录下。
 
 > [!TIP] 提示
-> 所下载的API Key文件 `${API_KEY}.txt` 可以对其进行改名，但必须以 `utf-8` 格式与 `.txt` 后缀结尾。
+> 所下载的 API Key 文件 `${API_KEY}.txt` 可以对其进行改名，但必须以 `utf-8` 格式与 `.txt` 后缀结尾。
 
+## 提交 URL
 
-## 提交URL
-
-要使用 HTTP 请求提交一个URL（用搜索引擎提供的 URL 替换 ），请向以下 URL 发出请求：
+要使用 HTTP 请求提交一个 URL（用搜索引擎提供的 URL 替换 ），请向以下 URL 发出请求：
 
 ```http:no-line-numbers
 https://<searchengine>/indexnow?url=url-changed&key=your-key
@@ -42,8 +41,8 @@ https://<searchengine>/indexnow?url=url-changed&key=your-key
 https://<searchengine>/indexnow?url=https://www.example.com/product.html&key=7b1acc95d64f4496a7ba0744adb6af04
 ```
 
-- 向Bing提交示例：https://www.bing.com/indexnow?url=https://www.example.com/product.html&key=7b1acc95d64f4496a7ba0744adb6af04
-- 向Yandex提交示例：https://yandex.com/indexnow?url=url-changed&kurl=https://www.example.com/product.html&key=7b1acc95d64f4496a7ba0744adb6af04
+- 向 Bing 提交示例：https://www.bing.com/indexnow?url=https://www.example.com/product.html&key=7b1acc95d64f4496a7ba0744adb6af04
+- 向 Yandex 提交示例：https://yandex.com/indexnow?url=url-changed&kurl=https://www.example.com/product.html&key=7b1acc95d64f4496a7ba0744adb6af04
 
 你可以使用浏览器、wget、curl 或你选择的任何其他机制发出 HTTP 请求。请求成功将返回一个 HTTP 200 响应代码；如果你收到不同的响应，请验证提交的次数是否过多，密钥和 URL 是否有效，并重新提交请求。HTTP 200 响应代码只表明搜索引擎已收到你的 URL。
 
@@ -66,11 +65,11 @@ Host: <searchengine>
 }
 ```
 
-你可以在每次发布中提交最多 10,000 个URL，如果需要，可以混合 http 和 https URL。
+你可以在每次发布中提交最多 10,000 个 URL，如果需要，可以混合 http 和 https URL。
 
 你可以使用 wget、curl 或你选择的任何其他机制发出 HTTP 请求。请求成功将返回一个 HTTP 200 响应代码；如果你收到不同的响应，你应该验证请求，如果一切看起来没问题，就重新提交请求。HTTP 200 响应代码只表明搜索引擎已收到你的 URL 组。
 
-推荐的方法是，内容被添加、更新或删除以后，就自动提交URL，但要达到一定的限度；见《常见问题解答》中的用户生成内容的最佳做法。
+推荐的方法是，内容被添加、更新或删除以后，就自动提交 URL，但要达到一定的限度；见《常见问题解答》中的用户生成内容的最佳做法。
 
 ## 通过秘钥验证所有权
 
@@ -83,7 +82,7 @@ Host: <searchengine>
 在你主机的根目录下托管一个文本密钥文件。
 必须在你的网站根目录下托管一个 UTF-8 编码的文本密钥文件{your-key}.txt，在文件中列出密钥。
 
-例如，对于前面的例子，你将需要把你的UTF-8密钥文件托管在 https://www.example.com/7b1acc95d64f4496a7ba0744adb6af04.txt 且该文件必须包含密钥7b1acc95d64f4496a7ba0744adb6af04
+例如，对于前面的例子，你将需要把你的 UTF-8 密钥文件托管在 https://www.example.com/7b1acc95d64f4496a7ba0744adb6af04.txt 且该文件必须包含密钥 7b1acc95d64f4496a7ba0744adb6af04
 
 - 方案 2
 
@@ -114,7 +113,7 @@ Host: <searchengine>
 }
 ```
 
-在此方案 2 中，一个密钥文件的位置决定了这个密钥可以包含的 URL 组。一个位于 http://example.com/catalog/key12457EDd.txt 的密钥文件可以包括以 http://example.com/catalog/ 开始的任何 URL，但不能包括以 http://example.com/help/ 开始的URL。
+在此方案 2 中，一个密钥文件的位置决定了这个密钥可以包含的 URL 组。一个位于 http://example.com/catalog/key12457EDd.txt 的密钥文件可以包括以 http://example.com/catalog/ 开始的任何 URL，但不能包括以 http://example.com/help/ 开始的 URL。
 
 http://example.com/catalog/show?item=23
 http://example.com/catalog/show?item=233&user=3453

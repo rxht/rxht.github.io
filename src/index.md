@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-07-23 21:55:07
+LastEditTime: 2025-08-01 23:37:04
 
 # 首页
 
@@ -12,7 +12,7 @@ hero:
   text: "简单的文档说明"
   tagline: "正在认真完善中。。。"
   image:
-    src: "assets/logo.png"
+    src: "assets/logo.webp"
     alt: "LOGO"
 
 features:
@@ -21,7 +21,7 @@ features:
     link: molstar
     linkText: 点击查看
     icon:
-      src: "assets/molstar.png"
+      src: "assets/molstar.webp"
       alt: "Q-Mol*"
 
   - title: VitePress

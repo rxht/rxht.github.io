@@ -1,6 +1,6 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:00:56
+LastEditTime: 2025-08-01 23:34:34
 title: rss 订阅
 ---
 
@@ -8,8 +8,8 @@ title: rss 订阅
 
 > 基于 pagefind 实现的离线全文搜索
 
-
 ## 下载依赖
+
 ::: code-group
 
 ```sh [npm]
@@ -47,12 +47,11 @@ export default defineConfig({
 })
 ```
 
-## UI更新
+## UI 更新
 
 在网站的 <b>socialLinks</b> 会自动新增一个 <b>RSS</b> 图标，如下图
 
-![rss](./assets/rss.png)
-
+![rss](./assets/rss.webp)
 
 ## 编译时控制台输出
 
@@ -61,7 +60,6 @@ export default defineConfig({
 rss filepath: xxxxxxx\wiki\.vitepress\dist\feed.rss
 rss url: https://rxht.github.io/wiki/feed.rss
 ```
-
 
 ::: tip
 
@@ -74,7 +72,6 @@ publish: false
 ```
 
 :::
-
 
 ::: tip
 

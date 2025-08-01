@@ -1,7 +1,8 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:01:25
+LastEditTime: 2025-08-01 23:35:27
 ---
+
 # google 收录
 
 ## 检查网站是否被收录
@@ -14,7 +15,7 @@ site:https://rxht.github.io/
 
 如果出现如下结果则表示网站还未被 [google](https://www.google.com.hk/) 收录
 
-![google](./assets/google-check.png)
+![google](./assets/google-check.webp)
 
 ## 开始配置
 
@@ -22,11 +23,11 @@ site:https://rxht.github.io/
 
 2. 点击添加资源，在弹框中选择 <b>网址前缀</b>，然后将对应的网站输入，点击继续
 
-![google source type](./assets/google-source-type.png)
+![google source type](./assets/google-source-type.webp)
 
-3. 在 <b>验证所有权</b> 弹框中选择其他验证方式 <b>HTML标记</b>，复制这个字符串后添加到文件 `config.mts` 的 `<head>` 中
+3. 在 <b>验证所有权</b> 弹框中选择其他验证方式 <b>HTML 标记</b>，复制这个字符串后添加到文件 `config.mts` 的 `<head>` 中
 
-![google verify ownership](./assets/google-verify-ownership.png)
+![google verify ownership](./assets/google-verify-ownership.webp)
 
 4. 得到上述字符串后按照 VitePress 的 head 配置规则进行配置
 
@@ -77,8 +78,8 @@ export default defineConfig({
 
 9. 添加新的站点地图，如下图所示，输入完成后点击提交
 
-![google add sitemap](./assets/google-add-sitemap.png)
+![google add sitemap](./assets/google-add-sitemap.webp)
 
 ::: tip
-提交完sitemap.xml 文件以后，你的网页并不会立刻被 Google 搜索引擎收录，第一次提交通常需要等待五六天左右甚至更长的时间。之后可以点击侧边栏的 Links 或者 Coverage 进行查看。
+提交完 sitemap.xml 文件以后，你的网页并不会立刻被 Google 搜索引擎收录，第一次提交通常需要等待五六天左右甚至更长的时间。之后可以点击侧边栏的 Links 或者 Coverage 进行查看。
 :::

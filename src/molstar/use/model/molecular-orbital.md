@@ -1,8 +1,9 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-07-15 17:43:08
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:32:54
+tags: ["Molstar"]
 ---
+
 # 显示分子轨道
 
 > [!TIP]
@@ -10,8 +11,7 @@ tags: ['Molstar']
 
 分子轨道主界面如下
 
-![molecular-orbital](./assets/molecular-orbital.png)
-
+![molecular-orbital](./assets/molecular-orbital.webp)
 
 ## 操作步骤
 
@@ -19,10 +19,10 @@ tags: ['Molstar']
 
 2. 在 `State Tree` 页面中，在对应的文件上进行鼠标右键操作，得到如下结果：
 
-![molecular-orbital-context-menu](./assets/molecular-orbital-context-menu.png)
+![molecular-orbital-context-menu](./assets/molecular-orbital-context-menu.webp)
 
 3. 点击 `View Molecular Orbitals` 按钮，就可以得到上述的 **分子轨道主界面**
 
 4. 然后点击所需要展示的分子轨道即可得到如下结果
 
-![molecular-orbital-result](./assets/molecular-orbital-result.png)
+![molecular-orbital-result](./assets/molecular-orbital-result.webp)

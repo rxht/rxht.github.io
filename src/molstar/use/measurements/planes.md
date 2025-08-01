@@ -1,14 +1,14 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-07-15 09:56:55
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:32:07
+tags: ["Molstar"]
 ---
+
 # 显示 Planes
 
 测量功能主界面
 
-![测量主界面](./assets/measurements.png)
-
+![测量主界面](./assets/measurements.webp)
 
 ## 操作步骤
 
@@ -20,4 +20,4 @@ tags: ['Molstar']
 
 ## 结果如下
 
-![Planes](./assets/Planes.png)
+![Planes](./assets/Planes.webp)

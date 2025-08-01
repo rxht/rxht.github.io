@@ -1,13 +1,14 @@
 ---
 Date: 2025-07-15 09:42:27
-LastEditTime: 2025-07-15 09:50:58
-tags: ['Molstar']
+LastEditTime: 2025-08-01 23:30:52
+tags: ["Molstar"]
 ---
+
 # 导出 Model
 
 导出功能主要模块
 
-![export_models](./assets/export_models.png)
+![export_models](./assets/export_models.webp)
 
 ## 操作步骤
 

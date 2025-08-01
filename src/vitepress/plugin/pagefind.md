@@ -1,6 +1,6 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:00:43
+LastEditTime: 2025-08-01 23:34:28
 title: 离线全文搜索
 ---
 
@@ -10,9 +10,10 @@ title: 离线全文搜索
 
 ## 最终效果如下
 
-![pagefind](./assets/pagefind.png)
+![pagefind](./assets/pagefind.webp)
 
 ## 下载依赖
+
 ::: code-group
 
 ```sh [npm]
@@ -34,15 +35,15 @@ $ yarn add vitepress-plugin-pagefind pagefind
 文件路径 `.vitepress/config.mts`
 
 ```typescript
-import { defineConfig } from 'vitepress'
-import { pagefindPlugin } from 'vitepress-plugin-pagefind'
+import { defineConfig } from "vitepress";
+import { pagefindPlugin } from "vitepress-plugin-pagefind";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
     plugins: [pagefindPlugin()],
-  }
-})
+  },
+});
 ```
 
 ## 中文搜索优化
@@ -56,7 +57,7 @@ import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [pagefindPlugin({ 
+    plugins: [pagefindPlugin({
         customSearchQuery: (input: string) => {
             const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
             const result: string[] = []

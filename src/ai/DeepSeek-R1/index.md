@@ -1,11 +1,11 @@
 ---
 Date: 2025-03-21 19:47:49
-LastEditTime: 2025-03-27 21:52:28
+LastEditTime: 2025-08-01 23:17:31
 ---
+
 # DeepSeek-R1
 
 ![logo](./assets/logo.svg)
-
 
 ## 安装 Ollama
 
@@ -19,12 +19,14 @@ ollama version is 0.5.7
 ```
 
 查看当前本地的模型列表
+
 ```bash:no-line-numbers
 C:\Users\xxxx> ollama list
 NAME    ID    SIZE    MODIFIED
 ```
 
 查看帮助信息
+
 ```bash:no-line-numbers
 C:\Users\xxxx> ollama --help
 Large language model runner
@@ -54,10 +56,9 @@ Flags:
 Use "ollama [command] --help" for more information about a command.
 ```
 
-
 ## 加载 DeepSeek-R1 模型
 
-进入 [ollama安装DeepSeek-R1 模型](https://ollama.com/library/deepseek-r1:14b) 教程地址
+进入 [ollama 安装 DeepSeek-R1 模型](https://ollama.com/library/deepseek-r1:14b) 教程地址
 
 执行命令 `ollama run deepseek-r1` 即可完成下载 <b>deepseek-r1</b>的默认版本，如果需要下载指定版本则执行如下命令
 
@@ -77,7 +78,7 @@ ollama run deepseek-r1:32b  # 经过 Qwen 蒸馏过后的 32b 版本模型 -> De
 ollama run deepseek-r1:70b  # 经过 Llama 蒸馏过后的 70b 版本模型 -> DeepSeek-R1-Distill-Llama-70b
 ```
 
-执行此步骤会耗费较长时间（需要下载对应的模型文件，模型越大对应的下载文件越大，或者由于网络问题导致超时等），所下载的模型越大后期运行时所要求的硬件性能越强，推荐安装 `ollama run deepseek-r1` 或者 `ollama run deepseek-r1:7b` 版本大小的模型（模型文件大小约4.7GB）
+执行此步骤会耗费较长时间（需要下载对应的模型文件，模型越大对应的下载文件越大，或者由于网络问题导致超时等），所下载的模型越大后期运行时所要求的硬件性能越强，推荐安装 `ollama run deepseek-r1` 或者 `ollama run deepseek-r1:7b` 版本大小的模型（模型文件大小约 4.7GB）
 
 ## Chatbox 安装
 
@@ -85,11 +86,11 @@ ollama run deepseek-r1:70b  # 经过 Llama 蒸馏过后的 70b 版本模型 -> D
 
 安装完成后打开 <b>Chatbox</b>，然后选择使用本地的 <b>DeepSeek</b> 模型
 
-![local model](./assets/Chatbox-model.png)
+![local model](./assets/Chatbox-model.webp)
 
 选择 <b>ollama api</b>，选择所下载的指定模型
 
-![local api](./assets/Chatbox-api.png)
+![local api](./assets/Chatbox-api.webp)
 
 完成后即可实现本地的 <b>DeepSeek-R1</b> 的本地对话
 
