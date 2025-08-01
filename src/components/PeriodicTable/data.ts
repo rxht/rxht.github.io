@@ -1,11 +1,37 @@
 export const ConfigurationColor = {
-  s: "bg-[#38bdf8]",
-  p: "bg-[#34d399]",
-  d: "bg-[#facc15]",
-  f: "bg-[#fb7185]",
+  s: "bg-[#38bdf8] dark:bg-[#0b8ec8]",
+  p: "bg-[#34d399] dark:bg-[#0cb175]",
+  d: "bg-[#facc15] dark:bg-[#cba408]",
+  f: "bg-[#fb7185] dark:bg-[#ff0025]",
 };
 export type Block = keyof typeof ConfigurationColor;
 export type ConfigurationColorType = keyof typeof ConfigurationColor;
+
+export const SeriesColor = {
+  Alkali: "bg-[#eace5d] dark:bg-[#d2b025]",
+  Alkaline: "bg-[#f1f165] dark:bg-[#adad1d]",
+  Lanthanoid: "bg-[#e8d19c] dark:bg-[#d1a337]",
+  Actinoid: "bg-[#f5ccda] dark:bg-[#e881a4]",
+  Transition: "bg-[#fac5b7] dark:bg-[#d27359]",
+  Poor: "bg-[#acdfec] dark:bg-[#4bb2cd]",
+  Metalloid: "bg-[#9ee5d4] dark:bg-[#1cc199]",
+  Nonmetal: "bg-[#8ced8c] dark:bg-[#29a229]",
+  Noble: "bg-[#e5bde5] dark:bg-[#c139c1]",
+  Unknown: "bg-[#eeeeee] dark:bg-[#655b5b]",
+};
+export const MatterColor = {
+  Gaseous: "bg-[#bae6fd] dark:bg-[#43a8dd]",
+  Liquid: "bg-[#06b6d4] dark:bg-[#0da3bd]",
+  Solid: "bg-[#dbee15] dark:bg-[#b3c400]",
+  Unknown: "bg-[#818181]",
+};
+export const MatterAbbreviation = {
+  Gaseous: "气",
+  Liquid: "液",
+  Solid: "固",
+  Unknown: "",
+};
+export type MatterType = keyof typeof MatterColor;
 
 export const DEFAULE_K = 273;
 
@@ -22,32 +48,6 @@ export const SeriesData = {
   Unknown: "",
 } as const;
 export type SeriesType = keyof typeof SeriesData;
-
-export const SeriesColor = {
-  Alkali: "bg-[#eace5d]",
-  Alkaline: "bg-[#f1f165]",
-  Lanthanoid: "bg-[#e8d19c]",
-  Actinoid: "bg-[#f5ccda]",
-  Transition: "bg-[#fac5b7]",
-  Poor: "bg-[#acdfec]",
-  Metalloid: "bg-[#9ee5d4]",
-  Nonmetal: "bg-[#8ced8c]",
-  Noble: "bg-[#e5bde5]",
-  Unknown: "bg-[#eeeeee]",
-};
-export const MatterColor = {
-  Gaseous: "bg-[#bae6fd]",
-  Liquid: "bg-[#06b6d4]",
-  Solid: "bg-[#dbee15]",
-  Unknown: "bg-[#818181]",
-};
-export const MatterAbbreviation = {
-  Gaseous: "气",
-  Liquid: "液",
-  Solid: "固",
-  Unknown: "",
-};
-export type MatterType = keyof typeof MatterColor;
 
 type RadiusType = {
   calculated?: string;
