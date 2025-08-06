@@ -1,4 +1,7 @@
 <template>
+  <ClientOnly>
+    <Toaster position='top-right' :theme :offset='{ top: 80 }' :mobileOffset='{ top: 80 }' />
+  </ClientOnly>
   <DefaultTheme.Layout>
     <template v-for="(slot, name) in $slots" #[name]>
       <slot :name="name" />
@@ -9,9 +12,13 @@
 <script setup lang="ts">
 import { useData } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
-import { nextTick, provide } from 'vue';
+import { computed, nextTick, provide } from 'vue';
+import { Toaster } from 'vue-sonner';
+import "vue-sonner/style.css";
+
 
 const { isDark } = useData();
+const theme = computed(() => isDark.value ? 'light' : 'dark');
 
 const enableTransitions = () =>
   'startViewTransition' in document &&

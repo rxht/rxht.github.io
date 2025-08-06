@@ -11,6 +11,7 @@ import Article from "./components/Article";
 import DocInfo from "./components/DocInfo";
 import "virtual:group-icons.css";
 import "viewerjs/dist/viewer.min.css";
+
 import "./theme.css";
 import "./tailwind.css";
 import Layout from "./Layout.vue";

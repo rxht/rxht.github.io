@@ -44,6 +44,9 @@ dependencies:
   vue:
     specifier: ^3.5.17
     version: 3.5.17
+  vue-sonner:
+    specifier: ^2.0.2
+    version: 2.0.2
 
 devDependencies:
   '@types/node':
@@ -2799,6 +2802,10 @@ packages:
         optional: true
     dependencies:
       vue: 3.5.17
+    dev: false
+
+  /vue-sonner@2.0.2:
+    resolution: {integrity: sha512-cN6onnN6aBOZ56YWN8CMj6t4zqbz/XlenE+jx5z+mgduMMelFo6B6G+e2Q6hhxU9YFiV16MXG2MBPluZabyElQ==}
     dev: false
 
   /vue@3.5.17:
