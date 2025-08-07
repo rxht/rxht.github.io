@@ -13,9 +13,9 @@
   },
   "license": "CC BY-NC-SA 4.0",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
     "cz": "git add . && git czg",
     "release": "bumpp"
   },
