@@ -39,6 +39,10 @@ export default defineConfig({
     ], // bing 收录
     [
       "meta",
+      { 'http-equiv': "Content-Type", content: "text/html;charset=gb2312" },
+    ], // 搜狗收录
+    [
+      "meta",
       { name: "sogou_site_verification", content: "G2uQSuFE7m" },
     ], // 搜狗收录
     ["meta", { name: "og:type", content: "website" }],
