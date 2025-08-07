@@ -197,22 +197,6 @@ export default defineConfig({
             },
           ],
         },
-        workbox: {
-          navigateFallback: '/404.html',
-          runtimeCaching: [
-            {
-              urlPattern: ({ request }) => request.destination === 'image',
-              handler: 'CacheFirst',
-              options: {
-                cacheName: 'images-cache',
-                expiration: {
-                  maxEntries: 10,
-                  maxAgeSeconds: 60 * 60 * 24 * 30, // 30天
-                },
-              },
-            },
-          ]
-        }
       })
     ],
     server: {
