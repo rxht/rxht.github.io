@@ -11,10 +11,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "WIKI",
+  title: "RXHT - 博客",
   description:
     "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
-  // base: "/wiki/", // base 会自动添加到其他选项中以 / 开头的所有 URL 前面，因此只需指定一次。
   srcDir: "src", // 相对于项目根目录的 markdown 文件所在的文件夹。
   cleanUrls: true, // 当设置为 true 时，VitePress 将从 URL 中删除 .html 后缀。
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
@@ -38,10 +37,14 @@ export default defineConfig({
       "meta",
       { name: "msvalidate.01", content: "9AC86FD1DE0C9B5003A7EC062D6CCAFA" },
     ], // bing 收录
+    [
+      "meta",
+      { name: "sogou_site_verification", content: "G2uQSuFE7m" },
+    ], // 搜狗收录
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "zh-cn" }],
     ["meta", { name: "og:site_name", content: "RXHT- 博客" }],
-    ["link", { rel: "icon", href: "/wiki/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.ico" }],
     [
       "script",
       { type: "text/javascript" },
@@ -168,7 +171,7 @@ export default defineConfig({
         },
       }),
       RssPlugin({
-        title: "WIKI",
+        title: "RXHT - 博客",
         baseUrl: "https://rxht.github.io",
         copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`,
       }),

@@ -34,7 +34,7 @@ export default {
 
     // Obtain configuration from: https://giscus.app/
     const props = {
-      repo: "rxht/wiki",
+      repo: "rxht/rxht.github.io",
       repoId: "R_kgDONsocXw",
       category: "General", // default: `General`
       categoryId: "DIC_kwDONsocX84CmKve",

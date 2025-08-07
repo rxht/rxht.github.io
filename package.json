@@ -1,18 +1,15 @@
 {
-  "name": "wiki",
+  "name": "rxht.github.io",
   "version": "0.0.16-beta.1",
   "description": "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
   "author": "RXHT <brf9577@163.com>",
   "contributors": [
     "RXHT <brf9577@163.com>"
   ],
-  "homepage": "https://rxht.github.io/wiki",
+  "homepage": "https://rxht.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rxht/wiki"
-  },
-  "bugs": {
-    "url": "https://github.com/rxht/wiki/issues"
+    "url": "https://github.com/rxht/rxht.github.io"
   },
   "license": "CC BY-NC-SA 4.0",
   "scripts": {
