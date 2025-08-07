@@ -14,7 +14,7 @@ export default defineConfig({
   title: "WIKI",
   description:
     "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
-  base: "/wiki/", // base 会自动添加到其他选项中以 / 开头的所有 URL 前面，因此只需指定一次。
+  // base: "/wiki/", // base 会自动添加到其他选项中以 / 开头的所有 URL 前面，因此只需指定一次。
   srcDir: "src", // 相对于项目根目录的 markdown 文件所在的文件夹。
   cleanUrls: true, // 当设置为 true 时，VitePress 将从 URL 中删除 .html 后缀。
   lastUpdated: true, // 最近一条内容的更新时间会显示在页面右下角。
