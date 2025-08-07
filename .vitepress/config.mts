@@ -43,6 +43,8 @@ export default defineConfig({
     ["meta", { name: "og:locale", content: "zh-cn" }],
     ["meta", { name: "og:site_name", content: "RXHT- 博客" }],
     ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
+    ["script", { id: "vite-plugin-pwa:register-sw", type: "text/javascript", src: "/registerSW.js" }],
     [
       "script",
       { type: "text/javascript" },
