@@ -7,11 +7,13 @@ import {
 import { license, repository, homepage } from "../package.json";
 import { nav, sidebar, socialLinks } from "./route/index.mts";
 import { RssPlugin } from "vitepress-plugin-rss";
+import { VitePWA } from 'vite-plugin-pwa';
 import tailwindcss from "@tailwindcss/vite";
 
+const title = 'RXHT - 博客';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "RXHT - 博客",
+  title,
   description:
     "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
   srcDir: "src", // 相对于项目根目录的 markdown 文件所在的文件夹。
@@ -171,6 +173,45 @@ export default defineConfig({
         baseUrl: "https://rxht.github.io",
         copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`,
       }),
+      VitePWA({
+        registerType: 'prompt',
+        includeAssets: ['favicon.svg', 'robots.txt'],
+        strategies: 'generateSW',
+        manifest: {
+          name: title,
+          short_name: title,
+          description: title,
+          theme_color: "#ffffff",
+          icons: [
+            {
+              src: 'assets/logo192.webp',
+              sizes: "192x192",
+              type: "image/webp",
+            },
+            {
+              src: 'assets/logo512.webp',
+              sizes: "512x512",
+              type: "image/webp",
+            },
+          ],
+        },
+        workbox: {
+          navigateFallback: '/404.html',
+          runtimeCaching: [
+            {
+              urlPattern: ({ request }) => request.destination === 'image',
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'images-cache',
+                expiration: {
+                  maxEntries: 10,
+                  maxAgeSeconds: 60 * 60 * 24 * 30, // 30天
+                },
+              },
+            },
+          ]
+        }
+      })
     ],
     server: {
       host: "0.0.0.0",
