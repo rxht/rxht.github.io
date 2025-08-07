@@ -174,7 +174,7 @@ export default defineConfig({
         copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`,
       }),
       VitePWA({
-        registerType: 'prompt',
+        registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'robots.txt'],
         strategies: 'generateSW',
         manifest: {
