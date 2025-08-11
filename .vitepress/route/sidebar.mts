@@ -27,6 +27,7 @@ function getOption(
 
 const options = [
   getOption("molstar"),
+  getOption("javascript"),
   getOption("code-segment"),
   getOption("vitepress"),
   getOption("chemical"),

@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-08-01 23:37:04
+LastEditTime: 2025-08-11 09:53:14
 
 # 首页
 
@@ -64,6 +64,14 @@ features:
     icon: 📝
     details: 一些小方法、小功能的代码片段
     link: code-segment
+    linkText: 点击查看
+
+  - title: Javascript
+    icon:
+      src: "assets/js.webp"
+      alt: "javascript"
+    details: Javascript 相关的内容
+    link: javascript
     linkText: 点击查看
 ---
 
