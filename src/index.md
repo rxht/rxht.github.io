@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-08-11 09:53:14
+LastEditTime: 2025-08-11 09:59:29
 
 # 首页
 
@@ -68,7 +68,7 @@ features:
 
   - title: Javascript
     icon:
-      src: "assets/js.webp"
+      src: "assets/javascript.svg"
       alt: "javascript"
     details: Javascript 相关的内容
     link: javascript
