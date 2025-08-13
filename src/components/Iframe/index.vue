@@ -1,12 +1,3 @@
 <template>
-  <iframe :src="src" :width="width ?? '100%'" :height="height ?? '500px'" frameborder="0" />
+  <iframe width="100%" height="500px"  frameborder="0" v-bind="$attrs" />
 </template>
-
-<script setup lang="ts">
-
-defineProps<{
-  src: string;
-  width?: string;
-  height?: string;
-}>();
-</script>

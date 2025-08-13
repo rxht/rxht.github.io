@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 14:41:50
-LastEditTime: 2025-08-13 20:56:44
+LastEditTime: 2025-08-13 21:52:35
 tags:
   - MolStar
 ---
@@ -16,8 +16,6 @@ tags:
 > - [官方网站](https://molstar.org) 、[官方文档](https://molstar.org/docs)
 > - [带编辑器版本](http://molstar.szbl.ac.cn/viewer/)、[备用链接](https://molstar.pages.dev/)、[文档](http://molstar.szbl.ac.cn/docs/)
 > - [介绍说明](https://zhjun-sci.com/qmolstar.html)
-
-
 
 ## 所支持格式 - 按功能分类
 

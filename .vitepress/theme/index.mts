@@ -12,8 +12,9 @@ import DocInfo from "./components/DocInfo";
 import "virtual:group-icons.css";
 import "viewerjs/dist/viewer.min.css";
 
-import "./theme.css";
-import "./tailwind.css";
+import "./style/theme.css";
+import "./style/blur.css";
+import "./style/tailwind.css";
 import Layout from "./Layout.vue";
 
 export default {
