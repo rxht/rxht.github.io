@@ -24,9 +24,8 @@
     "bumpp": "^9.10.1",
     "czg": "^1.11.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "vite-plugin-pwa": "^1.0.2",
-    "vitepress": "^1.6.3",
-    "vitepress-sidebar": "^1.32.1"
+    "vitepress": "^1.6.4",
+    "vitepress-sidebar": "^1.33.0"
   },
   "pnpm": {
     "peerDependencyRules": {
@@ -46,7 +45,7 @@
     "viewerjs": "^1.11.7",
     "vitepress-plugin-group-icons": "^1.3.5",
     "vitepress-plugin-image-viewer": "^1.1.6",
-    "vitepress-plugin-pagefind": "^0.4.12",
+    "vitepress-plugin-pagefind": "^0.4.14",
     "vitepress-plugin-rss": "^0.3.0",
     "vue": "^3.5.17",
     "vue-sonner": "^2.0.2"
