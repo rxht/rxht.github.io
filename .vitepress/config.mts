@@ -3,7 +3,6 @@ import { homepage } from "../package.json";
 import { head, themeConfig, markdown } from "./common/index.mts";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { groupIconVitePlugin } from "vitepress-plugin-group-icons";
-import { RssPlugin } from "vitepress-plugin-rss";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
@@ -41,16 +40,22 @@ export default defineConfig({
         filter(searchItem, idx, originArray) {
           return !searchItem.route.includes("404");
         },
-      }),
-      RssPlugin({
-        title: "RXHT - 博客",
-        baseUrl: homepage,
-        copyright: `版权所有 © 2024-${new Date().getFullYear()} 荣轩浩[rxht]`,
       })
     ],
     server: {
       host: "0.0.0.0",
     },
+    build: {
+      rollupOptions: {
+        cache: true,
+        output: {
+          manualChunks: {
+            vue: ['vue'],
+            vitepress: ['vitepress']
+          }
+        }
+      }
+    }
   },
   sitemap: {
     hostname: homepage,
