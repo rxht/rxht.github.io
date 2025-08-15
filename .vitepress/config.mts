@@ -48,12 +48,6 @@ export default defineConfig({
     build: {
       rollupOptions: {
         cache: true,
-        output: {
-          manualChunks: {
-            vue: ['vue'],
-            vitepress: ['vitepress']
-          }
-        }
       }
     }
   },
