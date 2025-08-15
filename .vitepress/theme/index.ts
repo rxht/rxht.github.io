@@ -8,6 +8,7 @@ import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
 import Confetti from "./components/Confetti";
 import BackToTop from "./components/BackToTop";
 import Article from "./components/Article";
+import Archive from "./components/Archive";
 import DocInfo from "./components/DocInfo";
 
 import "virtual:group-icons.css";
@@ -28,6 +29,8 @@ export default {
     ctx.app.component("Confetti", Confetti);
     // 文章页
     ctx.app.component("Article", Article);
+    // 归档
+    ctx.app.component("Archive", Archive);
   },
   setup() {
     const route = useRoute();
@@ -37,7 +40,7 @@ export default {
   Layout() {
     return h(Layout, null, {
       "layout-bottom": () => h(BackToTop),
-      "doc-before": () => h(DocInfo)
+      "doc-before": () => h(DocInfo),
     });
   },
 };
