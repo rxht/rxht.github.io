@@ -29,6 +29,23 @@ const head: HeadConfig[] = [
   ], // Google Analytics
   [
     "script",
+    {
+      type: "text/javascript",
+      async: "async",
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4811040847504068",
+      crossorigin: "anonymous"
+    },
+  ], // Google Adsense
+  ['script',
+    { type: "text/javascript" },
+    `
+       window['addGoogleAdsense'] = function(){
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    `
+  ],
+  [
+    "script",
     { type: "text/javascript" },
     `
       var _hmt = _hmt || [];

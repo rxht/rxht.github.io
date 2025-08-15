@@ -9,6 +9,8 @@ import Confetti from "./components/Confetti";
 import BackToTop from "./components/BackToTop";
 import Article from "./components/Article";
 import DocInfo from "./components/DocInfo";
+import GoogleAdsense from './components/GoogleAdsense';
+
 import "virtual:group-icons.css";
 import "viewerjs/dist/viewer.min.css";
 
@@ -37,6 +39,7 @@ export default {
     return h(Layout, null, {
       "layout-bottom": () => h(BackToTop),
       "doc-before": () => h(DocInfo),
+      "doc-after": () => h(GoogleAdsense)
     });
   },
 };
