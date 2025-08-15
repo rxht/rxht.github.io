@@ -17,6 +17,7 @@ function getOption(
     useFolderTitleFromIndexFile: true,
     useFolderLinkFromIndexFile: true,
     sortMenusByName: true,
+    sortMenusOrderNumericallyFromTitle: true,
     prefixSeparator: ".",
     removePrefixAfterOrdering: true,
     collapsed: true, // 分组折叠 / 展开
@@ -38,5 +39,7 @@ const options = [
 
 /**
  * @param 侧边栏菜单项的配置。
+ * @description 顺序说明
+ * 如果想让指定的子路径排序靠前可以在指定的路径下的index.md中的标题改为# 0.{name}，这样就可以实现靠前
  */
 export const sidebar: DefaultTheme.Sidebar = generateSidebar(options);
