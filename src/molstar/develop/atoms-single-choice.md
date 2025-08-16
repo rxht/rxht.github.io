@@ -1,6 +1,9 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:25:23
+LastEditTime: 2025-08-16 11:53:08
+description: Molstar 设置原子只能单选
+tags:
+  - MolStar
 ---
 
 # 设置原子只能单选

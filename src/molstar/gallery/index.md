@@ -1,8 +1,13 @@
 ---
 Date: 2025-08-15 11:30:39
-LastEditTime: 2025-08-15 14:02:06
+LastEditTime: 2025-08-16 11:52:27
+description: Molstar 画廊
+tags:
+  - MolStar
+  - molecular
+  - electronic
+  - edit
 ---
-
 
 # 0. 画廊
 
@@ -20,7 +25,6 @@ LastEditTime: 2025-08-15 14:02:06
 
 ![molecular-05](./assets/molecular-05.webp)
 
-
 ## 电子结构显示
 
 ![electronic-00](./assets/electronic-00.webp)
@@ -32,7 +36,6 @@ LastEditTime: 2025-08-15 14:02:06
 ## 轨迹显示
 
 ![trajectory-00](./assets/trajectory-00.gif)
-
 
 ## 分子编辑
 
