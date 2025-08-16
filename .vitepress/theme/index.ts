@@ -20,9 +20,8 @@ import "./style/tailwind.css";
 import Layout from "./Layout.vue";
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   enhanceApp(ctx) {
-    DefaultTheme.enhanceApp(ctx);
     // 图片预览
     ctx.app.component("vImageViewer", vImageViewer);
     // 五彩纸屑
