@@ -9,7 +9,7 @@
     <div class='relative flex flex-wrap'>
       <div v-for="(data, i) in list" :key='i' class='w-full md:w-1/2 xl:w-1/3 2xl:w-1/4 p-1'>
         <div
-          class='rounded-2xl hover:scale-120 duration-500 p-4 bg-[var(--vp-c-bg)] shadow-xs shadow-[var(--vp-c-bg-reverse-rgb)]/5 dark:shadow-white/5 hover:z-1 hover:shadow-xl hover:shadow-[var(--vp-c-bg-reverse-rgb)]/10 hover:dark:shadow-white'>
+          class='rounded-2xl hover:scale-110 duration-500 p-4 bg-[var(--vp-c-bg)] shadow-xs shadow-[var(--vp-c-bg-reverse-rgb)]/5 dark:shadow-white/5 hover:shadow-xl hover:shadow-[var(--vp-c-bg-reverse-rgb)]/10 hover:dark:shadow-white'>
           <a :href='data.url'>
             <section class='space-y-2'>
               <div class='relative font-bold text-md overflow-hidden line-clamp-1 whitespace-nowrap'
