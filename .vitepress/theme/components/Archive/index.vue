@@ -1,5 +1,5 @@
 <template>
-  <div class='py-4 px-8'>
+  <div class='py-4 px-8 bg-[var(--vp-c-bg-soft)]'>
     <div class="title">
       <h1 class='font-bold! text-2xl!'>
         全部文章<span class='text-sm text-neutral-500'> - {{ posts.articles.length || '' }} 篇</span>
