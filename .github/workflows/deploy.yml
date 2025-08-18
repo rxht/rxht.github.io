@@ -47,6 +47,9 @@ jobs:
         run: pnpm install --no-frozen-lockfile # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: pnpm docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      # 生成 IndexNow 验证文件
+      - name: Setup IndexNow
+        run: echo ${{ secrets.INDEXNOW_KEY }} > .vitepress/dist/${{ secrets.INDEXNOW_KEY }}.txt
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

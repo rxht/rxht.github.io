@@ -1,0 +1,21 @@
+name: "IndexNow"
+
+on:
+  schedule:
+    # 每周一 00:00 UTC（北京时间周一 08:00）
+    - cron: '0 0 * * 1'
+
+  # 仍保留手动触发
+  workflow_dispatch:
+
+jobs:
+  check-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: "https://rxht.github.io/sitemap.xml"
+          since: 1
+          since-unit: "week"
+          key: ${{ secrets.INDEXNOW_KEY }}
