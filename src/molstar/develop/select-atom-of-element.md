@@ -1,6 +1,9 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:25:37
+LastEditTime: 2025-08-16 11:54:14
+description: Molstar 选中指定的原子序号
+tags:
+  - MolStar
 ---
 
 # 选中指定的原子序号

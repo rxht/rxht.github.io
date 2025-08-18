@@ -1,6 +1,7 @@
 <template>
   <p>共计 {{ posts.total }} 篇文章</p>
-  <div v-for="year in sortedYears" :key="year" class="bg-gradient-to-r w-fit bg-clip-text leading-normal from-[#263482] to-[#6bcfe4]">
+  <div v-for="year in sortedYears" :key="year"
+    class="bg-gradient-to-r w-fit bg-clip-text leading-normal from-[#263482] to-[#6bcfe4]">
     <span class="font-bold text-6xl hover:tracking-wide duration-500 text-transparent">{{ year }}</span>
     <ul class="space-y-4">
       <li v-for="article in categorizedTimes[year]" :key="article.url">
@@ -10,7 +11,7 @@
           </a>
           <div class="text-sm space-x-1" v-if="article.frontmatter.tags?.length">
             <span class="font-bold">标签:</span>
-            <span v-for="tag in article.frontmatter.tags" :key="tag" class="tag-item">
+            <span v-for="tag in article.frontmatter.tags" :key="tag">
               <Badge type="tip" :text="tag" />
             </span>
           </div>
@@ -24,8 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { Article } from './index.data.mts';
-import { data as posts } from './index.data.mts';
+import { Article, data as posts } from '../../common/article.data.mts';
 
 const props = withDefaults(defineProps<{ size?: number; }>(), { size: 10 });
 

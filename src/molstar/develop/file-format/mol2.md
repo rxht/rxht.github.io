@@ -1,10 +1,14 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:58:13
+LastEditTime: 2025-08-16 11:55:37
+description: Molstar MOL2 文件格式介绍
+tags:
+  - MolStar
 ---
+
 # MOL2
 
-> mol2文件是计算化学领域非常常用的记录分子结构的格式，被很多程序所支持和利用。
+> mol2 文件是计算化学领域非常常用的记录分子结构的格式，被很多程序所支持和利用。
 
 ```txt [benzaldehyde.mol2]
 @<TRIPOS>MOLECULE
@@ -44,65 +48,66 @@ GASTEIGER
     14     7    14    1
 ```
 
-首先要知道mol2文件里，<b>空行</b> 被完全无视。mol2文件是自由格式，因此空格数目完全随意。
+首先要知道 mol2 文件里，<b>空行</b> 被完全无视。mol2 文件是自由格式，因此空格数目完全随意。
 
 以 <b>#</b> 开头的是注释行；
 
-以 <b>@</b>  开头的叫做字段；
+以 <b>@</b> 开头的叫做字段；
 
-从上面的benzaldehyde.mol2可见，当前文件有`@<TRIPOS>MOLECULE`、`@<TRIPOS>ATOM`、`@<TRIPOS>BOND`三个字段。一般来说这三个字段都是必须出现的，一起提供了描述一个分子最起码的信息。
+从上面的 benzaldehyde.mol2 可见，当前文件有`@<TRIPOS>MOLECULE`、`@<TRIPOS>ATOM`、`@<TRIPOS>BOND`三个字段。一般来说这三个字段都是必须出现的，一起提供了描述一个分子最起码的信息。
 
-- <b>MOLECULE字段</b>
+- <b>MOLECULE 字段</b>
 
 `@<TRIPOS>MOLECULE` 字段记录了体系的基本信息，包括：
 
-第1行：体系的名字。可见OpenBabel把转换出mol2文件的源文件的名字benzaldehyde.pdb当做了当前体系的名字
+第 1 行：体系的名字。可见 OpenBabel 把转换出 mol2 文件的源文件的名字 benzaldehyde.pdb 当做了当前体系的名字
 
-第2行：五个数字分别是体系中的原子数、化学键数、子结构数、特征数、set数。对于单纯记录体系结构信息，只要提供前两者就够了，后三个可以省略。所谓的子结构是指体系中的一个部分，比如每个分子、每个残基、蛋白质的每条链等等都可以在 `@<TRIPOS>SUBSTRUCTURE` 字段里定义为一个子结构。所谓的set是指基于体系中的一些原子/键/子结构根据特定规则和需要定义的集合，可以在 `@<TRIPOS>SET` 里具体定义。
+第 2 行：五个数字分别是体系中的原子数、化学键数、子结构数、特征数、set 数。对于单纯记录体系结构信息，只要提供前两者就够了，后三个可以省略。所谓的子结构是指体系中的一个部分，比如每个分子、每个残基、蛋白质的每条链等等都可以在 `@<TRIPOS>SUBSTRUCTURE` 字段里定义为一个子结构。所谓的 set 是指基于体系中的一些原子/键/子结构根据特定规则和需要定义的集合，可以在 `@<TRIPOS>SET` 里具体定义。
 
-第3行：体系的类型。可以为SMALL（小分子）、BIOPOLYMER、PROTEIN、NUCLEIC_ACID、SACCHARIDE
+第 3 行：体系的类型。可以为 SMALL（小分子）、BIOPOLYMER、PROTEIN、NUCLEIC_ACID、SACCHARIDE
 
-第4行：原子电荷。如果mol2文件没记录原子电荷信息这里就为NO_CHARGES。而在产生当前benzaldehyde.mol2文件的时候OpenBabel自动计算了Gasteiger电荷，因此此处写的是GASTEIGER。还可以为MULLIKEN_CHARGES（Mulliken电荷）、MMFF94_CHARGES（MMFF94力场定义的电荷）等等，不同种类电荷都有固定名字。如果记录的原子电荷是比如Multiwfn算的ADCH、RESP、1.2*CM5等电荷，在mol2格式规范中没有对应的名字，则这里应当写USER_CHARGES。
+第 4 行：原子电荷。如果 mol2 文件没记录原子电荷信息这里就为 NO_CHARGES。而在产生当前 benzaldehyde.mol2 文件的时候 OpenBabel 自动计算了 Gasteiger 电荷，因此此处写的是 GASTEIGER。还可以为 MULLIKEN_CHARGES（Mulliken 电荷）、MMFF94_CHARGES（MMFF94 力场定义的电荷）等等，不同种类电荷都有固定名字。如果记录的原子电荷是比如 Multiwfn 算的 ADCH、RESP、1.2\*CM5 等电荷，在 mol2 格式规范中没有对应的名字，则这里应当写 USER_CHARGES。
 
-- <b>ATOM字段</b>
+- <b>ATOM 字段</b>
 
 `@<TRIPOS>ATOM` 字段每一行定义一个原子的信息，每一列记录的信息为：
 
 1. 原子序号（整数）
 2. 原子名（字符串）
-3. X坐标（埃）
-4. Y坐标（埃）
-5. Z坐标（埃）
+3. X 坐标（埃）
+4. Y 坐标（埃）
+5. Z 坐标（埃）
 6. 原子类型（atom type。字符串）
 7. 原子所属的子结构序号（整数），可省略
 8. 原子所述的子结构名字（字符串），可省略
 9. 原子电荷（浮点数），可省略
 
-原子名部分可以为比如C2、H4等等，完全随意。记录生物分子结构时通常用IUPAC定义的各种残基中的原子名。
-原子类型部分可以记录做分子模拟用的力场中此原子实际对应的原子类型。mol2格式自己也有一套原子类型定义，见前述的Tripos_Mol2_File_Format.pdf文档的末尾，比如sp3杂化的碳的原子类型是C.3，C.ar代表芳香碳，Any代表任意，Hal泛指卤素，Cl代表氯，Ca代表钙，H代表氢，H.spc特指SPC水模型的氢，LP代表孤对电子（lone pair），Du代表虚原子（dummy），等等。
+原子名部分可以为比如 C2、H4 等等，完全随意。记录生物分子结构时通常用 IUPAC 定义的各种残基中的原子名。
+原子类型部分可以记录做分子模拟用的力场中此原子实际对应的原子类型。mol2 格式自己也有一套原子类型定义，见前述的 Tripos_Mol2_File_Format.pdf 文档的末尾，比如 sp3 杂化的碳的原子类型是 C.3，C.ar 代表芳香碳，Any 代表任意，Hal 泛指卤素，Cl 代表氯，Ca 代表钙，H 代表氢，H.spc 特指 SPC 水模型的氢，LP 代表孤对电子（lone pair），Du 代表虚原子（dummy），等等。
 
-- <b>BOND字段</b>
+- <b>BOND 字段</b>
 
 `@<TRIPOS>BOND` 字段每一行定义一个键的信息，其每一列记录的信息为：
 
 1. 键的序号（整数）
-2. 第1个原子的序号
-3. 第2个原子的序号
+2. 第 1 个原子的序号
+3. 第 2 个原子的序号
 4. 键的类型
 
 键的类型有以下这些
 • 1 = 单键
 • 2 = 双键
 • 3 = 三键
-• am = 酰胺的N-C键（这种键有一定pi共轭作用，这是为什么mol2格式里特意用am来与单键区分）
+• am = 酰胺的 N-C 键（这种键有一定 pi 共轭作用，这是为什么 mol2 格式里特意用 am 来与单键区分）
 • ar = 芳香环（aromatic）上的键，以下简称芳香键
 • du = 虚键
 • un = 未知/无法判断
-• nc = 不相连（俩原子不成键就没必要在BOND字段出现，但可以靠nc强调某两个原子间就是没成键）绝大多数程序产生的mol2文件里没有du、un、nc。
+• nc = 不相连（俩原子不成键就没必要在 BOND 字段出现，但可以靠 nc 强调某两个原子间就是没成键）绝大多数程序产生的 mol2 文件里没有 du、un、nc。
 
 - <b>晶胞信息</b>
 
-mol2文件通常用来记录孤立体系，但实际上此格式也定义了记录晶胞信息的字段 `@<TRIPOS>CRYSIN`，在其下一行写晶胞的a、b、c三个边长（埃）以及alpha、beta、gamma夹角（度），每个值之间以逗号分隔。例如：
+mol2 文件通常用来记录孤立体系，但实际上此格式也定义了记录晶胞信息的字段 `@<TRIPOS>CRYSIN`，在其下一行写晶胞的 a、b、c 三个边长（埃）以及 alpha、beta、gamma 夹角（度），每个值之间以逗号分隔。例如：
+
 ```txt
 @<TRIPOS>CRYSIN
 3.785,3.785,9.514,90,90,90
@@ -110,4 +115,4 @@ mol2文件通常用来记录孤立体系，但实际上此格式也定义了记�
 
 ## 文章参考
 
-[谈谈记录化学体系结构的mol2文件-sobereva](http://sobereva.com/655)
+[谈谈记录化学体系结构的 mol2 文件-sobereva](http://sobereva.com/655)

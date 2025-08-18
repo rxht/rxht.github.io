@@ -1,6 +1,9 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:25:33
+LastEditTime: 2025-08-16 11:54:06
+description: Molstar 新增 Label Type
+tags:
+  - MolStar
 ---
 
 # 新增 Label Type
