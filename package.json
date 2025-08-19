@@ -7,6 +7,7 @@
     "RXHT <brf9577@163.com>"
   ],
   "homepage": "https://rxht.github.io",
+  "cloudflare": "https://rxht.pages.dev",
   "repository": {
     "type": "git",
     "url": "https://github.com/rxht/rxht.github.io"
@@ -16,12 +17,15 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
+    "github": "cross-env CI_ENV=github vitepress build",
+    "cloudflare": "cross-env CI_ENV=cloudflare vitepress build",
     "cz": "git add . && git czg",
     "release": "bumpp"
   },
   "devDependencies": {
     "@types/node": "^22.13.13",
     "bumpp": "^9.10.1",
+    "cross-env": "^10.0.0",
     "czg": "^1.11.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.4",

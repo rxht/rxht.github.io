@@ -1,10 +1,14 @@
 import { defineConfig } from "vitepress";
-import { homepage } from "../package.json";
+import { homepage, cloudflare } from "../package.json";
 import { head, themeConfig, markdown } from "./common/index.mts";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import tailwindcss from "@tailwindcss/vite";
 
+const hostname = {
+  github: homepage,
+  cloudflare,
+};
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "RXHT - 博客",
@@ -53,6 +57,6 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: homepage,
+    hostname: hostname[process.env.CI_ENV as keyof typeof hostname] ?? homepage,
   },
 });
