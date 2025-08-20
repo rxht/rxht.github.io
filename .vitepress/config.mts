@@ -3,6 +3,7 @@ import { homepage, cloudflare } from "../package.json";
 import { head, themeConfig, markdown } from "./common/index.mts";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { groupIconVitePlugin } from "vitepress-plugin-group-icons";
+import viteCompression from "vite-plugin-compression";
 import tailwindcss from "@tailwindcss/vite";
 
 const hostname = {
@@ -46,6 +47,7 @@ export default defineConfig({
           return !searchItem.route.includes("404");
         },
       }),
+      viteCompression(),
     ],
     server: {
       host: "0.0.0.0",
