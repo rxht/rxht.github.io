@@ -1,6 +1,10 @@
 ---
 Date: 2025-08-06 20:39:31
-LastEditTime: 2025-08-06 22:41:29
+LastEditTime: 2025-08-20 22:05:18
+description: 论文配色方案
+tags:
+  - 配色
+  - 主题
 ---
 
 <script lang="ts" setup>
