@@ -8,7 +8,8 @@
       class="size-full p-4 pt-8 bg-[var(--vp-c-bg)] rounded-xl transition-all duration-200 hover:rounded-2xl hover:scale-98">
       <a :href='data.url'>
         <section class='space-y-2'>
-          <div class='relative font-bold text-md overflow-hidden line-clamp-1 whitespace-nowrap'
+          <div
+            class='relative font-bold text-md overflow-hidden line-clamp-1 whitespace-nowrap bg-gradient-to-r from-[#ec695c] to-[#61c454] bg-no-repeat bg-bottom-right bg-size-[0_2px] transition-[background-size] duration-1000 hover:bg-bottom-left hover:bg-size-[100%_2px]'
             :title='data.frontmatter.title'>
             {{ data.frontmatter.title }}
           </div>
