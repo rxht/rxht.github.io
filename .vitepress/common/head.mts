@@ -21,6 +21,7 @@ const head: HeadConfig[] = [
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "py6srk3h9m");`,
   ], // Microsoft Clarity
+  ["script", { defer: "", async: "", href: "https://static.cloudflareinsights.com/beacon.min.js", 'data-cf-beacon': '{"token": "1bbe18f9faf141ed9b87cfc7e816404a"}' }], // Cloudflare Analytics
   ["script", { async: "", href: "https://www.googletagmanager.com/gtag/js?id=G-C73RJC1NJS" }], // Google Analytics
   [
     "script",
