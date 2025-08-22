@@ -1,9 +1,15 @@
 ---
 Date: 2025-08-07 09:34:00
-LastEditTime: 2025-08-16 11:54:52
-description: Molstar 更改 Focus representation 的 扩展半径
+LastEditTime: 2025-08-22 17:44:59
+description: 源码级示例：如何修改 StructureFocusRepresentation 的 expandRadius，实现聚焦时自动扩大/缩小显示范围。
+head:
+  - - meta
+    - name: keywords
+      content: molstar expandRadius, structure focus, 扩展半径, 行为源码
 tags:
   - MolStar
+  - Behavior
+  - StructureFocusRepresentation
 ---
 
 # 更改 Focus representation 的 扩展半径

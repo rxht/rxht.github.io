@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-16 11:53:43
-description: Molstar 鼠标与键盘事件监听
+LastEditTime: 2025-08-22 17:39:52
+description: 在 Qbics-MolStar 中订阅并处理鼠标点击、移动及键盘快捷键事件，实现自定义交互逻辑与快捷键绑定。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 鼠标事件, 键盘事件, 事件订阅, 开发示例
 tags:
   - MolStar
+  - MouseAndKeySubscribe
+  - 开发示例
 ---
 
 # 鼠标与键盘事件监听

@@ -1,6 +1,11 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:01:55
+LastEditTime: 2025-08-22 17:27:35
+description: 收录 VitePress 开发、主题、插件、部署等场景高频术语与缩写，提供中英文对照、一句话解释与关联链接，持续更新。
+head:
+  - - meta
+    - name: keywords
+      content: vitepress 词汇表, vitepress 术语, vitepress glossary, vitepress 中文, vitepress 缩写
 ---
 # 语法
 

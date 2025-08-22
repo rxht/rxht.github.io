@@ -1,7 +1,11 @@
 ---
 Date: 2025-08-15 21:52:30
-LastEditTime: 2025-08-16 11:50:53
-description: Molstar 可视化轨迹并导出动画
+LastEditTime: 2025-08-22 17:32:55
+description: 使用 Qbics-MolStar 加载并播放分子动力学轨迹（XYZ、DCD、XTC 等），分步讲解加载轨迹文件、同步拓扑、播放控制与导出动画的完整流程。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 轨迹可视化, 分子动力学轨迹, xyz dcd xtc 播放, 轨迹动画导出, Qbics-MolStar 教程
 tags:
   - MolStar
   - Trajectory

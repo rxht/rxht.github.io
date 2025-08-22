@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:54:06
-description: Molstar 新增 Label Type
+description: 在 Qbics-MolStar 中注册并渲染全新的标签类型，支持自定义文本、样式与交互，用于展示任意结构或属性信息。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 新标签类型, 自定义标签, labelType 扩展, 开发示例
 tags:
   - MolStar
+  - NewLabelType
+  - 开发示例
 ---
 
 # 新增 Label Type

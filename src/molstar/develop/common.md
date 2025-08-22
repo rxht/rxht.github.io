@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:53:21
-description: Molstar 常用方法
+description: 收录 Qbics-MolStar 开发中最常用的工具函数、配置片段和最佳实践，方便快速复制粘贴。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 开发片段, 通用工具函数, 最佳实践, 代码片段
 tags:
   - MolStar
+  - Common
+  - 开发片段
 ---
 
 # 常用方法

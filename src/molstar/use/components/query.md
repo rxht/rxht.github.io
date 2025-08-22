@@ -1,7 +1,15 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-08-01 23:27:42
-tags: ["Molstar"]
+LastEditTime: 2025-08-22 17:37:30
+description: 通过 Query 组件在 Qbics-MolStar 中编写序列、结构或属性查询，快速定位并高亮目标原子、残基或链。
+head:
+  - - meta
+    - name: keywords
+      content: molstar query, 序列查询, 结构查询, 属性查询
+tags:
+  - MolStar
+  - Query
+  - 组件示例
 ---
 
 # 添加 Components 表现

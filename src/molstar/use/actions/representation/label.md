@@ -1,7 +1,15 @@
 ---
 Date: 2025-07-15 09:52:00
-LastEditTime: 2025-08-01 23:26:48
-tags: ["Molstar"]
+LastEditTime: 2025-08-22 17:37:00
+description: 在 Qbics-MolStar 中为指定原子、残基或链添加文本标签，支持自定义内容与样式，提升结构解读效率。
+head:
+  - - meta
+    - name: keywords
+      content: molstar label, 原子标签, 残基标签, 文本标记
+tags:
+  - MolStar
+  - Label
+  - 表示操作
 ---
 
 # 新建标签

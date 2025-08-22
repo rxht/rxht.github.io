@@ -1,7 +1,11 @@
 ---
 Date: 2025-07-15 09:46:33
-LastEditTime: 2025-08-01 23:30:39
-tags: ["Molstar"]
+LastEditTime: 2025-08-22 17:10:38
+description: Molstar 导出图片实践教程
+tags: 
+  - Molstar
+  - image
+  - export
 ---
 
 # 导出图片
@@ -15,7 +19,7 @@ tags: ["Molstar"]
 ## 操作步骤
 
 1. 加载对应的结构文件
-2. <div style="display: flex; gap: 0 8px; align-items: center;">点击主界面右上角的相机按钮 <img src="./assets/export_image_screenshot.webp" style="width:32px; height:32px; vertical-align:middle;"></div>
+2. <div style="display: flex; gap: 0 8px; align-items: center;">点击主界面右上角的相机按钮 <img alt="screenshot" src="./assets/export_image_screenshot.webp" style="width:32px; height:32px; vertical-align:middle;"></div>
 3. 在弹窗中点击 `Format` 按钮可以选择所需要下载的图片格式
 4. 点击 `Resolution` 按钮可以选择对应的下载图片尺寸，或者选择 `Custom` 来自定义图片尺寸
 5. 点击 `Download` 按钮即可下载对应的图片数据
@@ -26,7 +30,7 @@ tags: ["Molstar"]
 
 ## 更改背景颜色
 
-<div style="display: flex; gap: 0 8px; align-items: center;"> 更改背景颜色首先需要先点击 <code>Setting</code> 按钮<img src="./assets/export_image_setting.webp" style="width:32px; height:32px; vertical-align:middle;"> ，在设置弹窗中更新主界面的背景颜色。</div>
+<div style="display: flex; gap: 0 8px; align-items: center;"> 更改背景颜色首先需要先点击 <code>Setting</code> 按钮<img alt="setting" src="./assets/export_image_setting.webp" style="width:32px; height:32px; vertical-align:middle;"> ，在设置弹窗中更新主界面的背景颜色。</div>
 
 ![export_image_setting_background](./assets/export_image_setting_background.webp)
 

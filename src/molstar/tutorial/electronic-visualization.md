@@ -1,7 +1,11 @@
 ---
 Date: 2025-08-18 20:24:07
 LastEditTime: 2025-08-18 20:45:36
-description: Molstar 可视化电子结构
+description: 在 Qbics-MolStar 中加载并渲染电子密度、分子轨道、静电势等电子结构数据，支持 .cube、.dx、.mol2 格式，分步演示参数调节与颜色映射。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 电子密度, 分子轨道可视化, cube dx 文件, 静电势图, 电子结构渲染
 tags:
   - MolStar
   - electronic

@@ -1,7 +1,10 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-08-01 23:29:07
-tags: ["Molstar"]
+LastEditTime: 2025-08-22 17:17:30
+description: Molstar 编辑功能实践教程
+tags: 
+  - Molstar
+  - editor
 ---
 
 # 编辑功能
@@ -14,19 +17,19 @@ tags: ["Molstar"]
 
 1：在编辑的界面中选择对应的片段模板，并点击空白位置。
 
-![](./assets/2024-12-26-15-56-12-image.webp)
+![anthracene](./assets/2024-12-26-15-56-12-image.webp)
 
 2：再次选择片段模板（可在模板中更换标记原子），同时在主窗口中选择对应的目标原子并进行点击即可完成两个片段模板的分子的对接。
 
-![](./assets/2024-12-26-15-59-02-image.webp)
+![ethyl](./assets/2024-12-26-15-59-02-image.webp)
 
 3： 完成一次编辑功能，结果如下：
 
-![](./assets/2024-12-26-16-01-22-image.webp)
+![result](./assets/2024-12-26-16-01-22-image.webp)
 
-> 提示：如需撤销，可以点击快捷键 `Ctrl + z` 或者点击 **<mark>撤销按钮</mark>** 可进行编辑撤销！![撤销](./assets/2024-12-26-16-06-11-image.webp)
+> 提示：如需撤销，可以点击快捷键 `Ctrl + z` 或者点击 **<mark>撤销按钮</mark>** 可进行编辑撤销！ ![撤销](./assets/2024-12-26-16-06-11-image.webp)
 
-![](./assets/2024-12-26-16-04-11-image.webp)
+![undo](./assets/2024-12-26-16-04-11-image.webp)
 
 > 反之，可以点击快捷键 `Ctrl + y` 或者点击 **<mark>重做按钮</mark>** 可进行编辑重做！ ![重做](./assets/2024-12-26-16-10-37-image.webp)
 

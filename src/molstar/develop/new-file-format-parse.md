@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:53:53
-description: Molstar 新增所支持的解析格式
+description: 分步演示如何为 Qbics-MolStar 添加新的分子文件格式解析器，实现读取、解析与渲染自定义扩展名结构数据。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 新文件格式, 自定义解析器, 文件格式扩展, 开发示例
 tags:
   - MolStar
+  - NewFileFormatParse
+  - 开发示例
 ---
 
 # 新增所支持的解析格式

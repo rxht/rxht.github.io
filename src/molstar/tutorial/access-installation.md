@@ -1,12 +1,16 @@
 ---
 Date: 2025-08-15 10:51:37
-LastEditTime: 2025-08-16 11:49:55
-description: Molstar 安装与简单使用
+LastEditTime: 2025-08-22 17:32:14
+description: 详解 Qbics-MolStar 在线访问、安装包下载、本地及在线 PDB 文件、SMILES 代码三种方式实现分子 3D 可视化，含拖拽加载、Apply 渲染完整步骤。
+head:
+  - - meta
+    - name: keywords
+      content: Qbics-MolStar 安装, Qbics-MolStar 使用, 分子可视化教程, PDB 文件查看, SMILES 渲染, 在线分子查看器
 tags:
   - MolStar
 ---
 
-# 0.安装与简单使用
+# 0.Qbics-MolStar 安装与使用教程 - 本地文件、PDB 与 SMILES 可视化
 
 ## 使用
 

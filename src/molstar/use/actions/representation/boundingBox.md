@@ -1,7 +1,15 @@
 ---
 Date: 2025-07-15 09:52:00
-LastEditTime: 2025-08-01 23:26:42
-tags: ["Molstar"]
+LastEditTime: 2025-08-22 17:36:34
+description: 在 Qbics-MolStar 中一键开启或关闭分子结构的三维包围盒，帮助快速定位整体范围与边界。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 包围盒, boundingBox, 分子边界框, 显示隐藏
+tags:
+  - MolStar
+  - BoundingBox
+  - 表示操作
 ---
 
 # 新建 BoundingBox

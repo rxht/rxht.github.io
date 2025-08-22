@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-16 11:53:08
-description: Molstar 设置原子只能单选
+LastEditTime: 2025-08-22 17:38:17
+description: 在 Qbics-MolStar 中实现“单原子点击选择”功能的完整开发示例，涵盖事件监听、状态更新与 UI 联动。
+head:
+  - - meta
+    - name: keywords
+      content: molstar 单原子选择, 点击选择原子, 开发示例, 事件监听
 tags:
   - MolStar
+  - AtomsSingleChoice
+  - 开发示例
 ---
 
 # 设置原子只能单选
