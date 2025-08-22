@@ -31,6 +31,7 @@ const themeConfig: DefaultTheme.Config = {
 
   outline: {
     label: "页面导航",
+    level: [2, 3]
   },
 
   lastUpdated: {
