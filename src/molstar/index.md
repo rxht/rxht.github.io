@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 14:41:50
-LastEditTime: 2025-08-22 17:29:36
+LastEditTime: 2025-08-25 15:38:17
 tags:
   - MolStar
 head:
@@ -211,6 +211,7 @@ head:
 
 <Badge type="warning" text=".cub" />
 <Badge type="warning" text=".cube" />
+<Badge type="warning" text=".dat" />
 <Badge type="warning" text=".dx" />
 <Badge type="warning" text=".cif" />
 
