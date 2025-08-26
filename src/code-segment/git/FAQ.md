@@ -19,3 +19,43 @@ $ git add .
 $ git commit -m 'update .gitignore'
 $ git push
 ```
+
+
+## github.com port 22 Connection timed out
+
+> 在执行 `git clone` 或者 `git pull/push` 时出现 GitHub 22 端口超时。
+
+```bash
+PS E:\RXH\xxxx\xxxx> git pull
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+**解决方案：**
+
+1. 先在 git 的 bin 文件夹下 执行如下命令，如果出现 **successfully** 则可以继续执行以下步骤。
+
+```bash
+$ ssh -T -p 443 git@ssh.github.com
+# Hi rxht! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+2. 在个人用户文件夹下的 `C:\Users\RXHT\.ssh\` 新建文件 `config`，并输入如下内容。
+
+```txt [.ssh/config]
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+```
+
+3. 在 git 的 bin 文件夹下 执行如下命令，如果出现 **successfully** 则表示配置有效。
+
+```bash
+$ ssh -T git@ssh.github.com
+# Hi rxht! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+4. 执行命令 `git clone` 克隆一次项目即可验证。
