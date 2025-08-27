@@ -54,8 +54,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
-      - name: Release
-        uses: softprops/action-gh-release@v2
   # 部署工作
   deploy:
     environment:
