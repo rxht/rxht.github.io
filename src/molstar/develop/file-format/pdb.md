@@ -1,9 +1,14 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-16 11:55:47
-description: Molstar PDB 文件格式介绍
+LastEditTime: 2025-08-28 10:21:03
+description: 全面解析 MolStar 可直接读取的 PDB 文件格式：字段位置、对齐规则、链/残基/原子层级、坐标单位及常见注意事项。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, PDB, 蛋白质结构, 原子坐标, 温度因子, 占有率, 记录格式
 tags:
   - MolStar
+  - pdb
 ---
 
 # PDB

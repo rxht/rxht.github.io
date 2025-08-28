@@ -1,9 +1,15 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:55:13
-description: Molstar CUBE 文件格式介绍
+description: 详解 MolStar 可直接读取的 CUBE 文件格式：标题、平移矢量、原子坐标、格点数据、分子轨道扩展及 Fortran 数据存储顺序。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, CUBE, 格点数据, 分子轨道, 平移矢量, 标量场, Bohr
 tags:
   - MolStar
+  - cube
+  - volume
 ---
 
 # CUBE

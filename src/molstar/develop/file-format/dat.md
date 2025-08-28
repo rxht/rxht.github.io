@@ -1,7 +1,15 @@
 ---
-description: Molstar Dat 文件格式介绍
+Date: 2025-08-26 14:10:42
+LastEditTime: 2025-08-28 10:17:49
+description: 介绍 MolStar 可直接读取的 DAT volume 文件格式（兼容 gnuplot dat），含字段含义、示例与常见注意事项。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, DAT, volume, gnuplot dat, FIELDS, x y z zdelta
 tags:
   - MolStar
+  - dat
+  - volume
 ---
 
 # DAT

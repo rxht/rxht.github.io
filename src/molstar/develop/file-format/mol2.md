@@ -1,9 +1,14 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:55:37
-description: Molstar MOL2 文件格式介绍
+description: 深入解读 MolStar 可直接读取的 MOL2 文件格式：字段含义、TRIPOS 段落、原子/键/电荷/晶胞信息及常见陷阱与示例。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, MOL2, TRIPOS, 分子结构, 原子类型, 键类型, 电荷, 晶胞
 tags:
   - MolStar
+  - MOL2
 ---
 
 # MOL2

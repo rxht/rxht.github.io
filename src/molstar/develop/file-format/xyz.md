@@ -1,7 +1,11 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-16 11:55:57
-description: Molstar XYZ 文件格式介绍
+description: 一文读懂 MolStar 可直接读取的 XYZ 文件格式：单帧结构、多帧轨迹、字段含义及坐标单位说明。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, XYZ, 轨迹, 分子结构, 坐标文件, 格式说明
 tags:
   - MolStar
   - xyz
