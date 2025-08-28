@@ -1,7 +1,11 @@
 ---
 Date: 2025-08-27 20:39:46
-LastEditTime: 2025-08-27 20:47:45
-description: Molstar RXH 文件格式介绍
+LastEditTime: 2025-08-28 10:24:04
+description: 介绍 MolStar 可直接读取的 RXH 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。
+head:
+  - - meta
+    - name: keywords
+      content: MolStar, RXH, 分子结构, 坐标文件, 键连信息, 原子数量
 tags:
   - MolStar
   - rxh
