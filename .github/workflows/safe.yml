@@ -3,6 +3,7 @@ name: Safe
 on:
   schedule:
     - cron: '0 14 7 * *'  # 每月七号下午2点触发
+  workflow_dispatch:  # 添加手动触发事件
 
 jobs:
   build:
