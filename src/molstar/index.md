@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 14:41:50
-LastEditTime: 2025-08-25 15:38:17
+LastEditTime: 2025-08-29 14:47:33
 tags:
   - MolStar
 head:
@@ -17,8 +17,8 @@ head:
 > [!tip]
 > 后续的文档说明会更新到[文档](http://molstar.szbl.ac.cn/docs/)，最新的功能会更新到[molstar](http://molstar.szbl.ac.cn/viewer/)。
 
-> - [官方网站](https://molstar.org) 、[官方文档](https://molstar.org/docs)
-> - [带编辑器版本](http://molstar.szbl.ac.cn/viewer/)、[备用链接](https://molstar.pages.dev/)、[文档](http://molstar.szbl.ac.cn/docs/)
+> - [官方网站](https://molstar.org) 、[官方文档](https://molstar.org/docs)、[由 AI（deepwiki）生成的文档 ](https://deepwiki.com/molstar/molstar)
+> - [带编辑器版本](http://molstar.szbl.ac.cn/viewer/)、[Windowns 客户端](http://molstar.szbl.ac.cn/download)、[文档](http://molstar.szbl.ac.cn/docs/)
 > - [介绍说明](https://zhjun-sci.com/qmolstar.html)
 
 ## 所支持格式 - 按功能分类
@@ -78,6 +78,7 @@ head:
 <Badge type="tip" text=".g3d" />
 <Badge type="tip" text=".mvsj" />
 <Badge type="tip" text=".mvsx" />
+<Badge type="tip" text=".rst7" />
 <Badge type="tip" text=".gz" />
 <Badge type="tip" text=".zip" />
 
@@ -249,6 +250,7 @@ head:
 <Badge type="warning" text=".lammpstrj" />
 <Badge type="warning" text=".xyz" />
 <Badge type="warning" text=".pdb" />
+<Badge type="warning" text=".rst7" />
 
 :::
 
