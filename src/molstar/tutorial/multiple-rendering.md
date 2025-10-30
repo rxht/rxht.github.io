@@ -1,6 +1,6 @@
 ---
 Date: 2025-10-29 17:26:51
-LastEditTime: 2025-10-30 09:38:56
+LastEditTime: 2025-10-30 09:55:59
 description: 详细讲解分子可视化工具 Qbics-MolStar 的原子选择（支持 Vmd/Pymol/Jmol/Mol Script4 种语法）、原子编号显示（全原子 / 指定原子）及多种渲染方式（Ball & Stick/Spacefill/Cartoon 等）操作，含 PubChem 化合物（ID:2244）、PDB 蛋白质（ID:1tqn）实操案例，助力科研人员快速掌握分子结构分析核心技能，高效完成分子可视化工作。
 head:
   - - meta
@@ -8,16 +8,9 @@ head:
       content: molStar Vmd 语法使用，molStar Pymol 原子选择，molStar 1tqn 蛋白质渲染，molStar PubChem 化合物下载，molStar 组件管理，molStar Ball & Stick 渲染，molStar Spacefill 显示，molStar Label 原子编号
 tags:
   - MolStar
-  - 分子可视化工具
-  - 原子选择教程
-  - 原子编号显示
-  - Vmd 语法
-  - Pymol 语法
-  - Jmol 语法
-  - Mol Script 语法
-  - Ball & Stick 模型
-  - Spacefill 模型
-  - Cartoon 模型
+  - Vmd
+  - Pymol
+  - Jmol
 ---
 
 # 3. 选择原子、显示编号、以及多种渲染方式

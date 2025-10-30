@@ -1,25 +1,15 @@
 ---
 Date: 2025-10-30 09:43:34
-LastEditTime: 2025-10-30 09:52:36
+LastEditTime: 2025-10-30 09:55:44
 description: 聚焦 AI 驱动的图片分子导入功能，详细讲解从图片（如含依拉雷诺分子的图片）裁剪、访问在线平台（https://molstar.szbl.ac.cn/viewer）、拖拽识别分子，到导出分子结构的完整流程，说明功能仅在线可用的关键注意事项，助力科研人员、药物研发者快速将图片分子转化为可分析的数字模型，提升分子处理效率。
 head:
   - - meta
     - name: keywords
       content: molstar AI 分子识别，molstar 依拉雷诺分子导入，molstar 在线分子识别，molstar SMILES 代码生成，molstar 分子结构下载，molstar 图片分子转化，molstar molstar.szbl.ac.cn使用
 tags:
-  - Qbics-MolStar
-  - AI 分子识别
-  - 图片导入分子
-  - 分子可视化工具
-  - SMILES 代码
-  - 依拉雷诺（Iqirvo）
-  - HIF-PH 抑制剂
-  - 在线分子查看器
-  - molstar.szbl.ac.cn
-  - 分子结构下载
-  - 药物研发工具
-  - 科研分子处理
-  - 分子图片转化
+  - molStar
+  - AI
+  - SMILES
 ---
 
 # 4. 从图片直接导入分子
