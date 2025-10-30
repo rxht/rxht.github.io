@@ -4,8 +4,7 @@
     <MacIconsComponent class='z-2' />
     <DormantIconsComponent :dormant class='z-2' />
 
-    <div
-      class="size-full p-4 pt-8 bg-[var(--vp-c-bg)] rounded-xl transition-all duration-200 hover:rounded-2xl hover:scale-98">
+    <div class="size-full p-4 pt-8 bg-[var(--vp-c-bg)] rounded-xl transition-all duration-200 hover:rounded-2xl hover:scale-98">
       <a :href='data.url'>
         <section class='space-y-2'>
           <div
@@ -14,7 +13,7 @@
             {{ data.frontmatter.title }}
           </div>
           <div class='text-xs overflow-hidden line-clamp-2'>{{ data.frontmatter.description }}</div>
-          <div class="flex overflow-hidden gap-1" v-if="data.frontmatter.tags?.length">
+          <div class="flex overflow-hidden gap-1 flex-wrap" v-if="data.frontmatter.tags?.length">
             <Badge type="tip" v-for="tag in data.frontmatter.tags" :key="tag" :text="tag" />
           </div>
           <div class='text-xs'>{{ FormatDate(data.frontmatter.LastEditTime, DATE_FORMAT) }}</div>
