@@ -58,6 +58,10 @@ const head: HeadConfig[] = [
         "script",
         { type: "text/javascript", src: "//www.highperformanceformat.com/922991dd9d0c81934adf4ef49d1a5c6e/invoke.js" },
     ], // adsterra
+    [
+        "script",
+        { async: "async", 'data-cfasync': "false", src: "//pl28069981.effectivegatecpm.com/9201687309a4ba933bbd246d08bb6b99/invoke.js" }
+    ]
 ];
 
 export { head };
