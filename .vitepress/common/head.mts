@@ -44,7 +44,11 @@ const head: HeadConfig[] = [
     [
         "script",
         { async: "async", 'data-cfasync': "false", src: "//pl28069981.effectivegatecpm.com/9201687309a4ba933bbd246d08bb6b99/invoke.js" }
-    ] // adsterra
+    ], // adsterra
+    [
+        "script",
+        { async: "async", crossorigin: "anonymous", src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4811040847504068" }
+    ], // googleAds
 ];
 
 export { head };
