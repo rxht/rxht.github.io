@@ -1,13 +1,26 @@
 ---
 Date: 2025-07-25 21:01:23
-LastEditTime: 2025-08-01 00:15:43
+LastEditTime: 2025-11-25 11:15:17
 aside: false
+description: 元素周期表，可以拖动温度改变元素状态，还有元素基本信息展示
+tags:
+  - 元素周期表
+  - 温度
+  - 固态
+  - 液态
+  - 气态
+  - 电子
+  - 元素
+head:
+  - - meta
+    - name: keywords
+      content: 元素周期表
 ---
 
 # 元素周期表
 
 <script lang="ts" setup>
-import PeriodicTable from '../components/PeriodicTable'
+import PeriodicTable from '../../components/PeriodicTable'
 </script>
 
 <PeriodicTable />

@@ -1,6 +1,7 @@
 ---
 Date: 2025-11-20 17:36:55
-LastEditTime: 2025-11-20 18:12:01
+LastEditTime: 2025-11-25 11:16:36
+description: 介绍如何使用Qbics-Molstar的查看轨迹动画
 tags:
   - MolStar
   - Animate
@@ -10,7 +11,7 @@ tags:
 
 # Animate Trajectory
 
-## 以.xyz 文件为例查看轨迹并导出动画
+## 以.xyz 文件为例查看轨迹动画
 
 1. 在 Qbics-MolStar 界面打开或拖入 .xyz 文件 显示渲染。
 

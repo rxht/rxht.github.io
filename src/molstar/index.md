@@ -1,6 +1,7 @@
 ---
 Date: 2025-01-20 14:41:50
 LastEditTime: 2025-08-29 14:47:33
+description: 详细介绍Qbics-Molstar的功能以及部分开发教程，还有详细说明的使用步骤
 tags:
   - MolStar
 head:

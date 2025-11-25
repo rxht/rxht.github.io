@@ -1,6 +1,7 @@
 ---
 Date: 2025-11-20 18:09:54
-LastEditTime: 2025-11-20 18:23:19
+LastEditTime: 2025-11-25 11:16:03
+description: 介绍如何使用Qbics-Molstar查看相机旋转动画
 tags:
   - MolStar
   - Animate
