@@ -1,6 +1,6 @@
 ---
 Date: 2025-11-25 09:35:48
-LastEditTime: 2025-11-25 11:27:41
+LastEditTime: 2025-11-25 11:29:59
 aside: false
 description: 科研网站/资源推荐，其中不仅有Qbics、Qbics-Molstar等还有其他的优质网站/资源。
 tags:
@@ -41,7 +41,7 @@ const features = [
       alt: 'Qbics Molstar',
     },
     title: 'Qbics-MolStar',
-    details: 'Qbics 团队在开源软件 MolStar 基础上自主开发的 Qbics-MolStar 可视化工具，大大提高了研究工作的效率。Qbics-MolStar支持计算化学中常用的所有坐标、轨迹、波函数格式、SMILES字符串或PubChem数据库直接导入分子结构、分子动力学轨迹、波函数可视化。<a herf="https://molstar.szbl.ac.cn/download/" target="_blank">【客户端下载】</a>',
+    details: 'Qbics 团队在开源软件 MolStar 基础上自主开发的 Qbics-MolStar 可视化工具，大大提高了研究工作的效率。Qbics-MolStar支持计算化学中常用的所有坐标、轨迹、波函数格式、SMILES字符串或PubChem数据库直接导入分子结构、分子动力学轨迹、波函数可视化。<a href="https://molstar.szbl.ac.cn/download/" target="_blank">【客户端下载】</a>',
     link: 'https://molstar.szbl.ac.cn/viewer/',
     linkText: '跳转官网'
   }
