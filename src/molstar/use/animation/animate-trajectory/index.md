@@ -1,7 +1,11 @@
 ---
 Date: 2025-11-20 17:36:55
-LastEditTime: 2025-11-25 11:16:36
-description: 介绍如何使用Qbics-Molstar的查看轨迹动画
+LastEditTime: 2025-11-25 11:20:31
+description: 本文详细介绍 Qbics-MolStar 软件查看.xyz 文件分子轨迹并导出动画的完整步骤，涵盖多帧.xyz 文件加载、Dynamic Bonds 动态键连开启、Animate Trajectory 模式选择及动画渲染导出，助力科研人员直观观察原子运动与键连变化，适用于分子动力学模拟数据可视化场景。
+head:
+  - - meta
+    - name: keywords
+      content: .xyz 文件轨迹查看,Qbics-MolStar 教程,分子动画导出,多帧 xyz 可视化,Dynamic Bonds 动态键连,分子动力学模拟,原子轨迹渲染,MolStar 动画导出步骤
 tags:
   - MolStar
   - Animate

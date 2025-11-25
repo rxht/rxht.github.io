@@ -1,3 +1,18 @@
+---
+Date: 2025-07-15 09:52:01
+LastEditTime: 2025-11-21 22:45:22
+description: qbics-molstar 隐藏特定的 Structure 或者可选中的对象
+head:
+  - - meta
+    - name: keywords
+      content: Structure hide,隐藏Structure,隐藏选中,His29,Tyr108
+tags:
+  - MolStar
+  - Structure
+  - hide
+  - His29
+  - Tyr108
+---
 
 # 隐藏特定的 Structure 或者可选中的对象
 
