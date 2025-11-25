@@ -1,6 +1,6 @@
 ---
 Date: 2025-11-25 09:35:48
-LastEditTime: 2025-11-25 11:14:29
+LastEditTime: 2025-11-25 11:27:41
 aside: false
 description: 科研网站/资源推荐，其中不仅有Qbics、Qbics-Molstar等还有其他的优质网站/资源。
 tags:
@@ -20,12 +20,14 @@ head:
 # 科研网站/资源推荐
 
 <script lang="ts" setup>
-import Features from '../../components/Features'
+import Features from '../../components/Features';
+import qbics from './assets/qbics.webp';
+import qbicsMolstar from './assets/qbics-molstar.svg';
 
 const features = [
   {
     icon: {
-      src: './assets/qbics.webp',
+      src: qbics,
       alt: 'qbics',
     },
     title: 'Qbics',
@@ -35,7 +37,7 @@ const features = [
   },
   {
     icon: {
-      src: './assets/qbics-molstar.svg',
+      src: qbicsMolstar,
       alt: 'Qbics Molstar',
     },
     title: 'Qbics-MolStar',
