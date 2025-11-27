@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 my-16">
         <div v-for="(feature, index) in features" :key="index" class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-lg transition-transform duration-200 hover:-translate-y-1">
             <!-- Icon -->
             <div class="mb-4 text-3xl" v-if="feature.icon">
