@@ -11,11 +11,7 @@
             </p>
             <p>
                 <b>🅁 阅读: </b>
-                <span id="vercount_value_page_pv" />
-            </p>
-            <p>
-                <b>🅅 访客: </b>
-                <span id="vercount_value_page_uv" />
+                <span id="vercount_value_page_pv"> - </span>
             </p>
         </div>
         <div v-if="frontmatter.tags" class="flex flex-wrap gap-1">

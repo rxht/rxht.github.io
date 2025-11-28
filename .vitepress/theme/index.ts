@@ -10,6 +10,7 @@ import BackToTop from "./components/BackToTop";
 import Article from "./components/Article";
 import Archive from "./components/Archive";
 import DocInfo from "./components/DocInfo";
+import SiteInfo from "./components/SiteInfo";
 
 import Layout from "./Layout.vue";
 import useVisitData from './hooks/VisitData';
@@ -45,6 +46,7 @@ export default {
         return h(Layout, null, {
             "layout-bottom": () => h(BackToTop),
             "doc-before": () => h(DocInfo),
+            "aside-bottom": () => h(SiteInfo),
             "doc-after": () => h('div', { id: 'container-9201687309a4ba933bbd246d08bb6b99' }),
         });
     },
