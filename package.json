@@ -1,60 +1,60 @@
 {
-  "name": "rxht.github.io",
-  "version": "0.0.28",
-  "description": "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
-  "author": "RXHT <brf9577@163.com>",
-  "contributors": [
-    "RXHT <brf9577@163.com>"
-  ],
-  "homepage": "https://rxht.github.io",
-  "cloudflare": "https://rxht.pages.dev",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rxht/rxht.github.io"
-  },
-  "license": "CC BY-NC-SA 4.0",
-  "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-    "github": "cross-env CI_ENV=github vitepress build",
-    "cloudflare": "cross-env CI_ENV=cloudflare vitepress build",
-    "cz": "git add . && git czg",
-    "release": "bumpp"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.13",
-    "bumpp": "^9.10.1",
-    "cross-env": "^10.0.0",
-    "czg": "^1.11.0",
-    "markdown-it-mathjax3": "^4.3.2",
-    "vite-plugin-compression": "^0.5.1",
-    "vitepress": "^1.6.4",
-    "vitepress-sidebar": "^1.33.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "search-insights"
-      ]
+    "name": "rxht.github.io",
+    "version": "0.0.28",
+    "description": "「开发者实战指南」- 分享一些技术文章，包括前端、后端、数据库、工具、开发规范等。",
+    "author": "RXHT <brf9577@163.com>",
+    "contributors": [
+        "RXHT <brf9577@163.com>"
+    ],
+    "homepage": "https://rxht.github.io",
+    "cloudflare": "https://rxht.pages.dev",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rxht/rxht.github.io"
+    },
+    "license": "CC BY-NC-SA 4.0",
+    "scripts": {
+        "docs:dev": "vitepress dev",
+        "docs:build": "vitepress build",
+        "docs:preview": "vitepress preview",
+        "github": "cross-env CI_ENV=github vitepress build",
+        "cloudflare": "cross-env CI_ENV=cloudflare vitepress build",
+        "cz": "git add . && git czg",
+        "release": "bumpp"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.13",
+        "bumpp": "^9.10.1",
+        "cross-env": "^10.0.0",
+        "czg": "^1.11.0",
+        "markdown-it-mathjax3": "^4.3.2",
+        "vite-plugin-compression": "^0.5.1",
+        "vitepress": "^1.6.4",
+        "vitepress-sidebar": "^1.33.0"
+    },
+    "pnpm": {
+        "peerDependencyRules": {
+            "ignoreMissing": [
+                "@algolia/client-search",
+                "search-insights"
+            ]
+        }
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.11",
+        "@vueuse/core": "^13.5.0",
+        "canvas-confetti": "^1.9.3",
+        "cheerio": "^1.1.2",
+        "dayjs": "^1.11.13",
+        "node-fetch": "^3.3.2",
+        "nodemailer": "^7.0.9",
+        "pagefind": "^1.3.0",
+        "tailwindcss": "^4.1.11",
+        "viewerjs": "^1.11.7",
+        "vitepress-plugin-group-icons": "^1.3.5",
+        "vitepress-plugin-image-viewer": "^1.1.6",
+        "vitepress-plugin-pagefind": "^0.4.14",
+        "vue": "^3.5.17",
+        "vue-sonner": "^2.0.2"
     }
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "@vueuse/core": "^13.5.0",
-    "canvas-confetti": "^1.9.3",
-    "cheerio": "^1.1.2",
-    "dayjs": "^1.11.13",
-    "node-fetch": "^3.3.2",
-    "nodemailer": "^7.0.9",
-    "pagefind": "^1.3.0",
-    "tailwindcss": "^4.1.11",
-    "viewerjs": "^1.11.7",
-    "vitepress-plugin-group-icons": "^1.3.5",
-    "vitepress-plugin-image-viewer": "^1.1.6",
-    "vitepress-plugin-pagefind": "^0.4.14",
-    "vue": "^3.5.17",
-    "vue-sonner": "^2.0.2"
-  }
 }

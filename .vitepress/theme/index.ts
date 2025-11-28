@@ -1,7 +1,7 @@
 // .vitepress/theme/index.js
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { useRoute } from "vitepress";
+import { inBrowser, useRoute } from "vitepress";
 import imageViewer from "vitepress-plugin-image-viewer";
 import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
 
@@ -11,13 +11,15 @@ import Article from "./components/Article";
 import Archive from "./components/Archive";
 import DocInfo from "./components/DocInfo";
 
+import Layout from "./Layout.vue";
+import useVisitData from './hooks/VisitData';
+
 import "virtual:group-icons.css";
 import "viewerjs/dist/viewer.min.css";
 
 import "./style/theme.css";
 import "./style/blur.css";
 import "./style/tailwind.css";
-import Layout from "./Layout.vue";
 
 export default {
     extends: DefaultTheme,
@@ -30,6 +32,9 @@ export default {
         ctx.app.component("Article", Article);
         // 归档
         ctx.app.component("Archive", Archive);
+        if (inBrowser) {
+            ctx.router.onAfterPageLoad = () => useVisitData();
+        }
     },
     setup() {
         const route = useRoute();
@@ -40,7 +45,7 @@ export default {
         return h(Layout, null, {
             "layout-bottom": () => h(BackToTop),
             "doc-before": () => h(DocInfo),
-            "doc-after": () => h('div', { id: 'container-9201687309a4ba933bbd246d08bb6b99' })
+            "doc-after": () => h('div', { id: 'container-9201687309a4ba933bbd246d08bb6b99' }),
         });
     },
 };
