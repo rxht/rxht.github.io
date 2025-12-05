@@ -1,6 +1,7 @@
 ---
 Date: 2025-10-29 17:26:51
 LastEditTime: 2025-10-30 09:55:59
+title: 3_选择原子、显示编号、以及多种渲染方式
 description: 详细讲解分子可视化工具 Qbics-MolStar 的原子选择（支持 Vmd/Pymol/Jmol/Mol Script4 种语法）、原子编号显示（全原子 / 指定原子）及多种渲染方式（Ball & Stick/Spacefill/Cartoon 等）操作，含 PubChem 化合物（ID:2244）、PDB 蛋白质（ID:1tqn）实操案例，助力科研人员快速掌握分子结构分析核心技能，高效完成分子可视化工作。
 head:
   - - meta
@@ -13,7 +14,7 @@ tags:
   - Jmol
 ---
 
-# 3. 选择原子、显示编号、以及多种渲染方式
+# 选择原子、显示编号、以及多种渲染方式
 
 ## 选择原子
 

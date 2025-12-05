@@ -18,8 +18,9 @@ function getOption(
     useFolderLinkFromIndexFile: true,
     sortMenusByName: true,
     sortMenusOrderNumericallyFromTitle: true,
-    prefixSeparator: ".",
+    prefixSeparator: "_",
     removePrefixAfterOrdering: true,
+
     collapsed: true, // 分组折叠 / 展开
     collapseDepth: 2,
     options,
