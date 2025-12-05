@@ -1,7 +1,13 @@
 ---
 Date: 2025-12-05 09:43:39
-LastEditTime: 2025-12-05 10:22:35
+LastEditTime: 2025-12-05 10:43:07
 title: useTemplateRef
+description: 该文档聚焦 Vue 3.5 新增的 useTemplateRef 特性，对比新旧版本模板引用的使用方式，核心解决传统模板引用的痛点
+tags:
+  - vue
+  - vue3.5
+  - 新特性
+  - useTemplateRef
 ---
 
 # useTemplateRef: Vue3.5 版本新特性
@@ -138,5 +144,8 @@ const { focus } = useFocus('email')
 ```ts [index.d.ts]
 function useTemplateRef<T = Element>(key: string): Readonly<Ref<T | null>>
 ```
+- 泛型 T：指定元素类型，默认 Element，支持精准类型约束；
+- 参数 key：模板中定义的 ref 名称（静态 / 动态均可）；
+- 返回值：只读的 Ref 对象，值为对应 DOM 元素或 null，保证类型安全。
 
 Vue 3.5 在编译阶段会将模板中的静态 ref 收集到专门的引用队列中。`useTemplateRef(key)` 本质上是从这个预先生成的队列中读取对应的虚拟节点引用，这个过程不会触发额外的依赖收集，性能表现接近原生操作。
