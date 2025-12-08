@@ -1,6 +1,15 @@
 ---
 Date: 2025-12-08 09:56:17
-LastEditTime: 2025-12-08 10:33:10
+LastEditTime: 2025-12-08 10:35:17
+description: 详细介绍nvidia-smi的功能部分参数说明
+tags:
+  - nvidia
+  - nvidia-smi
+  - GPU
+head:
+  - - meta
+    - name: keywords
+      content: nvidia, nvidia-smi, 参数, GPU
 ---
 
 # NVIDIA GPU 常用命令
