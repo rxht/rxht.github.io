@@ -29,6 +29,7 @@
         "czg": "^1.11.0",
         "markdown-it-mathjax3": "^4.3.2",
         "vite-plugin-compression": "^0.5.1",
+        "vite-plugin-html": "^3.2.2",
         "vitepress": "^1.6.4",
         "vitepress-sidebar": "^1.33.0"
     },

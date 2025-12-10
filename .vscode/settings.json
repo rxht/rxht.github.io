@@ -1,34 +1,34 @@
 {
-    "editor.formatOnSave": true,
-    "javascript.preferences.quoteStyle": "single",
-    "typescript.preferences.quoteStyle": "single",
-    "fileheader.customMade": {
-        "Date": "Do not edit", // 设置后默认设置文件生成时间
-        "LastEditTime": "Do not edit" // 设置后，保存文件更改默认更新最后编辑时间
-    },
-    "fileheader.configObj": {
-        "autoAdd": true, // 检测文件没有头部注释，自动添加文件头部注释
-        "autoAlready": true, // 只添加插件支持的语言以及用户通过`language`选项自定义的注释
-        "supportAutoLanguage": [
-            "md"
-        ], // 设置之后，在数组内的文件才支持自动添加
-        "folderBlacklist": [
-            "node_modules",
-            ".vitepress",
-            ".vscode"
-        ], // 文件夹或文件名禁止自动添加头部注释
-        "createHeader": true, // 默认关闭
-        "throttleTime": 60000, // 对同一个文件 需要过1分钟再次修改文件并保存才会更新注释
-        "language": {
-            "md": {
-                "head": "---",
-                "middle": "",
-                "end": "---"
-            }
-        }
-    },
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
-    "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "fileheader.customMade": {
+    "Date": "Do not edit", // 设置后默认设置文件生成时间
+    "LastEditTime": "Do not edit" // 设置后，保存文件更改默认更新最后编辑时间
+  },
+  "fileheader.configObj": {
+    "autoAdd": true, // 检测文件没有头部注释，自动添加文件头部注释
+    "autoAlready": true, // 只添加插件支持的语言以及用户通过`language`选项自定义的注释
+    "supportAutoLanguage": [
+      "md"
+    ], // 设置之后，在数组内的文件才支持自动添加
+    "folderBlacklist": [
+      "node_modules",
+      ".vitepress",
+      ".vscode"
+    ], // 文件夹或文件名禁止自动添加头部注释
+    "createHeader": true, // 默认关闭
+    "throttleTime": 60000, // 对同一个文件 需要过1分钟再次修改文件并保存才会更新注释
+    "language": {
+      "md": {
+        "head": "---",
+        "middle": "",
+        "end": "---"
+      }
+    }
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.tabSize": 4,
 }
