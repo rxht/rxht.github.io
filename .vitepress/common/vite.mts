@@ -56,11 +56,7 @@ const vite: UserConfig['vite'] = {
             cache: true,
         },
     },
-    assetsInclude: ['**/*.svg'],
-    optimizeDeps: {
-        include: ['vue', 'vitepress'],
-        exclude: []
-    }
+    assetsInclude: ['**/*.svg']
 };
 
 export { vite };
