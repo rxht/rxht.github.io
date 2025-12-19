@@ -1,3 +1,18 @@
+---
+Date: 2025-08-07 14:46:51
+LastEditTime: 2025-12-19 17:53:41
+description: 如何快速使用 fetch，与fetch 高级教程。
+head:
+  - - meta
+    - name: keywords
+      content: fetch, 请求取消, 请求重试, 流式读取数据
+tags:
+    - fetch
+    - 请求取消
+    - 请求重试
+    - 流式读取数据
+---
+
 # Fetch
 
 ## 请求取消

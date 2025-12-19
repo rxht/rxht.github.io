@@ -1,6 +1,16 @@
 ---
 Date: 2025-01-20 09:14:47
 LastEditTime: 2025-12-19 17:42:53
+description: 个人博客首页，方便快速找到想要的内容
+head:
+  - - meta
+    - name: keywords
+      content: 个人博客, 首页, 模块
+tags:
+    - 博客首页
+    - 首页
+    - 文档
+    - Qbics-Molstar
 
 # 首页
 
@@ -16,13 +26,13 @@ hero:
     alt: "LOGO"
 
 features:
-  - title: Q-Mol*
+  - title: Qbics-Molstar
     details: 基于开源 MolStar 的编辑器版本
     link: molstar
     linkText: 点击查看
     icon:
       src: "assets/molstar.webp"
-      alt: "Q-Mol*"
+      alt: "Qbics-Molstar"
 
   - title: 化学部分
     icon: 🧪
