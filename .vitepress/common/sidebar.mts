@@ -3,39 +3,32 @@ import { generateSidebar } from "vitepress-sidebar";
 import { VitePressSidebarOptions } from "vitepress-sidebar/types";
 
 // see: https://vitepress-sidebar.cdget.com/zhHans/guide/options#frontmattertitlefieldname
-function getOption(
-  name: string,
-  options: Partial<VitePressSidebarOptions> = {}
-) {
-  return {
-    scanStartPath: name,
-    basePath: `/${name}/`,
-    resolvePath: `/${name}/`,
-    documentRootPath: "src",
-    useTitleFromFileHeading: true,
-    useTitleFromFrontmatter: true,
-    useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true,
-    sortMenusByName: true,
-    sortMenusOrderNumericallyFromTitle: true,
-    prefixSeparator: "_",
-    removePrefixAfterOrdering: true,
+function getOption(name: string, options: Partial<VitePressSidebarOptions> = {}) {
+    return {
+        scanStartPath: name,
+        basePath: `/${name}/`,
+        resolvePath: `/${name}/`,
+        documentRootPath: "src",
+        useTitleFromFileHeading: true,
+        useTitleFromFrontmatter: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        sortMenusByName: true,
+        sortMenusOrderNumericallyFromTitle: true,
+        prefixSeparator: "_",
+        removePrefixAfterOrdering: true,
 
-    collapsed: true, // 分组折叠 / 展开
-    collapseDepth: 2,
-    options,
-  };
+        collapsed: true, // 分组折叠 / 展开
+        collapseDepth: 2,
+        options,
+    };
 }
 
 const options = [
-  getOption("molstar"),
-  getOption("javascript"),
-  getOption("code-segment"),
-  getOption("vitepress"),
-  getOption("chemical"),
-  getOption("docker"),
-  getOption("ai"),
-  getOption("linux"),
+    getOption("molstar"),
+    getOption("javascript"),
+    getOption("chemical"),
+    getOption("others"),
 ];
 
 /**

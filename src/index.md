@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-08-11 09:59:29
+LastEditTime: 2025-12-19 17:42:53
 
 # 首页
 
@@ -24,46 +24,10 @@ features:
       src: "assets/molstar.webp"
       alt: "Q-Mol*"
 
-  - title: VitePress
-    details: VitePress 搭建教程
-    link: vitepress
-    linkText: 点击查看
-    icon:
-      src: "assets/vitepress.svg"
-      alt: "vitepress"
-
-  - title: Docker
-    details: Docker 部分功能教程
-    link: docker
-    linkText: 点击查看
-    icon:
-      src: "assets/docker.svg"
-      alt: "docker"
-
-  - title: Linux
-    details: 安装教程
-    link: linux
-    linkText: 点击查看
-    icon:
-      src: "assets/linux.svg"
-      alt: "linux"
-
-  - title: AI
-    icon: 📝
-    details: 安装教程
-    link: ai
-    linkText: 点击查看
-
   - title: 化学部分
     icon: 🧪
     details: 化学相关的内容
     link: chemical
-    linkText: 点击查看
-
-  - title: 代码片段
-    icon: 📝
-    details: 一些小方法、小功能的代码片段
-    link: code-segment
     linkText: 点击查看
 
   - title: Javascript
@@ -72,6 +36,12 @@ features:
       alt: "javascript"
     details: Javascript 相关的内容
     link: javascript
+    linkText: 点击查看
+
+  - title: 其他杂项
+    icon: 📝
+    details: 一些代码片段或者教程说明之类的文档
+    link: others
     linkText: 点击查看
 ---
 
