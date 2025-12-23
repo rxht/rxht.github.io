@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 09:14:47
-LastEditTime: 2025-12-19 17:42:53
+LastEditTime: 2025-12-23 15:06:12
 description: 个人博客首页，方便快速找到想要的内容
 head:
   - - meta
@@ -27,7 +27,7 @@ hero:
 
 features:
   - title: Qbics-Molstar
-    details: 基于开源 MolStar 的编辑器版本
+    details: 基于开源 MolStar 深度优化的专业工具，突破了传统分子可视化的局限，内置功能完备的分子编辑器，支持灵活的结构编辑、参数调整与模型修改，让科研人员无需切换多套软件，即可一站式完成 “可视化 - 编辑” 全流程操作。
     link: molstar
     linkText: 点击查看
     icon:
