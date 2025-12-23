@@ -1,6 +1,20 @@
 ---
 Date: 2025-12-23 10:17:33
-LastEditTime: 2025-12-23 10:20:24
+LastEditTime: 2025-12-23 13:32:59
+description: MAchine Learning Potential for Landscape Exploration (MAPLE)
+head:
+  - - meta
+    - name: keywords
+      content: Maple, LBFGS, NEB, PRFO, FREQ, Structure Optimization, Transition State Search, Vibrational Analysis
+tags:
+  - Maple
+  - LBFGS
+  - NEB
+  - PRFO
+  - FREQ
+  - Structure Optimization
+  - Transition State Search
+  - Vibrational Analysis
 ---
 
 # Maple 

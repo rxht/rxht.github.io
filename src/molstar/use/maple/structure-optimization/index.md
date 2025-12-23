@@ -1,6 +1,16 @@
 ---
 Date: 2025-12-23 10:21:29
-LastEditTime: 2025-12-23 11:27:52
+LastEditTime: 2025-12-23 13:34:32
+description: Qbics-Molstar的结构优化功能使用教程
+head:
+  - - meta
+    - name: keywords
+      content: Maple, LBFGS,Structure Optimization, 使用教程
+tags:
+  - Maple
+  - LBFGS
+  - Structure Optimization
+  - 教程
 ---
 
 # Qbics-Molstar 结构优化: LBFGS
