@@ -1,6 +1,7 @@
 ---
 Date: 2025-12-15 17:20:14
-LastEditTime: 2025-12-16 09:22:01
+LastEditTime: 2025-12-23 15:08:02
+description: 单点能计算化学专业科普与介绍说明文档
 head:
   - - meta
     - name: keywords
