@@ -1,6 +1,6 @@
 ---
 Date: 2025-12-23 13:41:46
-LastEditTime: 2025-12-23 14:58:32
+LastEditTime: 2025-12-23 15:00:47
 description: Qbics-Molstar 振幅动画使用教程，如何使用振幅动画
 head:
   - - meta
@@ -14,7 +14,7 @@ tags:
 ---
 
 
-# Qbics-Molstar 振幅动画使用教程
+# Harmonic Vibrations
 
 
 ## 前置条件
