@@ -1,6 +1,6 @@
 ---
 Date: 2025-12-23 10:21:29
-LastEditTime: 2025-12-23 13:34:32
+LastEditTime: 2025-12-23 14:57:13
 description: Qbics-Molstar的结构优化功能使用教程
 head:
   - - meta
@@ -72,6 +72,8 @@ OH
 :::tip
  如需查看具体如何使用动画功能可查看文档 [可视化轨迹并导出动画](../../../tutorial/trajectory-visualization.md)
 :::
+
+## 最终结果
 
 结构优化的操作过程与最终结果如下动图所示：
 
