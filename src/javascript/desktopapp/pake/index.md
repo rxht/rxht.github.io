@@ -1,6 +1,6 @@
 ---
 Date: 2025-12-24 16:54:19
-LastEditTime: 2025-12-24 17:40:09
+LastEditTime: 2025-12-24 17:43:07
 description: 详细介绍 Pake 的安装以及存在的问题解决方法和具体的使用和配置参数
 head:
   - - meta
@@ -20,7 +20,7 @@ tags:
 
 # Pake 网页打包客户端
 
-> 只需一个命令，就能将任何网页变成桌面应用，支持 macOS、Windows 和 Linux
+> 只需一个命令，就能将任何网页变成桌面应用，支持 macOS、Windows 和 Linux。[官方地址](https://github.com/tw93/Pake/)
 
 :::tip
 确保你的 Node.js 版本是 22.0 或更高版本（例如 22.11.0）。 注意：旧版本≥18.0.0 也可能有效。
