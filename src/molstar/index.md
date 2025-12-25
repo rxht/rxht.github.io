@@ -1,6 +1,6 @@
 ---
 Date: 2025-01-20 14:41:50
-LastEditTime: 2025-08-29 14:47:33
+LastEditTime: 2025-12-25 09:00:14
 description: 详细介绍Qbics-Molstar的功能以及部分开发教程，还有详细说明的使用步骤
 tags:
   - MolStar
@@ -21,6 +21,8 @@ head:
 > - [官方网站](https://molstar.org) 、[官方文档](https://molstar.org/docs)、[由 AI（deepwiki）生成的文档 ](https://deepwiki.com/molstar/molstar)
 > - [带编辑器版本](http://molstar.szbl.ac.cn/viewer/)、[Windowns 客户端](http://molstar.szbl.ac.cn/download)、[文档](http://molstar.szbl.ac.cn/docs/)
 > - [介绍说明](https://zhjun-sci.com/qmolstar.html)
+
+
 
 ## 所支持格式 - 按功能分类
 
@@ -304,3 +306,8 @@ head:
 <Badge type="warning" text=".xyz" />
 
 :::
+
+
+## Molstar LOGO 相关文件
+
+![molstar](./assets/molstar.svg)、![molstar-icon](./assets/molstar-icon.svg)
