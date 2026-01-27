@@ -1,43 +1,59 @@
 ---
-Date: 2025-07-15 09:52:01
-LastEditTime: 2025-08-22 17:17:30
-description: Molstar 编辑功能实践教程
+Date: 2026-01-27 15:15:46
+LastEditTime: 2026-01-27 15:43:13
+description: Molstar 编辑功能实践教程，包括原子选择、修改分子、删除原子、框选原子、修改键连等操作。
 tags: 
   - Molstar
   - editor
+  - 编辑功能
+  - 原子选择
+  - 修改分子
+  - 删除原子
+  - 框选原子
+  - 修改键连
 ---
 
 # 编辑功能
 
+## 前置条件
+
+> - **Qbics-MolStar** 客户端支持的操作系统包括 **Windows**、**Linux** 和 **Android**。
+> - **Qbics-MolStar** 客户端支持安装版本、绿色免安装版本 和 精简版本。
+> - 提示: 请根据您的操作系统选择对应的版本进行下载安装。
+
+1. 进入官网 [https://molstar.szbl.ac.cn/viewer/](https://molstar.szbl.ac.cn/viewer/)
+2. 下载 **Qbics-MolStar** 客户端：[https://molstar.szbl.ac.cn/download/](https://molstar.szbl.ac.cn/download/)，安装客户端并双击打开客户端。
+3. 如需教程/使用文档，请参考：
+    - [Qbics-MolStar 教程](https://rxht.github.io/molstar/tutorial/)
+    - [Qbics-MolStar 使用文档](https://rxht.github.io/molstar/use/)
+    - [zhjun-sci Qbics-MolStar 教程](https://zhjun-sci.com/qbicsmolstar/doc/)
+
+
 ## 编辑器的主要功能界面如下：
 
-![编辑器界面](./assets/2ff439d9937125e14bf65403cd04ef36dbceb726.webp)
+![编辑器界面](./assets/canvas.webp)
 
 ## 开始编辑
 
-1：在编辑的界面中选择对应的片段模板，并点击空白位置。
+点击页面左上角的 "Editor" 按钮，进入编辑功能界面。
 
-![anthracene](./assets/2024-12-26-15-56-12-image.webp)
+点击左侧的 "Editor" 不同分子片段按钮，在右侧的 "Editor Viewer" 区域即可显示对应的分子片段 3D 模型。
 
-2：再次选择片段模板（可在模板中更换标记原子），同时在主窗口中选择对应的目标原子并进行点击即可完成两个片段模板的分子的对接。
+![editor-viewer](./assets/editor-viewer.webp)
 
-![ethyl](./assets/2024-12-26-15-59-02-image.webp)
+点击空白区域，即可完成第一步操作，如下所示。
 
-3： 完成一次编辑功能，结果如下：
+![editor-step-00](./assets/editor-step-00.webp)
 
-![result](./assets/2024-12-26-16-01-22-image.webp)
+按照上一步图片中的提示点击对应的原子，即可完成第二步操作，如下所示。
 
-> 提示：如需撤销，可以点击快捷键 `Ctrl + z` 或者点击 **<mark>撤销按钮</mark>** 可进行编辑撤销！ ![撤销](./assets/2024-12-26-16-06-11-image.webp)
+![editor-step-01](./assets/editor-step-01.webp)
 
-![undo](./assets/2024-12-26-16-04-11-image.webp)
+编辑功能的主要操作步骤如上所示。
 
-> 反之，可以点击快捷键 `Ctrl + y` 或者点击 **<mark>重做按钮</mark>** 可进行编辑重做！ ![重做](./assets/2024-12-26-16-10-37-image.webp)
+编辑完成后点击 "Editor" 按钮，即可退出编辑功能界面。
 
-> 提示：如需清空当前的所有数据可点击快捷键 `Ctrl + Delete` 或者点击 **<mark>删除</mark>** ![清空](./assets/2024-12-26-16-17-04-image.webp)
+## 编辑功能动画如下
 
-4：在编辑过程中可使用快捷键 `Shift + 鼠标左键拖动` 进行原子多选！或者鼠标移动到指定的原子上进行点击选择！
+![editor](./assets/editor.gif)
 
-![框选](./assets/2024-12-26-16-20-40-image.webp)
-
-5：原子选择完后 删除按钮 ，将删除当前选择的所有原子
-![删除原子](./assets/2024-12-26-16-22-29-image.webp)
