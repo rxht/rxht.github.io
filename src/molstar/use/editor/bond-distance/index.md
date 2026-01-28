@@ -1,6 +1,6 @@
 ---
 Date: 2026-01-27 16:43:26
-LastEditTime: 2026-01-27 16:58:21
+LastEditTime: 2026-01-28 10:00:46
 description: Molstar 编辑功能实践教程，编辑键长信息
 tags: 
   - Molstar
@@ -37,12 +37,12 @@ tags:
 ![editor-bond](./assets/editor-bond.webp)
 
 - Atom1 的更新类型支持如下：
-    - **Translate Group**：将 Atom1 所在的原子组整体移动
+    - **Translate Group**：将 Atom1 所在的原子组整体移动。
     - **Translate Atom**：将 Atom1 的位置设置为新值，所在原子组其余原子固定不动。
     - **Fixed**：Atom1 所在的原子组整体不进行任何移动。
 
 - Atom2 的更新类型支持如下：
-    - **Translate Group**：将 Atom2 所在的原子组整体移动
+    - **Translate Group**：将 Atom2 所在的原子组整体移动。
     - **Translate Atom**：将 Atom2 的位置设置为新值，所在原子组其余原子固定不动。
     - **Fixed**：Atom2 所在的原子组整体不进行任何移动。
 
@@ -56,6 +56,6 @@ tags:
 编辑完成后点击 "Editor" 按钮，即可退出编辑功能界面。
 
 
-## 编辑键级动画如下
+## 编辑键长动画如下
 
 ![editor](./assets/editor.gif)

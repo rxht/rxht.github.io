@@ -1,15 +1,16 @@
 ---
-Date: 2026-01-27 15:47:14
-LastEditTime: 2026-01-28 10:49:26
-description: Molstar 编辑功能实践教程，编辑键级信息
+Date: 2026-01-28 09:58:31
+LastEditTime: 2026-01-28 10:49:38
+description: Molstar 编辑功能实践教程，编辑键二面角信息
 tags: 
   - Molstar
   - editor
   - 编辑键连
-  - 编辑键级
+  - 编辑键二面角
 ---
 
-# 编辑键级信息
+
+# 编辑键二面角信息
 
 ## 前置条件
 
@@ -38,15 +39,33 @@ tags:
 
 ![editor-result](./assets/editor-result.webp)
 
-在主界面中选择对应的的两个原子，然后点击键连按钮，即可修改键连信息。
+在主界面中选择对应的的四个原子，然后在主界面中点击鼠标右键，弹出菜单选项选择 "Edit Dihedral"。
 
-![editor-bond](./assets/editor-bond.webp)
+![editor-dihedral](./assets/editor-dihedral.webp)
 
-编辑键连功能的主要操作步骤如上所示。
+- Atom1 的更新类型支持如下：
+    - **Rotate Groups**：将 Atom1 所在的所有原子组整体旋转。
+    - **Rotate Group**：将 Atom1 所在的原子组整体旋转。
+    - **Rotate Atom**：将 Atom1 的位置进行旋转，所在原子组其余原子固定不动。
+    - **Fixed**：Atom1 所在的原子组整体不进行任何移动。
+
+- Atom4 的更新类型支持如下：
+    - **Rotate Groups**：将 Atom4 所在的所有原子组整体旋转。
+    - **Rotate Group**：将 Atom4 所在的原子组整体旋转。
+    - **Rotate Atom**：将 Atom4 的位置进行旋转，所在原子组其余原子固定不动。
+    - **Fixed**：Atom4 所在的原子组整体不进行任何移动。
+
+在弹出的对话框中输入新的键二面角值，即可修改键二面角信息。
+
+> 提示: 请根据您的需求输入新的键二面角值。
+
+
+编辑键角功能的主要操作步骤如上所示。
 
 编辑完成后点击 "Editor" 按钮，即可退出编辑功能界面。
 
 
-## 编辑键级动画如下
+## 编辑键二面角动画如下
 
 ![editor](./assets/editor.gif)
+

@@ -1,19 +1,16 @@
 ---
-Date: 2026-01-27 15:15:46
-LastEditTime: 2026-01-28 10:49:14
-description: Molstar 编辑功能实践教程，包括原子选择、修改分子、删除原子、框选原子、修改键连等操作。
+Date: 2026-01-28 10:56:10
+LastEditTime: 2026-01-28 11:03:05
+description: Molstar 编辑功能实践教程，修改分子片段模板操作。
 tags: 
   - Molstar
   - editor
   - 编辑功能
   - 原子选择
-  - 修改分子
-  - 删除原子
-  - 框选原子
-  - 修改键连
+  - 修改分子片段模板
 ---
 
-# 编辑功能
+# 编辑分子片段模板信息
 
 ## 前置条件
 
@@ -35,31 +32,37 @@ tags:
 3. 在编辑功能中，您选择完原子后，点击快捷键 **Delete** 即可删除选中的原子。
 :::
 
-## 编辑器的主要功能界面如下：
-
-![编辑器界面](./assets/canvas.webp)
-
 ## 开始编辑
 
 点击页面左上角的 "Editor" 按钮，进入编辑功能界面。
 
-点击左侧的 "Editor" 不同分子片段按钮，在右侧的 "Editor Viewer" 区域即可显示对应的分子片段 3D 模型。
+> 当前所支持的分子片段模板包括：
+> - 元素周期表中的元素所对应的分子片段模板
+> - Rang 分子片段
+> - RGroup 分子片段
+> - Biological 分子片段
 
-![editor-viewer](./assets/editor-viewer.webp)
+点击编辑工具栏中的**Rang图标**，即可切换为 Rang 分子片段模板。
 
-点击空白区域，即可完成第一步操作，如下所示。
+![rang-template](./assets/rang-template.webp)
 
-![editor-step-00](./assets/editor-step-00.webp)
+点击编辑工具栏中的**RGroup图标**，即可切换为 RGroup 分子片段模板。
 
-按照上一步图片中的提示点击对应的原子，即可完成第二步操作，如下所示。
+![rgroup-template](./assets/rgroup-template.webp)
 
-![editor-step-01](./assets/editor-step-01.webp)
+点击编辑工具栏中的**Biological图标**，即可切换为 Biological 分子片段模板。
 
-编辑功能的主要操作步骤如上所示。
+![biological-template](./assets/biological-template.webp)
+
+选择好对应的分子片段模板后，即可在界面右侧的 **Editor Viewer** 中查看对应的分子片段 3D 模型。
+
+![element-viewer](./assets/element-viewer.webp)
+
+同时可以在主界面中点击空白位置或点击原子即可完成一次编辑功能。
 
 编辑完成后点击 "Editor" 按钮，即可退出编辑功能界面。
 
-## 编辑功能动画如下
+## 编辑功能修改元素类型动画如下
 
 ![editor](./assets/editor.gif)
 

@@ -1,19 +1,16 @@
 ---
-Date: 2026-01-27 15:15:46
-LastEditTime: 2026-01-28 10:49:14
-description: Molstar 编辑功能实践教程，包括原子选择、修改分子、删除原子、框选原子、修改键连等操作。
+Date: 2026-01-28 10:19:45
+LastEditTime: 2026-01-28 10:52:29
+description: Molstar 编辑功能实践教程，修改元素类型操作。
 tags: 
   - Molstar
   - editor
   - 编辑功能
   - 原子选择
-  - 修改分子
-  - 删除原子
-  - 框选原子
-  - 修改键连
+  - 修改元素类型
 ---
 
-# 编辑功能
+# 编辑元素类型信息
 
 ## 前置条件
 
@@ -35,31 +32,34 @@ tags:
 3. 在编辑功能中，您选择完原子后，点击快捷键 **Delete** 即可删除选中的原子。
 :::
 
-## 编辑器的主要功能界面如下：
-
-![编辑器界面](./assets/canvas.webp)
-
 ## 开始编辑
 
 点击页面左上角的 "Editor" 按钮，进入编辑功能界面。
 
-点击左侧的 "Editor" 不同分子片段按钮，在右侧的 "Editor Viewer" 区域即可显示对应的分子片段 3D 模型。
+点击编辑工具栏中的**元素图标**，即可切换元素的对应分子片段模板，例如以下两个案例。
 
-![editor-viewer](./assets/editor-viewer.webp)
+Al（铝）
+![element-template-al](./assets/element-template-al.webp)
 
-点击空白区域，即可完成第一步操作，如下所示。
+Ge（锗）
+![element-template-ge](./assets/element-template-ge.webp)
 
-![editor-step-00](./assets/editor-step-00.webp)
 
-按照上一步图片中的提示点击对应的原子，即可完成第二步操作，如下所示。
+点击编辑工具栏中的**元素周期表图标**，即可切换不同的元素类型，例如切换为 Ge（锗） 、C（碳） 等元素。
 
-![editor-step-01](./assets/editor-step-01.webp)
+![element-periodic-table](./assets/element-periodic-table.webp)
 
-编辑功能的主要操作步骤如上所示。
+选择好对应的元素以及分子片段模板后，即可在界面右侧的 **Editor Viewer** 中查看对应的分子片段 3D 模型。
+
+![element-viewer](./assets/element-viewer.webp)
+
+同时可以在主界面中点击空白位置或点击原子即可完成一次编辑功能。
+
 
 编辑完成后点击 "Editor" 按钮，即可退出编辑功能界面。
 
-## 编辑功能动画如下
+
+## 编辑功能修改元素类型动画如下
 
 ![editor](./assets/editor.gif)
 
