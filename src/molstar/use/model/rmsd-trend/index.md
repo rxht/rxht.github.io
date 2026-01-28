@@ -1,6 +1,6 @@
 ---
 Date: 2026-01-28 11:19:20
-LastEditTime: 2026-01-28 11:30:26
+LastEditTime: 2026-01-28 13:39:30
 description: Molstar RMSD 趋势功能实践教程，展示 RMSD 趋势
 tags: 
   - Molstar
@@ -25,6 +25,7 @@ tags:
 
 ::: tip 提示
 所有格式的轨迹文件均支持 RMSD 趋势功能，非轨迹文件不支持。
+支持多文件同时展示 RMSD 趋势。
 :::
 
 ## 操作步骤
