@@ -1,12 +1,7 @@
 import { defineConfig } from "vitepress";
-import { homepage, cloudflare, description } from "../package.json";
+import { homepage, description } from "../package.json";
 import { head, themeConfig, markdown, vite } from "./common/index.mts";
 
-const HOSTNAME = {
-    github: homepage,
-    cloudflare,
-};
-type HOSTNAME = keyof typeof HOSTNAME;
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,6 +16,6 @@ export default defineConfig({
     markdown,
     vite,
     sitemap: {
-        hostname: HOSTNAME[process.env.CI_ENV as HOSTNAME] ?? homepage,
+        hostname: homepage,
     },
 });

@@ -15,7 +15,7 @@ function getOption(name: string, options: Partial<VitePressSidebarOptions> = {})
         useFolderLinkFromIndexFile: true,
         sortMenusByName: true,
         sortMenusOrderNumericallyFromTitle: true,
-        prefixSeparator: "_",
+        prefixSeparator: ".",
         removePrefixAfterOrdering: true,
 
         collapsed: true, // 分组折叠 / 展开

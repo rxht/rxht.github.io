@@ -1,6 +1,5 @@
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
-name: Deploy VitePress site to Pages
+name: 部署 VitePress 站点到 GitHub Pages
 
 on:
   push:
@@ -24,7 +23,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # 构建工作
   build:
     runs-on: ubuntu-latest
     steps:
@@ -41,20 +39,18 @@ jobs:
         with:
           node-version: 20
           cache: pnpm # 或 pnpm / yarn
-      - name: Setup Pages
+      - name: Setup Pages # 配置 GitHub Pages 环境
         uses: actions/configure-pages@v4
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: pnpm github # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-      # 生成 IndexNow 验证文件
-      - name: Setup IndexNow
+        run: pnpm docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Setup IndexNow # 生成 IndexNow 验证文件
         run: echo ${{ secrets.INDEXNOW_KEY }} > .vitepress/dist/${{ secrets.INDEXNOW_KEY }}.txt
-      - name: Upload artifact
+      - name: Upload Artifact # 上传构建工件
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
-  # 部署工作
   deploy:
     environment:
       name: github-pages

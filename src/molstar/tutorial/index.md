@@ -1,7 +1,7 @@
 ---
 Date: 2025-08-15 10:50:13
-LastEditTime: 2025-08-22 17:34:38
-title: 1_使用教程
+LastEditTime: 2026-05-20 16:20:45
+title: 02.使用教程
 description: 一站式学习 Qbics-MolStar 分子可视化：安装使用、轨迹播放、电子结构渲染等实战教程，含示例文件与操作步骤。
 head:
   - - meta
