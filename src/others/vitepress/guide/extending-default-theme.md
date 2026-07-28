@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 09:35:18
-LastEditTime: 2026-07-28 10:33:26
+LastEditTime: 2026-07-28 10:47:29
 title: 10.扩展默认主题
 description: 通过自定义 CSS、组件、布局和插槽来定制和扩展 VitePress 默认主题。
 tags:
@@ -12,7 +12,7 @@ tags:
 
 # 扩展默认主题
 
-VitePress 默认的主题已经针对文档进行了优化，并且可以进行自定义。请参考[默认主题配置概览](../reference/default-theme-config)获取完整的选项列表。
+VitePress 默认的主题已经针对文档进行了优化，并且可以进行自定义。请参考[默认主题配置概览](../reference/default-theme-config/default-theme-config)获取完整的选项列表。
 
 但是有一些情况仅靠配置是不够的。例如：
 
@@ -69,7 +69,7 @@ export default DefaultTheme
 ```
 
 ::: warning
-如果你在使用像是[团队页](../reference/default-theme-team-page)这样的组件，请确保也从 `vitepress/theme-without-fonts` 中导入它们！
+如果你在使用像是[团队页](../reference/default-theme-config/default-theme-team-page)这样的组件，请确保也从 `vitepress/theme-without-fonts` 中导入它们！
 :::
 
 如果字体是通过 `@font-face` 引用的本地文件，它将会被作为资源被包含在 `.vitepress/dist/asset` 目录下，并且使用哈希后的文件名。为了预加载这个文件，请使用 [transformHead](../reference/site-config#transformhead) 构建钩子：

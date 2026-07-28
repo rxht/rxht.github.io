@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 09:35:18
-LastEditTime: 2026-07-28 10:06:22
+LastEditTime: 2026-07-28 10:48:04
 title: 00.站点配置
 description: VitePress 站点配置选项的完整参考，包括应用级设置、主题和构建选项。
 tags:
@@ -510,7 +510,7 @@ export default {
 
 是否使用 Git 获取每个页面的最后更新时间戳。时间戳将包含在每个页面的页面数据中，可通过 [`useData`](./runtime-api#usedata) 访问。
 
-使用默认主题时，启用此选项将显示每个页面的最后更新时间。可以通过 [`themeConfig.lastUpdated.text`](./default-theme-config#lastupdated) 选项自定义文本。
+使用默认主题时，启用此选项将显示每个页面的最后更新时间。可以通过 [`themeConfig.lastUpdated.text`](./default-theme-config/default-theme-config#lastupdated) 选项自定义文本。
 
 ## 自定义
 

@@ -18,7 +18,7 @@ tags:
 - ⚡️ 针对最新版**VitePress**进行了优化
 - ⚡️ 易于使用，有很多选项可根据自己的喜好进行定制
 - ⚡️ 轻量级捆绑文件大小
-- ⚡️ 支持 [多个侧边栏](https://vitepress.dev/reference/default-theme-sidebar#multiple-sidebars)
+- ⚡️ 支持 [多个侧边栏](https://vitepress.dev/reference/default-theme-config/default-theme-sidebar#multiple-sidebars)
 - ⚡️ 支持[Frontmatter](https://vitepress.dev/guide/frontmatter)
 - ⚡️ 支持[TypeScript](https://www.typescriptlang.org)
 - ⚡️ 自定义分类、特殊字符转换、文件和文件夹过滤器等菜单！

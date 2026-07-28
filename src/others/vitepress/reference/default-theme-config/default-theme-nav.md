@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 10:07:55
-LastEditTime: 2026-07-28 10:40:16
+LastEditTime: 2026-07-28 10:53:44
 title: 01.导航栏
 description: 配置 VitePress 默认主题的导航栏，包括站点标题、图标和菜单链接。
 tags:
@@ -17,7 +17,7 @@ Nav 是显示在页面顶部的导航栏。它包含站点标题、全局菜单�
 
 ## 站点标题和图标
 
-默认情况下，nav 显示 [`config.title`](./site-config#title) 作为站点的标题。如果想更改导航栏上显示的内容，可以在 `themeConfig.siteTitle` 选项中定义自定义文本。
+默认情况下，nav 显示 [`config.title`](../site-config#title) 作为站点的标题。如果想更改导航栏上显示的内容，可以在 `themeConfig.siteTitle` 选项中定义自定义文本。
 
 ```js
 export default {
@@ -68,7 +68,7 @@ export default {
 
 `text` 是 nav 中显示的实际文本，而 `link` 是单击文本时将导航到的链接。对于链接，将路径设置为不带 `.md` 后缀的实际文件，并且始终以 `/` 开头。
 
-`link` 也可以是一个函数，它接受 [`PageData`](./runtime-api#usedata) 作为参数并返回路径。
+`link` 也可以是一个函数，它接受 [`PageData`](../runtime-api#usedata) 作为参数并返回路径。
 
 导航链接也可以是下拉菜单。为此，请替换 `link` 选项，设置 `items` 数组。
 
@@ -177,7 +177,7 @@ export default {
 
 ## 自定义组件
 
-你可以通过使用 `component` 选项在导航栏中包含自定义组件。`component` 键对应的值应为 Vue 组件名，并且必须使用 [Theme.enhanceApp](../guide/custom-theme#theme-interface) 全局注册。
+你可以通过使用 `component` 选项在导航栏中包含自定义组件。`component` 键对应的值应为 Vue 组件名，并且必须使用 [Theme.enhanceApp](../../guide/custom-theme#theme-interface) 全局注册。
 
 ```js [.vitepress/config.js]
 export default {

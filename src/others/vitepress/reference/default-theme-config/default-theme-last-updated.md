@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 10:07:55
-LastEditTime: 2026-07-28 10:10:21
+LastEditTime: 2026-07-28 10:50:48
 title: 10.最后更新于
 description: 基于 Git 提交历史在 VitePress 页面上显示最后更新时间。
 tags:

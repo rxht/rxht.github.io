@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 09:35:18
-LastEditTime: 2026-07-28 10:06:43
+LastEditTime: 2026-07-28 10:49:22
 title: 01.frontmatter 配置
 description: VitePress Markdown 页面所有可用 frontmatter 配置选项的参考。
 tags:
@@ -113,18 +113,18 @@ layout: doc
 
 ### hero <Badge type="info" text="home page only" />
 
-当 `layout` 设置为 `home` 时，定义主页 hero 部分的内容。更多详细信息：[默认主题：主页](./default-theme-home-page)。
+当 `layout` 设置为 `home` 时，定义主页 hero 部分的内容。更多详细信息：[默认主题：主页](./default-theme-config/default-theme-home-page)。
 
 ### features <Badge type="info" text="home page only" />
 
-定义当 `layout` 设置为 `home` 时要在 features 部分中显示的项目。更多详细信息：[默认主题：主页](./default-theme-home-page)。
+定义当 `layout` 设置为 `home` 时要在 features 部分中显示的项目。更多详细信息：[默认主题：主页](./default-theme-config/default-theme-home-page)。
 
 ### navbar
 
 - 类型：`boolean`
 - 默认值：`true`
 
-是否显示[导航栏](./default-theme-nav)。
+是否显示[导航栏](./default-theme-config/default-theme-nav)。
 
 ```yaml
 ---
@@ -137,7 +137,7 @@ navbar: false
 - 类型：`boolean`
 - 默认值：`true`
 
-是否显示 [侧边栏](./default-theme-sidebar)。
+是否显示 [侧边栏](./default-theme-config/default-theme-sidebar)。
 
 ```yaml
 ---
@@ -167,14 +167,14 @@ aside: false
 - 类型：`number | [number, number] | 'deep' | false`
 - 默认值：`2`
 
-大纲中显示的标题级别。它与 [config.themeConfig.outline.level](./default-theme-config#outline) 相同，它会覆盖站点级的配置。
+大纲中显示的标题级别。它与 [config.themeConfig.outline.level](./default-theme-config/default-theme-config#outline) 相同，它会覆盖站点级的配置。
 
 ### lastUpdated
 
 - 类型：`boolean | Date`
 - 默认值：`true`
 
-是否在当前页面的页脚中显示[最后更新时间](./default-theme-last-updated)的文本。如果指定了日期时间，则会显示该日期时间而不是上次 git 修改的时间戳。
+是否在当前页面的页脚中显示[最后更新时间](./default-theme-config/default-theme-last-updated)的文本。如果指定了日期时间，则会显示该日期时间而不是上次 git 修改的时间戳。
 
 ```yaml
 ---
@@ -187,7 +187,7 @@ lastUpdated: false
 - 类型：`boolean`
 - 默认值：`true`
 
-是否在当前页的页脚显示[编辑链接](./default-theme-edit-link)。
+是否在当前页的页脚显示[编辑链接](./default-theme-config/default-theme-edit-link)。
 
 ```yaml
 ---
@@ -200,7 +200,7 @@ editLink: false
 - 类型：`boolean`
 - 默认值：`true`
 
-是否显示[页脚](./default-theme-footer)。
+是否显示[页脚](./default-theme-config/default-theme-footer)。
 
 ```yaml
 ---

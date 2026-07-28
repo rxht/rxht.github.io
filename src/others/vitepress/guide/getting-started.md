@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 09:35:18
-LastEditTime: 2026-07-28 10:33:48
+LastEditTime: 2026-07-28 10:48:43
 title: 01.快速开始
 description: 快速上手 VitePress。了解如何安装、创建项目结构并开始开发你的文档站点。
 tags:
@@ -221,7 +221,7 @@ $ bun vitepress dev docs
 
 - 要了解有关可以在页面上执行的操作的更多信息，例如编写 Markdown 内容或使用 Vue 组件，请参见指南的“编写”部分。一个很好的起点是了解 [Markdown 扩展](./markdown)。
 
-- 要探索默认文档主题提供的功能，请查看[默认主题配置参考](../reference/default-theme-config)。
+- 要探索默认文档主题提供的功能，请查看[默认主题配置参考](../reference/default-theme-config/default-theme-config)。
 
 - 如果想进一步自定义站点的外观，参见[扩展默认主题](./extending-default-theme)或者[构建自定义主题](./custom-theme)。
 

@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 10:07:55
-LastEditTime: 2026-07-28 10:08:37
+LastEditTime: 2026-07-28 10:55:40
 title: 00.默认主题配置
 description: VitePress 默认主题所有可用配置选项的参考。
 tags:
@@ -181,7 +181,7 @@ export type SidebarItem = {
 
 - 类型：`boolean | 'left'`
 - 默认值：`true`
-- 每个页面可以通过 [frontmatter](./frontmatter-config#aside) 覆盖
+- 每个页面可以通过 [frontmatter](../frontmatter-config#aside) 覆盖
 
 将此值设置为 `false` 可禁用 aside 容器。\
 将此值设置为 `true` 将在页面右侧渲染。\
@@ -192,7 +192,7 @@ export type SidebarItem = {
 ## outline
 
 - 类型：`Outline | Outline['level'] | false`
-- 每个页面可以通过 [frontmatter](./frontmatter-config#outline) 覆盖层级
+- 每个页面可以通过 [frontmatter](../frontmatter-config#outline) 覆盖层级
 
 将此值设置为 `false` 可禁止渲染大纲容器。更多详情请参考该接口：
 
@@ -254,7 +254,7 @@ interface SocialLink {
 ## footer
 
 - 类型：`Footer`
-- 可以通过 [frontmatter](./frontmatter-config#footer) 进行覆盖。
+- 可以通过 [frontmatter](../frontmatter-config#footer) 进行覆盖。
 
 页脚配置。可以添加 message 和 copyright。由于设计原因，仅当页面不包含侧边栏时才会显示页脚。
 
@@ -279,7 +279,7 @@ export interface Footer {
 ## editLink
 
 - 类型：`EditLink`
-- 每个页面可以通过 [frontmatter](./frontmatter-config#editlink) 覆盖
+- 每个页面可以通过 [frontmatter](../frontmatter-config#editlink) 覆盖
 
 编辑链接允许显示一个链接，用于在 Git 管理服务 (例如 GitHub 或 GitLab) 上编辑页面。有关详细信息，请参阅[默认主题：编辑链接](./default-theme-edit-link)。
 
@@ -444,7 +444,7 @@ export interface DocFooter {
 - 类型：`string`
 - 默认值：`Change language`
 
-用于自定义导航栏中语言切换按钮的 aria-label，仅当使用 [i18n](../guide/i18n) 时才使用此选项。
+用于自定义导航栏中语言切换按钮的 aria-label，仅当使用 [i18n](../../guide/i18n) 时才使用此选项。
 
 ## externalLinkIcon
 

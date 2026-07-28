@@ -1,6 +1,6 @@
 ---
 Date: 2026-07-28 10:07:55
-LastEditTime: 2026-07-28 10:11:41
+LastEditTime: 2026-07-28 10:54:40
 title: 05.布局
 description: 在 VitePress 默认主题中选择 doc、page 和 home 布局。
 tags:
@@ -13,7 +13,7 @@ tags:
 
 # 布局
 
-可以通过设置页面 [frontmatter](./frontmatter-config) 选项来选择页面布局。有 3 种布局选项 `doc`、`page` 和 `home`。如果未指定任何内容，则该页面将被视为 `doc` 页面。
+可以通过设置页面 [frontmatter](../frontmatter-config) 选项来选择页面布局。有 3 种布局选项 `doc`、`page` 和 `home`。如果未指定任何内容，则该页面将被视为 `doc` 页面。
 
 ```yaml
 ---
@@ -36,7 +36,7 @@ layout: doc
 
 ## page 布局
 
-`page` 被视为“空白页”。Markdown 仍然会被解析，所有的 [Markdown 扩展](../guide/markdown) 都和 `doc` 布局一样运行，但它没有任何默认样式。
+`page` 被视为“空白页”。Markdown 仍然会被解析，所有的 [Markdown 扩展](../../guide/markdown) 都和 `doc` 布局一样运行，但它没有任何默认样式。
 
 `page` 布局使你可以自行设计所有内容，而不会受 VitePress 主题影响。当想要创建自己的自定义页面时，这很有用。
 

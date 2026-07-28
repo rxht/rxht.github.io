@@ -22,7 +22,7 @@ export default {
 }
 ```
 
-要在 `sitemap.xml` 中包含 `<lastmod>` 标签，可以启用 [`lastUpdated`](../reference/default-theme-last-updated) 选项。
+要在 `sitemap.xml` 中包含 `<lastmod>` 标签，可以启用 [`lastUpdated`](../reference/default-theme-config/default-theme-last-updated) 选项。
 
 ## 选项
 
