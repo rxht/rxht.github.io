@@ -1,6 +1,12 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:35:27
+LastEditTime: 2026-07-28 10:38:16
+title: google 收录
+description: 配置 google 收录，实现网站在 google 搜索引擎中的收录。
+tags:
+  - Vitepress
+  - vue
+  - google
 ---
 
 # google 收录

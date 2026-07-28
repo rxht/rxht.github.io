@@ -2,6 +2,11 @@
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-01 23:34:34
 title: rss 订阅
+description: 配置 vitepress-plugin-rss 插件，实现 rss 订阅功能。
+tags:
+  - Vitepress
+  - vue
+  - 插件
 ---
 
 # 配置 vitepress-plugin-rss

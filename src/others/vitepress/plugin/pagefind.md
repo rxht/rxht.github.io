@@ -1,7 +1,12 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:34:28
+LastEditTime: 2026-07-28 10:37:17
 title: 离线全文搜索
+description: 配置 vitepress-plugin-pagefind 插件，实现离线全文搜索功能。
+tags:
+  - Vitepress
+  - vue
+  - 插件
 ---
 
 # 配置 vitepress-plugin-pagefind

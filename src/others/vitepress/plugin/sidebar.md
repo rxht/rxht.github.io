@@ -2,6 +2,11 @@
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-03-27 22:01:04
 title: 自动侧边栏
+description: 配置 vitepress-sidebar 插件，实现自动侧边栏功能。
+tags:
+  - Vitepress
+  - vue
+  - 插件
 ---
 
 # 配置 vitepress-sidebar

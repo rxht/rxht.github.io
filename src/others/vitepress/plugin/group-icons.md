@@ -2,6 +2,12 @@
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-03-27 22:00:12
 title: 分组代码块图标
+description: 配置 vitepress-plugin-group-icons 插件，实现分组代码块图标样式。
+tags:
+  - Vitepress
+  - vue
+  - 分组代码块
+  - 图标样式
 ---
 
 # 配置 vitepress-plugin-group-icons

@@ -1,6 +1,12 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-08-01 23:35:22
+LastEditTime: 2026-07-28 10:38:06
+title: bing 收录
+description: 配置 bing 收录，实现网站在 bing 搜索引擎中的收录。
+tags:
+  - Vitepress
+  - vue
+  - bing
 ---
 
 # bing 收录

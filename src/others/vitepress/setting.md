@@ -1,10 +1,16 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:03:16
-title: 1_配置 VitePress
+LastEditTime: 2026-07-28 09:30:39
+title: 02.配置 VitePress
+description: VitePress 的基本使用与定制技巧，涵盖项目初始化、汉化配置、图标引入、自定义主题等内容，旨在利用 VitePress 构建美观、高效的静态站点。
+tags:
+  - VitePress
+  - 配置
+  - 项目初始化
+  - 汉化配置
 ---
 
-# 配置 VitePress
+# 二、配置 VitePress
 
 ## 配置基础信息
 ```typescript

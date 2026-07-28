@@ -2,6 +2,12 @@
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-01 23:34:20
 title: 评论区
+description: 配置 vitepress-plugin-comment-with-giscus 插件，实现评论区功能。
+tags:
+  - Vitepress
+  - vue
+  - vue
+  - 评论区
 ---
 
 # 配置 vitepress-plugin-comment-with-giscus

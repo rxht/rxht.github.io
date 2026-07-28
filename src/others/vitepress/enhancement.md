@@ -1,9 +1,18 @@
 ---
 Date: 2025-08-20 21:07:49
-LastEditTime: 2025-08-20 21:30:29
+LastEditTime: 2026-07-28 09:30:54
+title: 02.VitePress 优化和配置
 description: VitePress 的基本使用与定制技巧，涵盖项目初始化、汉化配置、图标引入、自定义主题等内容，旨在利用 VitePress 构建美观、高效的静态站点。
 tags:
-  - VitePress
+  - Vitepress
+  - vue
+  - 优化和配置
+  - 技巧
+  - 项目初始化
+  - 汉化配置
+  - 图标引入
+  - 自定义主题
+  - 代码切割
 ---
 
 # VitePress 优化和配置

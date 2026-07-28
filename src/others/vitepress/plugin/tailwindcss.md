@@ -1,7 +1,12 @@
 ---
 Date: 2025-07-15 11:20:37
-LastEditTime: 2025-07-25 21:53:58
-tags: ["Tailwindcss", "VitePress"]
+LastEditTime: 2026-07-28 10:37:46
+title: 整合 Tailwindcss V4
+description: 整合 Tailwindcss V4 与 VitePress 项目。
+tags:
+  - Vitepress
+  - vue
+  - Tailwindcss
 ---
 
 # 配置 Tailwindcss V4

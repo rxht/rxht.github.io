@@ -1,6 +1,12 @@
 ---
 Date: 2025-03-22 09:12:54
-LastEditTime: 2025-08-01 23:35:32
+LastEditTime: 2026-07-28 10:38:26
+title: IndexNow 收录
+description: 配置 IndexNow 收录，实现网站使用 IndexNow 发送到必应搜索引擎。
+tags:
+  - Vitepress
+  - vue
+  - IndexNow
 ---
 
 # SEO 优化： IndexNow

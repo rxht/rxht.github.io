@@ -1,7 +1,17 @@
 ---
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-03-27 22:02:01
+title: 02.部署到 GitHub 的 Pages
+description: 部署 VitePress 站点到 GitHub Pages 的工作流程。
+tags:
+  - Vitepress
+  - vue
+  - 部署
+  - GitHub
+  - Pages
+  - 工作流程
 ---
+
 # 部署到 GitHub 的 Pages
 
 使用仪表板创建新项目并更改这些设置：

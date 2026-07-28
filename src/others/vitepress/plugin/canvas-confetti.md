@@ -1,7 +1,13 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:59:47
-title: 纸屑动画
+LastEditTime: 2026-07-28 10:36:12
+description: 配置 canvas-confetti 插件，实现纸屑动画效果。
+title: 配置 canvas-confetti
+tags:
+  - Vitepress
+  - vue
+  - 纸屑动画
+  - 动画
 ---
 
 # 配置 canvas-confetti

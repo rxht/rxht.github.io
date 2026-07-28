@@ -1,7 +1,13 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:00:19
+LastEditTime: 2026-07-28 10:36:48
 title: 图像查看器
+description: 配置 vitepress-plugin-image-viewer 插件，实现图像查看器功能。
+tags:
+  - Vitepress
+  - vue
+  - 分组代码块
+  - 图标样式
 ---
 
 # 配置 vitepress-plugin-image-viewer
