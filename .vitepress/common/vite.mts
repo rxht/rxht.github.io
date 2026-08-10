@@ -2,6 +2,7 @@ import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import viteCompression from "vite-plugin-compression";
 import { createHtmlPlugin } from 'vite-plugin-html';
+import { RssPlugin } from 'vitepress-plugin-rss';
 import tailwindcss from "@tailwindcss/vite";
 import { UserConfig } from 'vitepress';
 
@@ -44,6 +45,11 @@ const vite: UserConfig['vite'] = {
         }),
         createHtmlPlugin({
             minify: true,
+        }),
+        RssPlugin({
+            title: 'RXHT - 博客',
+            baseUrl: 'https://rxht.github.io',
+            copyright: 'Copyright (c) 2018-present, RXHT'
         })
     ],
     server: {
