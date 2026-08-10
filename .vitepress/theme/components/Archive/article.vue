@@ -12,7 +12,7 @@
                     </div>
                     <div class='text-xs overflow-hidden line-clamp-2'>{{ data.frontmatter.description }}</div>
                     <div class="flex overflow-hidden gap-1 flex-wrap" v-if="data.frontmatter.tags?.length">
-                        <Badge type="tip" v-for="tag in data.frontmatter.tags" :key="tag" :text="tag" />
+                        <Badge type="tip" v-for="tag in data.frontmatter.tags" :key="tag" :text="`${tag}`" />
                     </div>
                     <div class='text-xs'>{{ FormatDate(data.frontmatter.LastEditTime, DATE_FORMAT) }}</div>
                 </section>
