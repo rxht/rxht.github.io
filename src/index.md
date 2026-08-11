@@ -7,20 +7,18 @@ head:
     - name: keywords
       content: 个人博客, 首页, 模块
 tags:
-    - 博客首页
-    - 首页
-    - 文档
-    - Qbics-Molstar
+  - 博客首页
+  - 首页
+  - 文档
+  - Qbics-Molstar
 
-# 首页
-
-# https://vitepress.dev/reference/default-theme-home-page
+# 首页布局参考：https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "开发者实战指南"
   text: "技术实战笔记 · 前端 / 后端 / 数据库 / 工具"
-  tagline: "把开发中的踩坑、方案与规范，沉淀为可检索、可复用的知识库。"
+  tagline: "把开发中的踩坑、方案与规范，沉淀为可检索、可复用的实战知识库。"
   image:
     src: "assets/logo.webp"
     alt: "LOGO"
@@ -34,30 +32,30 @@ hero:
 
 features:
   - title: Qbics-Molstar
-    details: 基于开源 MolStar 深度优化的专业工具，突破了传统分子可视化的局限，内置功能完备的分子编辑器，支持灵活的结构编辑、参数调整与模型修改，让科研人员无需切换多套软件，即可一站式完成 “可视化 - 编辑” 全流程操作。
+    details: 基于开源 MolStar 深度优化的专业工具，突破传统分子可视化的局限。内置功能完备的分子编辑器，支持灵活的结构编辑、参数调整与模型修改，让科研人员无需切换多套软件，即可一站式完成“可视化 - 编辑”全流程操作。
     link: molstar
     linkText: 点击查看
     icon:
       src: "assets/molstar.webp"
       alt: "Qbics-Molstar"
 
-  - title: 化学部分
+  - title: 化学
     icon: 🧪
-    details: 化学相关的内容
+    details: 分子结构、反应机理与计算化学相关的实战笔记，记录从原理到落地的关键细节与可复用方法。
     link: chemical
     linkText: 点击查看
 
-  - title: Javascript
+  - title: JavaScript
     icon:
       src: "assets/javascript.svg"
-      alt: "javascript"
-    details: Javascript 相关的内容
+      alt: "JavaScript"
+    details: 原生 JS、主流框架与工程化实践，覆盖日常开发中的典型场景、性能优化与常见坑点。
     link: javascript
     linkText: 点击查看
 
   - title: 其他杂项
     icon: 📝
-    details: 一些代码片段或者教程说明之类的文档
+    details: 工具脚本、部署教程与零散但实用的代码片段，随用随查，沉淀值得保留的经验。
     link: others
     linkText: 点击查看
 ---
