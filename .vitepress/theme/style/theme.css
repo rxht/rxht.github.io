@@ -1,40 +1,343 @@
+/* ============================================================
+   Stripe-Inspired Design System — 全局 VitePress 主题
+   落地规范：
+     · 电光靛蓝 primary  #533afd —— 仅用于 CTA / 链接强调
+     · 深海军墨 ink      #0d253d —— 全局正文文字
+     · 画布白 canvas     #ffffff / canvas-soft #f6f9fc —— 表面
+     · 渐变网格 mesh     —— 占据首页 Hero 上方三分之一
+     · 胶囊按钮 pill     —— 8px 16px 收紧内边距
+     · hairline 边框     #e3e8ee + 微蓝阴影
+   字体：Inter（Sohne 开源替代），显示层级 weight 300 + 负字距
+   ============================================================ */
+
 :root {
-  /* --vp-home-hero-name-color: transparent; */
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
-  --vp-home-hero-image-filter: blur(44px);
+  /* ---------- Stripe brand / accent ---------- */
+  --vp-c-brand-1: #533afd;            /* primary 电光靛蓝 */
+  --vp-c-brand-2: #4434d4;            /* primary-deep */
+  --vp-c-brand-3: #2e2b8c;            /* primary-press */
+  --vp-c-brand-soft: rgba(83, 58, 253, 0.12);
+
+  /* ---------- Surface ---------- */
+  --vp-c-bg: #ffffff;                 /* canvas */
+  --vp-c-bg-soft: #f6f9fc;            /* canvas-soft */
+  --vp-c-bg-alt: #f6f9fc;             /* canvas-soft alt */
+  --vp-c-bg-elv: #ffffff;
+
+  /* ---------- Text ---------- */
+  --vp-c-text-1: #0d253d;             /* ink */
+  --vp-c-text-2: #273951;             /* ink-secondary */
+  --vp-c-text-3: #64748d;             /* ink-mute */
+
+  /* ---------- Lines ---------- */
+  --vp-c-divider: #e3e8ee;            /* hairline */
+  --vp-c-border: #e3e8ee;             /* hairline */
+  --vp-c-gutter: #e3e8ee;
+
+  /* ---------- Typography ---------- */
+  --vp-font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --vp-font-family-mono: "SFMono-Regular", "JetBrains Mono", "Fira Code", Consolas,
+    "Liberation Mono", Menlo, monospace;
+
+  /* ---------- Layout ---------- */
+  --vp-layout-max-width: 1440px;
+  --vp-content-max-width: 820px;
+
+  /* ---------- Stripe shadows (Level 1 / Level 2) ---------- */
+  --stripe-shadow-1: 0 1px 3px rgba(0, 55, 112, 0.08);
+  --stripe-shadow-2: 0 8px 24px rgba(0, 55, 112, 0.08), 0 2px 6px rgba(0, 55, 112, 0.04);
+
+  /* ---------- Stripe radii ---------- */
+  --stripe-radius-xs: 4px;
+  --stripe-radius-sm: 6px;
+  --stripe-radius-md: 8px;
+  --stripe-radius-lg: 12px;
+  --stripe-radius-xl: 16px;
+  --stripe-radius-pill: 9999px;
+
+  /* ---------- Code ---------- */
+  --vp-code-bg: #eef2f7;
+  --vp-code-block-bg: #f6f9fc;
+  --vp-code-color: #0d253d;
+  --vp-code-link-color: #533afd;
+  --vp-code-line-highlight-color: rgba(83, 58, 253, 0.08);
+
+  /* ---------- 全局排版签名 ---------- */
+  font-feature-settings: "tnum" 1, "cv05" 1;
 }
 
-body {
-  font-size: 16px;
+/* ============================================================
+   深色 app shell —— 深海军底 + 提亮靛蓝
+   ============================================================ */
+.dark {
+  --vp-c-brand-1: #7b73ff;
+  --vp-c-brand-2: #665efd;
+  --vp-c-brand-3: #533afd;
+  --vp-c-brand-soft: rgba(123, 115, 255, 0.16);
+
+  --vp-c-bg: #0d1b2e;                 /* 深海军墨 */
+  --vp-c-bg-soft: #122036;
+  --vp-c-bg-alt: #122036;
+  --vp-c-bg-elv: #14233a;
+
+  --vp-c-text-1: #e8eef7;
+  --vp-c-text-2: #aab6c8;
+  --vp-c-text-3: #7e8ea6;
+
+  --vp-c-divider: #243650;
+  --vp-c-border: #243650;
+  --vp-c-gutter: #243650;
+
+  --vp-code-bg: #16263c;
+  --vp-code-block-bg: #122036;
+  --vp-code-color: #e8eef7;
+  --vp-code-link-color: #9a92ff;
+  --vp-code-line-highlight-color: rgba(123, 115, 255, 0.14);
+
+  --stripe-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --stripe-shadow-2: 0 8px 24px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
-* {
-  box-sizing: border-box;
+/* ============================================================
+   文档排版 —— 显示层级 thin(300) + 负字距（Stripe 签名）
+   ============================================================ */
+.vp-doc h1 {
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  line-height: 1.12;
+  color: var(--vp-c-text-1);
+}
+.vp-doc h2 {
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: var(--vp-c-text-1);
+  border-top: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-top: 1.6rem;
+  padding-bottom: 0.55rem;
+}
+.vp-doc h3 {
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  color: var(--vp-c-text-1);
+}
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+}
+.vp-doc p,
+.vp-doc li {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
 }
 
-.custom-page-full,
-.custom-page-full .VPContent,
-.custom-page-full .VPContent .VPPage,
-.custom-page-full .VPContent .VPPage > div,
-.custom-page-full .VPContent .VPPage > div > div {
-  width: 100%;
-  height: 100%;
+/* 行内链接：靛蓝、无下划线、悬停出现下划线 */
+.vp-doc a,
+.vp-doc a > code {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 400;
 }
-.custom-page-full .VPContent {
-  display: flex;
-  flex: 1;
-  height: calc(100vh - 64px);
+.vp-doc a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.custom-page-full .VPContent .VPPage {
-  height: auto;
+/* 代码块：白底 + hairline 边框 + 收紧圆角 */
+.vp-doc div[class*="language-"] {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--stripe-radius-md);
+}
+.vp-doc :not(pre) > code {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--stripe-radius-xs);
+}
+
+/* ============================================================
+   首页 Hero —— 渐变网格 mesh 背景 + Stripe 排版
+   ============================================================ */
+.VPHome {
+  position: relative;
+  isolation: isolate;
+}
+/* 渐变网格：奶油 → 品红 → 橙 → 薰衣草 → 靛蓝 → 宝石红，水平洗染于页面上方 */
+.VPHome::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  height: 700px;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(58% 78% at 12% -6%, rgba(245, 233, 212, 0.95) 0%, rgba(245, 233, 212, 0) 60%),
+    radial-gradient(48% 68% at 30% -12%, rgba(249, 107, 238, 0.52) 0%, rgba(249, 107, 238, 0) 55%),
+    radial-gradient(52% 72% at 50% -8%, rgba(155, 104, 41, 0.42) 0%, rgba(155, 104, 41, 0) 55%),
+    radial-gradient(56% 78% at 72% -6%, rgba(102, 94, 253, 0.55) 0%, rgba(102, 94, 253, 0) 60%),
+    radial-gradient(52% 72% at 90% -4%, rgba(83, 58, 253, 0.50) 0%, rgba(83, 58, 253, 0) 55%),
+    radial-gradient(40% 58% at 60% 8%, rgba(234, 34, 97, 0.30) 0%, rgba(234, 34, 97, 0) 55%);
+  filter: blur(46px) saturate(118%);
+  opacity: 0.92;
+}
+.VPHome > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 深色模式网格：压低亮度，保留靛蓝 / 品红气息 */
+.dark .VPHome::before {
+  opacity: 0.5;
+  filter: blur(52px) saturate(125%) brightness(0.8);
+  background:
+    radial-gradient(58% 78% at 14% -6%, rgba(245, 233, 212, 0.28) 0%, rgba(245, 233, 212, 0) 60%),
+    radial-gradient(48% 68% at 32% -10%, rgba(249, 107, 238, 0.30) 0%, rgba(249, 107, 238, 0) 55%),
+    radial-gradient(56% 78% at 70% -6%, rgba(102, 94, 253, 0.50) 0%, rgba(102, 94, 253, 0) 60%),
+    radial-gradient(52% 72% at 88% -4%, rgba(83, 58, 253, 0.42) 0%, rgba(83, 58, 253, 0) 55%),
+    radial-gradient(40% 58% at 58% 8%, rgba(234, 34, 97, 0.20) 0%, rgba(234, 34, 97, 0) 55%);
+}
+
+/* Hero 标题：墨色 thin + 负字距（去 VitePress 默认紫渐变） */
+.VPHero .name {
+  font-weight: 300;
+  letter-spacing: -1.4px;
+  line-height: 1.05;
+  color: var(--vp-c-text-1);
+  background: none;
+  -webkit-text-fill-color: var(--vp-c-text-1);
+  background-clip: initial;
+  -webkit-background-clip: initial;
+}
+.VPHero .text {
+  color: var(--vp-c-text-2);
+  font-weight: 300;
+  letter-spacing: -0.4px;
+}
+.VPHero .tagline {
+  color: var(--vp-c-text-3);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Hero CTA —— Stripe 胶囊按钮 */
+.VPHero .actions .VPButton {
+  border-radius: var(--stripe-radius-pill);
+  font-weight: 400;
+  font-size: 15px;
+  height: 44px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.VPHero .actions .VPButton.brand {
+  background: var(--vp-c-brand-1);
+  color: #ffffff;
+  border: 1px solid var(--vp-c-brand-1);
+}
+.VPHero .actions .VPButton.brand:hover {
+  background: var(--vp-c-brand-3);
+  border-color: var(--vp-c-brand-3);
+  transform: translateY(-1px);
+  box-shadow: var(--stripe-shadow-2);
+}
+.VPHero .actions .VPButton.alt {
+  background: var(--vp-c-bg);
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+}
+.VPHero .actions .VPButton.alt:hover {
+  background: var(--vp-c-bg-soft);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   首页特性卡片 —— 白底 + hairline 边框 + 微蓝阴影（在 blur.css 中覆盖，见下方说明）
+   此处仅补充标题/正文层级与悬停抬升
+   ============================================================ */
+.VPFeatures .VPFeature .title,
+.VPFeatures .VPFeature h2 {
+  color: var(--vp-c-text-1);
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  font-size: 20px;
+}
+.VPFeatures .VPFeature .details,
+.VPFeatures .VPFeature p {
+  color: var(--vp-c-text-3);
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+/* ============================================================
+   导航 / 侧边栏 / 页脚 —— 墨色文字 + 靛蓝强调
+   ============================================================ */
+.VPNavBar .VPNavBarMenuLink,
+.VPNavBar .VPNavBarMenuGroup .button {
+  color: var(--vp-c-text-2);
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+.VPNavBar .VPNavBarMenuLink:hover,
+.VPNavBar .VPNavBarMenuGroup .button:hover {
+  color: var(--vp-c-brand-1);
+}
+.VPNavBar .VPNavBarTitle .title {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+/* 侧边栏分组标题 */
+.VPSidebarItem .text {
+  color: var(--vp-c-text-2);
+}
+.VPSidebarItem.is-active > .item > .text,
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+/* 搜索框：hairline 边框 + 收紧圆角 */
+.DocSearch-Button {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--stripe-radius-sm);
+}
+
+/* 页脚 */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+}
+.VPFooter a {
+  color: var(--vp-c-text-2);
+}
+.VPFooter a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   通用：Badge / 胶囊标签 —— Stripe pill-tag-soft
+   ============================================================ */
+.vp-doc .VPBadge,
+:root .VPBadge {
+  border-radius: var(--stripe-radius-pill);
+  font-weight: 500;
+}
+.VPBadge.tip {
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-2);
+  border-color: transparent;
+}
+
+/* 滚动条：克制、贴合墨蓝 */
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: var(--stripe-radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
 }

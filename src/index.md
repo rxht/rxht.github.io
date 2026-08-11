@@ -18,12 +18,19 @@ tags:
 layout: home
 
 hero:
-  name: "文档"
-  text: "简单的文档说明"
-  tagline: "正在认真完善中。。。"
+  name: "开发者实战指南"
+  text: "技术实战笔记 · 前端 / 后端 / 数据库 / 工具"
+  tagline: "把开发中的踩坑、方案与规范，沉淀为可检索、可复用的知识库。"
   image:
     src: "assets/logo.webp"
     alt: "LOGO"
+  actions:
+    - theme: brand
+      text: 开始阅读
+      link: /archive
+    - theme: alt
+      text: GitHub
+      link: https://github.com/rxht/rxht.github.io
 
 features:
   - title: Qbics-Molstar

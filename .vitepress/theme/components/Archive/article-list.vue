@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class='relative w-full h-[1px] bg-neutral-300 mt-4 mb-6'>
+        <div class='relative w-full h-[1px] bg-[var(--vp-c-divider)] mt-4 mb-6'>
             <div class=' absolute left-1/2 top-1/2 -translate-1/2 px-8 font-bold text-2xl bg-[var(--vp-c-bg-soft)]'>
                 {{ year }}
-                <span class='text-sm text-neutral-500'> - {{ list.length }}篇</span>
+                <span class='text-sm text-[var(--vp-c-text-3)]'> - {{ list.length }}篇</span>
             </div>
         </div>
         <div class='relative flex flex-wrap items-stretch'>

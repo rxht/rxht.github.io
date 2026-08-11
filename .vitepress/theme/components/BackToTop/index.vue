@@ -123,7 +123,7 @@ onUnmounted(() => {
 
 .ring-progress {
     fill: none;
-    stroke: var(--blue8);
+    stroke: var(--vp-c-brand-1);
     stroke-width: 3;
     stroke-linecap: round;
     stroke-dasharray: 125.66;
@@ -134,11 +134,11 @@ onUnmounted(() => {
 
 
 .icon-ring {
-    fill: var(--blue8);
+    fill: var(--vp-c-brand-1);
 }
 
 .icon-arrow {
-    fill: var(--app-bg);
+    fill: var(--vp-c-bg);
 }
 
 .back-to-top.hover {
