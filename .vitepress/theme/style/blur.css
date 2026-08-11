@@ -15,6 +15,7 @@
     box-shadow: var(--stripe-shadow-1);
     background-color: var(--vp-c-bg);
     border-radius: var(--stripe-radius-lg);
+    padding: 28px 28px 32px;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   }
   .VPFeature:hover {
