@@ -1,7 +1,12 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:53:50
+LastEditTime: 2026-08-11 15:33:24
+description: 缓存命中率指标
+tags: 
+    - 缓存命中率指标
+    - 缓存命中率
 ---
+
 # 缓存命中率指标
 
 ```javascript

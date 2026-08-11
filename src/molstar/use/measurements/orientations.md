@@ -1,7 +1,11 @@
 ---
 Date: 2025-07-15 09:52:01
 LastEditTime: 2025-08-01 23:32:02
-tags: ["Molstar"]
+description: 显示 Orientations 在 Molstar 中的使用方法
+tags: 
+  - molstar
+  - measurements
+  - orientations
 ---
 
 # 显示 Orientations

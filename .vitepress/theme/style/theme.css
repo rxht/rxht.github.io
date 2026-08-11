@@ -157,7 +157,6 @@
 
 /* ============================================================
    布局根（.Layout）—— 复用首页 mesh 渐变（顶部洗染）
-   仅作用于文档页（含 .VPDoc），避免与首页 .VPHome::before 叠加
    ============================================================ */
 .Layout {
   position: relative;
@@ -165,7 +164,7 @@
 }
 .Layout::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: -40px;
   left: 0;
   right: 0;

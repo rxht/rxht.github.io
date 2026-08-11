@@ -1,7 +1,11 @@
 ---
 Date: 2025-07-15 09:52:01
-LastEditTime: 2025-08-01 23:31:46
-tags: ["Molstar"]
+LastEditTime: 2026-08-11 16:02:58
+description: 显示 Dihedrals 在 Molstar 中的使用方法
+tags: 
+  - molstar
+  - measurements
+  - dihedrals
 ---
 
 # 显示 Dihedrals

@@ -1,18 +1,17 @@
 <template>
     <div class='py-4 px-8'>
-        <div class="title">
-            <h1 class='font-bold! text-2xl!'>
-                全部文章<span class='text-sm text-[var(--vp-c-text-3)]'> - {{ posts.articles.length || '' }} 篇</span>
-            </h1>
-        </div>
-        <div>
-            <ArchiveList v-for="year in sortedYears" :key='year' :year='year' :list="categorizedTimes[year]" />
+        <h1 class="text-center">
+            <span class='font-bold text-5xl!'>全部文章</span>
+            <span class='font-bold text-md text-[var(--vp-c-text-3)]'> - {{ posts.articles.length || '' }} 篇</span>
+        </h1>
+        <div class='flex flex-col gap-16'>
+            <ArchiveListComponent v-for="year in sortedYears" :key='year' :year='year' :list="categorizedTimes[year]" />
         </div>
     </div>
 </template>
 <script setup lang="ts">
 import { Article, data as posts } from '../../common/article.data.mts';
-import ArchiveList from './article-list.vue';
+import ArchiveListComponent from './article-list.vue';
 
 // 解析时间并按年分类
 const categorizedTimes: { [key: string]: Article[]; } = {};

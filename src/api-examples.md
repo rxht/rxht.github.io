@@ -1,7 +1,11 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 22:03:30
+LastEditTime: 2026-08-11 15:59:04
 outline: deep
+description: VitePress 运行时 API 示例
+tags:
+  - vitepress
+  - api-examples
 ---
 
 # Runtime API Examples

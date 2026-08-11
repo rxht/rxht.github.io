@@ -1,6 +1,13 @@
 ---
 Date: 2025-03-21 19:47:49
-LastEditTime: 2025-08-01 23:19:30
+LastEditTime: 2026-08-11 15:55:06
+description: Dify 安装指南
+tags:
+  - ai
+  - dify
+  - docker
+  - dify
+  - ollama
 ---
 
 # Dify

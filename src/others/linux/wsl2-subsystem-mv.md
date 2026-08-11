@@ -1,6 +1,12 @@
 ---
 Date: 2025-03-22 06:30:34
-LastEditTime: 2026-07-14 23:15:08
+LastEditTime: 2026-08-11 15:25:22
+description: Widows 移动子系统 Ubuntu (WSL2) 位置（非系统盘）
+tags: 
+    - wsl2
+    - 子系统
+    - 学习记录
+    - 学习笔记
 ---
 
 # Widows 移动子系统 Ubuntu (WSL2) 位置（非系统盘）

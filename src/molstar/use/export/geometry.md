@@ -1,7 +1,11 @@
 ---
 Date: 2025-07-15 09:46:33
-LastEditTime: 2025-08-01 23:30:34
-tags: ["Molstar"]
+LastEditTime: 2026-08-11 16:02:21
+description: 导出 Geometry 在 Molstar 中的使用方法
+tags: 
+  - molstar
+  - export
+  - geometry
 ---
 
 # 导出 Geometry

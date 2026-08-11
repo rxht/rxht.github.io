@@ -1,7 +1,16 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:55:51
+LastEditTime: 2026-08-11 16:04:58
+description: 禁止实例访问原型链、构造函数
+tags: 
+  - javascript
+  - functions
+  - freezeProto
+  - __proto__
+  - Object.defineProperty
+  - Object.isExtensible
 ---
+
 # 禁止实例访问原型链、构造函数
 
 禁止实例通过__proto__访问原型链和构造函数，不影响原型链调用

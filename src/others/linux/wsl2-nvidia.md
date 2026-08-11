@@ -1,7 +1,14 @@
 ---
 Date: 2025-03-21 20:52:22
-LastEditTime: 2025-03-27 21:57:41
+LastEditTime: 2026-08-11 15:57:51
+description: Linux 安装 NVIDIA-SMI
+tags:
+  - linux
+  - commands
+  - nvidia
+  - wsl2
 ---
+
 # Widows 子系统 Ubuntu (WSL2) 安装 NVIDIA-SMI
 
 ## 前置条件

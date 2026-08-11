@@ -1,3 +1,15 @@
+---
+Date: 2025-08-14 09:27:40
+LastEditTime: 2026-08-11 15:30:23
+description: Node 学习记录
+tags: 
+    - node
+    - 学习记录
+    - 学习笔记
+    - 运行原理
+---
+
+
 
 # Node
  node 是一个基于 chrome v8 引擎的 javascript 运行环境。它可以在浏览器中运行 javascript 代码。

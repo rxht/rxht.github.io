@@ -1,7 +1,14 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:56:01
+LastEditTime: 2026-08-11 16:05:19
+description: 图片懒加载
+tags: 
+  - javascript
+  - functions
+  - imagesLazyLoading
+  - IntersectionObserver
 ---
+
 # 图片懒加载
 
 > 当一个页面中的图片资源很多的时候，为了加载时有好的体验，优先加载出现在可视区域的图片，随着网页往下滚动，逐渐加载其它的图片资源，这就是所谓的懒加载。

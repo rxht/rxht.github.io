@@ -1,6 +1,10 @@
 ---
 Date: 2025-07-31 18:36:04
-LastEditTime: 2025-07-31 18:40:23
+LastEditTime: 2026-08-11 15:57:29
+description: Linux 删除 nginx 服务
+tags:
+  - nginx
+  - stop-remove
 ---
 
 # Linux 删除 nginx 服务

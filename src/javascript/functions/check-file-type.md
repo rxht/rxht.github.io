@@ -1,7 +1,24 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:54:09
+LastEditTime: 2026-08-11 15:34:00
+description: 文件格式校验（文件二进制内容校验）
+tags: 
+    - 文件格式校验
+    - 文件二进制内容校验
+    - 文件类型识别
+    - PNG
+    - GIF
+    - BMP
+    - PCX
+    - TIFF
+    - ICO
+    - CUR
+    - IFF
+    - ANI
+    - TGA
+    - JPEG/JPG
 ---
+
 # 文件格式校验（文件二进制内容校验）
 
 > [第三方库 file-type](https://github.com/sindresorhus/file-type)

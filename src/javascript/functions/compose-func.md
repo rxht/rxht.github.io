@@ -1,7 +1,12 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:55:39
+LastEditTime: 2026-08-11 16:04:24
+description: 组合函数
+tags: 
+  - javascript
+  - functions
 ---
+
 # 组合函数
 
 ::: code-group

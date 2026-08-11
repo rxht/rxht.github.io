@@ -1,7 +1,13 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2025-03-27 21:56:41
+LastEditTime: 2026-08-11 16:06:09
+description: 设置 rem
+tags: 
+  - javascript
+  - functions
+  - settingRem
 ---
+
 # 设置 rem
 
 ::: details 防止 ios 中微信字体变大后布局错乱【点我查看代码】

@@ -1,7 +1,12 @@
 ---
 Date: 2025-03-22 22:26:48
-LastEditTime: 2025-03-27 21:57:30
+LastEditTime: 2026-08-11 15:56:58
+description: Docker 使用 GPU 报错
+tags:
+  - docker
+  - use-gpu-error
 ---
+
 # Docker 使用 GPU 报错
 
 ## 问题

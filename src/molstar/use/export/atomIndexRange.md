@@ -1,7 +1,11 @@
 ---
 Date: 2025-07-15 09:46:33
-LastEditTime: 2025-08-01 23:30:28
-tags: ["Molstar"]
+LastEditTime: 2026-08-11 16:01:56
+description: 在Qbics-molstar 中导出 Atom Index Range 的使用方法
+tags: 
+  - molstar
+  - export
+  - atomIndexRange
 ---
 
 # 导出 Atom Index Range

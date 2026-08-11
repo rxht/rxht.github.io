@@ -1,6 +1,13 @@
 ---
 Date: 2025-03-21 19:47:49
-LastEditTime: 2025-08-01 23:20:35
+LastEditTime: 2026-08-11 15:55:55
+description: RagFlow 安装指南
+tags:
+  - ai
+  - ragflow
+  - docker
+  - ragflow
+  - ollama
 ---
 
 # RagFlow
