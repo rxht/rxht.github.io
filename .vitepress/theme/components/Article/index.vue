@@ -38,7 +38,7 @@
                     class="group block overflow-hidden rounded-[var(--stripe-radius-lg)] border border-[var(--vp-c-divider)] bg-[var(--vp-c-bg)] shadow-[var(--stripe-shadow-1)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--vp-c-brand-1)] hover:shadow-[var(--stripe-shadow-2)]">
 
                     <!-- 卡片主体 -->
-                    <div class="p-5 sm:p-6">
+                    <div class="p-5 sm:p-6 size-full">
                         <!-- 软胶囊标签 -->
                         <div v-if="item.tags.length" class="mb-3 flex flex-wrap gap-2">
                             <span v-for="tag in item.tags" :key="tag"
@@ -56,14 +56,13 @@
                             {{ item.frontmatter.description }}
                         </p>
 
-                        <!-- 更新时间：tabular-nums 对齐 -->
-                        <div v-if="item.frontmatter.LastEditTime" class="mt-4 flex items-center gap-1.5 text-xs text-[var(--vp-c-text-3)] tabular-nums">
+                        <span v-if="item.frontmatter.LastEditTime" class="mt-4 flex items-center gap-1.5 text-xs text-[var(--vp-c-text-3)] tabular-nums">
                             <svg class="h-[13px] w-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="9" />
                                 <path d="M12 7v5l3 2" />
                             </svg>
                             {{ item.frontmatter.LastEditTime }}
-                        </div>
+                        </span>
                     </div>
                 </a>
             </div>
