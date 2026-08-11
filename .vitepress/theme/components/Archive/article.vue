@@ -1,6 +1,6 @@
 <template>
     <div @mouseenter='dormant = true' @mouseleave='dormant = false'
-        class="relative size-full rounded-2xl transition-all duration-300 bg-linear-163 from-[#533afd] to-[#f96bee] hover:shadow-xl hover:shadow-[rgba(83,58,253,0.35)]">
+        class="relative size-full transition-all duration-300 bg-linear-163 from-[#533afd] to-[#f96bee] hover:shadow-xl hover:shadow-[rgba(83,58,253,0.35)] border border-[var(--vp-c-divider)] bg-[var(--vp-c-bg)] rounded-md">
         <MacIconsComponent class='z-2' />
 
         <a :href='data.url'>
