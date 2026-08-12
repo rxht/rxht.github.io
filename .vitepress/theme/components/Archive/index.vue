@@ -5,13 +5,21 @@
             <span class='font-bold text-md text-[var(--vp-c-text-3)]'> - {{ posts.articles.length || '' }} 篇</span>
         </h1>
         <div class='flex flex-col gap-16'>
-            <ArchiveListComponent v-for="year in sortedYears" :key='year' :year='year' :list="categorizedTimes[year]" />
+            <div class='w-full' v-for="year in sortedYears" :key='year' :year='year'>
+                <h2 class='h-12'>
+                    <span class='font-bold text-4xl'>{{ year }}</span>
+                    <span class='font-bold text-sm text-[var(--vp-c-text-3)]'> - {{ categorizedTimes[year].length }}篇</span>
+                </h2>
+                <div class='flex flex-wrap items-stretch'>
+                    <ArticleComponent :data v-for="(data, i) in categorizedTimes[year]" :key='i' />
+                </div>
+            </div>
         </div>
     </div>
 </template>
 <script setup lang="ts">
 import { Article, data as posts } from '../../common/article.data.mts';
-import ArchiveListComponent from './article-list.vue';
+import ArticleComponent from './article.vue';
 
 // 解析时间并按年分类
 const categorizedTimes: { [key: string]: Article[]; } = {};

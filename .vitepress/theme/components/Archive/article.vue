@@ -2,7 +2,11 @@
     <div class='min-h-full h-auto w-full md:w-1/2 xl:w-1/3 2xl:w-1/4 p-1'>
         <div @mouseenter='dormant = true' @mouseleave='dormant = false'
             class="relative size-full transition-all duration-300 bg-linear-163 from-[#533afd] to-[#f96bee] hover:shadow-xl hover:shadow-[rgba(83,58,253,0.35)] border border-[var(--vp-c-divider)] bg-[var(--vp-c-bg)] rounded-md">
-            <MacIconsComponent class='z-2' />
+            <div class="flex flex-wrap absolute left-2 top-2 gap-1 z-2">
+                <span class="size-2 bg-[#ff605c] rounded-xl"></span>
+                <span class="size-2 bg-[#ffbd44] rounded-xl"></span>
+                <span class="size-2 bg-[#00ca4e] rounded-xl"></span>
+            </div>
 
             <a :href='data.url'>
                 <div class="size-full p-4 pt-8 bg-[var(--vp-c-bg)] rounded-xl transition-all duration-200 hover:rounded-2xl hover:scale-98">
@@ -24,7 +28,6 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
-import MacIconsComponent from './mac-icons.vue';
 import { Article } from '../../common/article.data.mts';
 import { DATE_FORMAT, FormatDate } from '../../common/date.mts';
 

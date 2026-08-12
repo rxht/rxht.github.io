@@ -1,7 +1,7 @@
 // .vitepress/theme/index.js
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { inBrowser, useRoute } from "vitepress";
+import { inBrowser, Theme, useRoute } from "vitepress";
 import imageViewer from "vitepress-plugin-image-viewer";
 import vImageViewer from "vitepress-plugin-image-viewer/lib/vImageViewer.vue";
 
@@ -23,30 +23,30 @@ import "./style/blur.css";
 import "./style/tailwind.css";
 
 export default {
-  extends: DefaultTheme,
-  enhanceApp(ctx) {
-    // 图片预览
-    ctx.app.component("vImageViewer", vImageViewer);
-    // 五彩纸屑
-    ctx.app.component("Confetti", Confetti);
-    // 文章页
-    ctx.app.component("Article", Article);
-    // 归档
-    ctx.app.component("Archive", Archive);
-    if (inBrowser) {
-      ctx.router.onAfterPageLoad = () => useVisitData();
-    }
-  },
-  setup() {
-    const route = useRoute();
-    // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
-    imageViewer(route);
-  },
-  Layout() {
-    return h(Layout, null, {
-      "layout-bottom": () => h(BackToTop),
-      "doc-before": () => h(DocInfo),
-      "aside-bottom": () => h(SiteInfo),
-    });
-  },
-};
+    extends: DefaultTheme,
+    enhanceApp(ctx) {
+        // 图片预览
+        ctx.app.component("vImageViewer", vImageViewer);
+        // 五彩纸屑
+        ctx.app.component("Confetti", Confetti);
+        // 文章页
+        ctx.app.component("Article", Article);
+        // 归档
+        ctx.app.component("Archive", Archive);
+        if (inBrowser) {
+            ctx.router.onAfterPageLoad = () => useVisitData();
+        }
+    },
+    setup() {
+        const route = useRoute();
+        // 文档中的所有图片添加无级缩放功能，无需修改 Markdown 内容。
+        imageViewer(route);
+    },
+    Layout() {
+        return h(Layout, null, {
+            "layout-bottom": () => h(BackToTop),
+            "doc-before": () => h(DocInfo),
+            "aside-bottom": () => h(SiteInfo),
+        });
+    },
+} satisfies Theme;

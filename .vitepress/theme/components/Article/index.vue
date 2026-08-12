@@ -82,23 +82,15 @@ interface ArticleItem {
         LastEditTime: string;
         Date?: string;
         description?: string;
-        cover?: string;
-        image?: string;
-        thumbnail?: string;
         tags?: string[];
-        [key: string]: any;
     };
-    __idx: number;
-    cover: string;
     tags: string[];
 }
 
 // 扁平列表（保留全局序号用于渐变分配），再按年分组
-const all: ArticleItem[] = posts.articles.slice(0, props.size).map((a, i) => ({
-    ...a,
-    __idx: i,
-    cover: a.frontmatter.cover || a.frontmatter.image || a.frontmatter.thumbnail || '',
-    tags: Array.isArray(a.frontmatter.tags) ? a.frontmatter.tags : [],
+const all: ArticleItem[] = posts.articles.slice(0, props.size).map(item => ({
+    ...item,
+    tags: Array.isArray(item.frontmatter.tags) ? item.frontmatter.tags : [],
 }));
 
 const map: Record<string, ArticleItem[]> = {};
