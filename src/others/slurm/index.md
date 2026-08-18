@@ -1,6 +1,6 @@
 ---
 Date: 2026-08-11 17:40:11
-LastEditTime: 2026-08-11 18:02:36
+LastEditTime: 2026-08-18 16:17:56
 description: Ubuntu 22.04 单机部署 Slurm 工作负载管理器，并配置任务完成/失败的邮件通知
 tags:
   - slurm
@@ -9,7 +9,11 @@ tags:
   - mail
 ---
 
-# Slurm 本地单机安装与邮件通知
+# Slurm
+
+Slurm（Simple Linux Utility for Resource Management）是一个开源的分布式资源管理和作业调度软件，用于超级计算机和大中小型计算节点集群的管理，具有高度的扩展性和容错性。Slurm调度系统使用简单、功能强大、应用广泛，是HPC调度领域事实上的标准。
+
+Slurm 利用分区(partition)对 CPU、内存、网络等资源进行分类，以便将不同需求的任务运行到不同规格的计算节点上。用户需利用 Slurm 命令将该任务及所需资源请求等提交到特定的分区中，等任务申请的资源得到满足后，任务才开始运行。任务运行受分区、账户、服务质量 (QOS)等限制。
 
 本文记录在 **Ubuntu 22.04** 单台机器上部署 Slurm（slurm-wlm），并配置任务邮件通知的完整流程，适用于个人工作站或单机测试环境。
 
@@ -222,6 +226,21 @@ sbatch test.slurm
 
 > 说明：`-p master` 对应 `PartitionName=master`；因该分区 `Default=NO`，必须显式指定 `-p`。`--mail-type=ALL` 会在任务开始、结束、失败时均发送邮件。
 
+
+## 六、常用命令
+
+| 命令 | 功能介绍 | 常用命令例子 |
+| --- | --- | --- |
+| sinfo | 显示分区和节点的状态 |	`sinfo` |
+| squeue | 显示作业状态 |	`squeue` |
+| srun | 用于交互式作业提交 |	`srun -n 2 -p p1-c1-2 hostname` |
+| sbbatch	| 用于批处理作业提交 |	`sbatch -n 2 job.sh` |
+| salalloc	| 用于分配模式作业提交 |	`salloc -p p1-c1-2` |
+| scancel	| 用于取消已提交的作业 |	`scancel JOBID` |
+| scontrol	| 用于查看和修改slurm配置和状态，包括查询节点信息或正在运行的作业信息 |	`scontrol show job JOBID` |
+
 ## 文章来源
 
 - [我心永恒小站：Ubuntu 20.04 安装 Slurm](https://wxyh.notion.site/Ubuntu20-04-slurm-28f03eec6bd04428a059ab47103d0756)
+
+- [SCNet Slurm 文档](https://www.scnet.cn/help/docs/mainsite/hpc/cmd/slurm/)
