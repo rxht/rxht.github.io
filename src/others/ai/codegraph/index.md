@@ -1,6 +1,14 @@
 ---
 Date: 2026-08-15 09:22:52
-LastEditTime: 2026-08-15 09:46:04
+LastEditTime: 2026-08-18 14:14:12
+description: codegraph 安装使用教程
+tags:
+  - codegraph
+  - ai
+  - 工具
+  - 代码知识图谱
+  - mcp
+  - 安装使用教程
 ---
 
 # codegraph 安装使用教程
