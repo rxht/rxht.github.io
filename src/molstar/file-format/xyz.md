@@ -1,6 +1,6 @@
 ---
 Date: 2025-03-18 22:10:44
-LastEditTime: 2026-08-19 15:29:04
+LastEditTime: 2026-08-19 17:34:12
 description: 一文读懂 MolStar 可直接读取的 XYZ 文件格式：单帧结构、多帧轨迹、字段含义及坐标单位说明。
 head:
   - - meta
@@ -11,7 +11,7 @@ tags:
   - xyz
 ---
 
-# XYZ 文件格式详解
+# XYZ
 
 >  **化学体系结构的 XYZ 文件** — 由 [MolStar](https://molstar.szbl.ac.cn/viewer/) 可直接读取的轻量级分子坐标格式
 

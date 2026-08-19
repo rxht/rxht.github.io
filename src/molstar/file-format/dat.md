@@ -1,6 +1,6 @@
 ---
 Date: 2025-08-26 14:10:42
-LastEditTime: 2026-08-19 15:27:53
+LastEditTime: 2026-08-19 17:34:46
 description: 介绍 MolStar 可直接读取的 DAT volume 文件格式（兼容 gnuplot dat），含字段含义、示例与常见注意事项。
 head:
   - - meta
@@ -12,7 +12,7 @@ tags:
   - volume
 ---
 
-# DAT 文件格式详解
+# DAT
 
 > **DAT Volume 文件格式详解** —— 兼容 [gnuplot dat](http://www.gnuplot.info/docs_6.0/Gnuplot_6.pdf) 的文本型体积数据格式，可直接被 MolStar 读取并渲染为三维标量场 / 等值面。
 

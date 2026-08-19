@@ -1,6 +1,6 @@
 ---
 Date: 2025-08-27 20:39:46
-LastEditTime: 2026-08-19 15:28:38
+LastEditTime: 2026-08-19 17:34:24
 description: 介绍 MolStar 可直接读取的 RXH 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。
 head:
   - - meta
@@ -11,7 +11,7 @@ tags:
   - rxh
 ---
 
-# RXH 文件格式详解
+# RXH
 
 > **RXH** 是一种简洁的分子结构文件格式，支持 **原子坐标 + 键连信息** 的完整描述，可被 [MolStar](https://molstar.szbl.ac.cn/viewer/) 直接读取并渲染。本文结合 `1TQN` 实例，逐行拆解其文件结构、字段含义与读取顺序。
 
