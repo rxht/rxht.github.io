@@ -1,7 +1,7 @@
 ---
 Date: 2026-08-19 17:38:35
-LastEditTime: 2026-08-19 17:52:02
-Description: 介绍 MolStar 可直接读取的 mmCIF 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。
+LastEditTime: 2026-08-26 17:47:05
+description: 介绍 MolStar 可直接读取的 mmCIF 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。
 tags:
   - MolStar
   - mmcif
