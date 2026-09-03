@@ -6,7 +6,6 @@ import { DefaultTheme } from "vitepress";
 export const nav: DefaultTheme.NavItem[] = [
     { text: "归档", link: "/archive" },
     { text: "MolStar", link: "http://molstar.szbl.ac.cn/viewer/" },
-    { text: "10点日报", link: "https://rxht.github.io/ai-hot/" },
     {
         text: "网站·工具",
         items: [
