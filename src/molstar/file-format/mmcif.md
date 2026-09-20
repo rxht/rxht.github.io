@@ -1,6 +1,6 @@
 ---
 Date: 2026-08-19 17:38:35
-LastEditTime: 2026-08-26 17:47:05
+LastEditTime: 2026-09-20 09:33:33
 description: 介绍 MolStar 可直接读取的 mmCIF 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。
 tags:
   - MolStar
@@ -50,7 +50,7 @@ mmCIF 文件建立在 STAR（Self-defining Text Archive and Retrieval）语法�
 
 每个 mmCIF 文件由一个或多个 **数据块** 组成，以 `data_` 开头：
 
-```cif
+```
 data_4HHB
 ```
 
@@ -63,7 +63,7 @@ data_4HHB
 
 所有数据项以 **下划线 `_`** 开头，格式为 **`_类别名.属性名`**：
 
-```cif
+```
 _cell.length_a    63.150
 _cell.length_b    83.590
 _cell.angle_alpha 90.00
@@ -82,7 +82,7 @@ mmCIF 提供两种数据呈现方式：
 
 **键值对风格**（Key-Value）：每个数据项后紧跟一个值
 
-```cif
+```
 _cell.entry_id   4HHB
 _cell.length_a   63.150
 _cell.length_b   83.590
@@ -95,7 +95,7 @@ _cell.Z_PDB       4
 
 **表格风格**（Tabular / Loop）：使用 `loop_` 指令定义多行数据表
 
-```cif
+```
 loop_
 _atom_site.group_PDB
 _atom_site.id
@@ -130,7 +130,7 @@ ATOM 4 O  O  VAL A 1 8.805  17.011 5.943 1.00 37.68
 
 **多行文本**用首尾分号（必须位于行首）包裹：
 
-```cif
+```
 _entity_poly.pdbx_seq_one_letter_code
 ;VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSH
 GSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKL
@@ -167,7 +167,7 @@ mmCIF 字典定义了丰富的数据类型，确保数据的规范性和机器�
 
 ### 文件头与审计信息
 
-```cif
+```
 data_4HHB
 
 _audit_conform.dict_name    mmcif_pdbx.dic
@@ -185,7 +185,7 @@ _entry.id 4HHB
 
 ### 实验信息（EXPTL）
 
-```cif
+```
 loop_
 _exptl.entry_id
 _exptl.method
@@ -197,7 +197,7 @@ _exptl.crystals_number
 
 ### 晶体学参数（CELL & SYMMETRY）
 
-```cif
+```
 _cell.entry_id    4HHB
 _cell.length_a    63.150
 _cell.length_b    83.590
@@ -223,7 +223,7 @@ _symmetry.Int_Tables_number      5
 
 **实体（Entity）** 是 mmCIF 中一个极其重要的概念——它代表结构中 **化学上独立** 的分子种类。同一实体的多个拷贝（如血红蛋白的两条 α 链）只定义一个实体。
 
-```cif
+```
 loop_
 _entity.id
 _entity.type
@@ -242,7 +242,7 @@ _entity.pdbx_number_of_molecules
 
 ### 聚合物序列（ENTITY_POLY & ENTITY_POLY_SEQ）
 
-```cif
+```
 _entity_poly.entity_id        1
 _entity_poly.type             'polypeptide(L)'
 _entity_poly.nstd_linkage     no
@@ -265,7 +265,7 @@ _entity_poly_seq.hetero
 
 每个氨基酸、核苷酸、配体都有详细的化学定义：
 
-```cif
+```
 _chem_comp.id          HEM
 _chem_comp.name        "PROTOPORPHYRIN IX CONTAINING FE"
 _chem_comp.type        NON-POLYMER
@@ -279,7 +279,7 @@ _chem_comp.pdbx_formal_charge 0
 
 `_atom_site` 类别通常是 mmCIF 文件中 **最大** 的部分，存储每个原子的完整信息：
 
-```cif
+```
 loop_
 _atom_site.group_PDB
 _atom_site.id
@@ -338,7 +338,7 @@ ATOM 3 C  C  . VAL A 1 1 ? 8.504  17.378 4.797 1.00 24.80 ? 1 VAL A C 1
 
 对于需要各向异性 B 因子精修的原子：
 
-```cif
+```
 loop_
 _atom_site_anisotrop.id
 _atom_site_anisotrop.U[1][1]
@@ -352,7 +352,7 @@ _atom_site_anisotrop.U[3][3]
 
 ### 二级结构（STRUCT_CONF & STRUCT_SHEET_RANGE）
 
-```cif
+```
 loop_
 _struct_conf.id
 _struct_conf.conf_type_id
@@ -368,7 +368,7 @@ HELX_P2 HELX_R_B  A 20  A 35
 
 描述链间/链内二硫键、盐桥、氢键等：
 
-```cif
+```
 loop_
 _struct_conn.id
 _struct_conn.conn_type_id
@@ -386,7 +386,7 @@ disu1 disulf A CYS 104  SG  A CYS 117  SG  2.05
 
 ### 精修统计（REFINE）
 
-```cif
+```
 _refine.entry_id             4HHB
 _refine.ls_d_res_high        1.74
 _refine.ls_d_res_low         10.00
@@ -398,7 +398,7 @@ _refine.pdbx_ls_cross_valid_method 'THROUGHOUT'
 
 ### 引用文献（CITATION & CITATION_AUTHOR）
 
-```cif
+```
 loop_
 _citation.id
 _citation.title
@@ -465,7 +465,7 @@ primary 'Perutz, M.F.'  2
 
 mmCIF 文件中的 ID 表示：
 
-```cif
+```
 loop_
 _database_2.database_id
 _database_2.database_code
@@ -491,7 +491,7 @@ mmCIF 的强大之处在于它的 **自描述性**——所有数据项的行为
 
 字典中的定义用 `save_` 帧封装：
 
-```cif
+```
 save_CITATION
 _category.description
 ;Data items in the CITATION category record details about the literature
@@ -523,7 +523,7 @@ save_
 
 下面是一个极度简化的 mmCIF 文件骨架，展示各部分的组织顺序：
 
-```cif
+```
 #==============================================================
 data_4HHB
 #==============================================================
