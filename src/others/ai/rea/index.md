@@ -1,3 +1,17 @@
+---
+Date: 2026-11-13 14:54:53
+LastEditTime: 2026-11-13 15:34:28
+title: REA
+description: REA(Reverse Engineer Anything) 是一个基于 AI Agent 的本地逆向工程平台。
+tags:
+  - ai
+  - rea
+  - agent
+  - mcp
+  - install
+  - use
+---
+
 # REA 安装使用教程
 
 > **REA(Reverse Engineer Anything)** 是一个基于 AI Agent 的本地逆向工程平台:通过 MCP 协议把 Ghidra、Hopper、IDA 等逆向工具,以及 JS/Electron、.NET、Go/Rust 等内建静态分析能力,统一暴露给 AI Agent 调用。所有分析都在本机执行,结果附带证据(Evidence)与未知项清单。
