@@ -1,4 +1,5 @@
 ---
+title: "Maple"
 Date: 2025-12-23 10:17:33
 LastEditTime: 2025-12-23 13:32:59
 description: MAchine Learning Potential for Landscape Exploration (MAPLE)

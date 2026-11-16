@@ -1,4 +1,5 @@
 ---
+title: "Harmonic Vibrations"
 Date: 2025-12-23 13:41:46
 LastEditTime: 2025-12-23 15:00:47
 description: Qbics-Molstar 振幅动画使用教程，如何使用振幅动画

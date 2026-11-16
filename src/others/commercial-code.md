@@ -1,4 +1,5 @@
 ---
+title: "标准电码表"
 Date: 2025-08-29 15:17:06
 LastEditTime: 2025-08-29 16:18:03
 description: 标准电码表 汉字对照表

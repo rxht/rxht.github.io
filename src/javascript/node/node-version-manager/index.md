@@ -1,4 +1,5 @@
 ---
+title: "Node 版本管理"
 Date: 2025-12-19 17:03:48
 LastEditTime: 2025-12-19 17:29:10
 description: 本文介绍如何在 macOS 和 Windows 上安装使用 nvm 管理 node 版本。

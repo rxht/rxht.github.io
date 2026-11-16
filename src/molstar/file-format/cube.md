@@ -1,4 +1,5 @@
 ---
+title: "CUBE"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2026-08-19 17:34:39
 description: 详解 MolStar 可直接读取的 CUBE 文件格式：标题、平移矢量、原子坐标、格点数据、分子轨道扩展及 Fortran 数据存储顺序。

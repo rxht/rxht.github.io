@@ -1,4 +1,5 @@
 ---
+title: "自动播放动画"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2026-04-09 10:27:18
 description: 在 Qbics-MolStar 中自动播放动画。

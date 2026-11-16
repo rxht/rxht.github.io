@@ -1,4 +1,5 @@
 ---
+title: "编辑分子片段模板信息"
 Date: 2026-01-28 10:56:10
 LastEditTime: 2026-01-28 11:03:05
 description: Molstar 编辑功能实践教程，修改分子片段模板操作。

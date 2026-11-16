@@ -1,4 +1,5 @@
 ---
+title: "设置原子只能单选"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-22 17:38:17
 description: 在 Qbics-MolStar 中实现“单原子点击选择”功能的完整开发示例，涵盖事件监听、状态更新与 UI 联动。

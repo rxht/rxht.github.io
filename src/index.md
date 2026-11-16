@@ -21,7 +21,7 @@ hero:
   tagline: "把开发中的踩坑、方案与规范，沉淀为可检索、可复用的实战知识库。"
   image:
     src: "assets/logo.webp"
-    alt: "LOGO"
+    alt: "开发者实战指南 Logo"
   actions:
     - theme: brand
       text: 开始阅读

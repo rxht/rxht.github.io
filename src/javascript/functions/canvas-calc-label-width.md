@@ -1,4 +1,5 @@
 ---
+title: "计算 Canvas 中文字渲染宽度"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2026-08-11 15:33:36
 description: 计算 Canvas 中文字渲染宽度

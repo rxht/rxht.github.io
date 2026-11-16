@@ -1,4 +1,5 @@
 ---
+title: "RXH"
 Date: 2025-08-27 20:39:46
 LastEditTime: 2026-08-19 17:34:24
 description: 介绍 MolStar 可直接读取的 RXH 文件格式：标题、原子坐标、键连信息及字段含义，附 1TQN 示例与读取顺序说明。

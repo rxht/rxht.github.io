@@ -1,4 +1,5 @@
 ---
+title: "PyMOL 安装教程"
 Date: 2026-07-31 12:41:21
 LastEditTime: 2026-07-31 13:21:38
 description: PyMOL 安装教程（Windows 11），覆盖 Win11 特有的 Smart App Control 拦截问题。

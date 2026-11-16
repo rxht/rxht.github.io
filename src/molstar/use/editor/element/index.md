@@ -1,4 +1,5 @@
 ---
+title: "编辑元素类型信息"
 Date: 2026-01-28 10:19:45
 LastEditTime: 2026-01-28 10:52:29
 description: Molstar 编辑功能实践教程，修改元素类型操作。

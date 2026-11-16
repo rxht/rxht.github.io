@@ -1,5 +1,17 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
 Disallow: /pagefind/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /pagefind/
+
+User-agent: Sogou web spider
+Allow: /
+Disallow: /pagefind/
+
+User-agent: 360Spider
+Allow: /
+Disallow: /pagefind/
+
 Sitemap: https://rxht.github.io/sitemap.xml

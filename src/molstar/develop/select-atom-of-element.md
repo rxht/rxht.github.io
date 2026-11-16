@@ -1,4 +1,5 @@
 ---
+title: "选中指定的原子序号"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-08-22 17:48:42
 description: 示例代码演示如何在 Qbics-MolStar 中按 ElementIndex 批量筛选并高亮原子，含脚本调用与结果回调。

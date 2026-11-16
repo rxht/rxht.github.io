@@ -1,4 +1,5 @@
 ---
+title: "四种重要的核苷酸"
 Date: 2025-11-27 16:52:17
 LastEditTime: 2025-11-27 17:23:04
 description: 详解介绍了生物体中四种重要的核苷酸，分别是腺嘌呤核苷三磷酸（ATP）、三磷酸鸟苷（GTP）、三磷酸胞苷（CTP）和尿苷三磷酸（UTP）。
@@ -31,8 +32,8 @@ tags:
 - 是磷酸基团转移的重要物质，fAMP是NAD+、NADP+、FAD、辅酶A的合成前体
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/ATP-line.webp" />
-    <img src="./assets/ATP.webp" />
+    <img alt="腺嘌呤核苷三磷酸（ATP）线框结构式" src="./assets/ATP-line.webp" />
+    <img alt="腺嘌呤核苷三磷酸（ATP）球棍模型" src="./assets/ATP.webp" />
 </div>
 
 动图如下:
@@ -50,8 +51,8 @@ tags:
 - 经UTP氨化由酶催化合成，一种在胞苷的核糖-5'－OH基上结合三分子磷酸的核苷酸；有二个高能磷酸键。是RNA生物合成的直接前体之一。
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/GTP-line.webp" />
-    <img src="./assets/GTP.webp" />
+    <img alt="三磷酸鸟苷（GTP）线框结构式" src="./assets/GTP-line.webp" />
+    <img alt="三磷酸鸟苷（GTP）球棍模型" src="./assets/GTP.webp" />
 </div>
 
 动图如下:
@@ -66,8 +67,8 @@ tags:
 - DNA复制时的引物和转录时的鸟嘌呤核苷酸的提供者。是三羧酸循环中琥珀酰辅酶A转变为琥珀酸过程中的能量载体，它可以和ATP相互转换。
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/CTP-line.webp" />
-    <img src="./assets/CTP.webp" />
+    <img alt="三磷酸胞苷（CTP）线框结构式" src="./assets/CTP-line.webp" />
+    <img alt="三磷酸胞苷（CTP）球棍模型" src="./assets/CTP.webp" />
 </div>
 
 动图如下:
@@ -85,8 +86,8 @@ tags:
 - 要用途是RNA合成（转录）时的原料，是RNA合成的直接前体。
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/UTP-line.webp" />
-    <img src="./assets/UTP.webp" />
+    <img alt="尿苷三磷酸（UTP）线框结构式" src="./assets/UTP-line.webp" />
+    <img alt="尿苷三磷酸（UTP）球棍模型" src="./assets/UTP.webp" />
 </div>
 
 动图如下:

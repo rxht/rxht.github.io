@@ -1,4 +1,5 @@
 ---
+title: "Ketcher 导出到 Qbics Molstar"
 Date: 2026-02-02 16:49:11
 LastEditTime: 2026-02-02 17:08:55
 description: Molstar 编辑功能实践教程，修改化学结构，最后导出到 Molstar, 并在 Qbics Molstar 中进行3D模式编辑。

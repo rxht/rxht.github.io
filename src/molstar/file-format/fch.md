@@ -1,4 +1,5 @@
 ---
+title: "FCH"
 Date: 2025-08-27 18:09:44
 LastEditTime: 2025-08-28 10:11:06
 description: 系统梳理 MolStar 可直接读取的 FCH(FCHK) 文件格式：字段含义、Fortran 描述符、壳层类型、基函数顺序及密度矩阵存储方式，并附常见陷阱提示。

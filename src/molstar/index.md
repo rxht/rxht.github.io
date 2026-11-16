@@ -1,4 +1,5 @@
 ---
+title: "Qbics-MolStar"
 Date: 2025-01-20 14:41:50
 LastEditTime: 2026-08-19 17:19:19
 description: 详细介绍 Qbics-MolStar 的功能、支持的文件格式、开发教程及使用步骤。

@@ -1,4 +1,5 @@
 ---
+title: "核酸中主要的五种碱基"
 Date: 2025-11-26 15:28:32
 LastEditTime: 2025-11-27 17:23:19
 description: 详解介绍了生物体中常见的碱基有5种，分别是腺嘌呤（A）、鸟嘌呤（G）、胞嘧啶（C）、胸腺嘧啶（T）和尿嘧啶（U）。
@@ -27,8 +28,8 @@ tags:
 ## 腺嘌呤（A）
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/A-line.webp" />
-    <img src="./assets/A.webp" />
+    <img alt="腺嘌呤（A）线框结构式" src="./assets/A-line.webp" />
+    <img alt="腺嘌呤（A）球棍模型" src="./assets/A.webp" />
 </div>
 
 动图如下:
@@ -38,8 +39,8 @@ tags:
 ## 胸腺嘧啶（T）
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/T-line.webp" />
-    <img src="./assets/T.webp" />
+    <img alt="胸腺嘧啶（T）线框结构式" src="./assets/T-line.webp" />
+    <img alt="胸腺嘧啶（T）球棍模型" src="./assets/T.webp" />
 </div>
 
 动图如下:
@@ -50,8 +51,8 @@ tags:
 ## 鸟嘌呤（G）
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/G-line.webp" />
-    <img src="./assets/G.webp" />
+    <img alt="鸟嘌呤（G）线框结构式" src="./assets/G-line.webp" />
+    <img alt="鸟嘌呤（G）球棍模型" src="./assets/G.webp" />
 </div>
 
 动图如下:
@@ -62,8 +63,8 @@ tags:
 ## 胞嘧啶（C）
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/C-line.webp" />
-    <img src="./assets/C.webp" />
+    <img alt="胞嘧啶（C）线框结构式" src="./assets/C-line.webp" />
+    <img alt="胞嘧啶（C）球棍模型" src="./assets/C.webp" />
 </div>
 
 动图如下:
@@ -74,8 +75,8 @@ tags:
 ## 尿嘧啶（U）
 
 <div style="display: grid; gap: 0 4px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-    <img src="./assets/U-line.webp" />
-    <img src="./assets/U.webp" />
+    <img alt="尿嘧啶（U）线框结构式" src="./assets/U-line.webp" />
+    <img alt="尿嘧啶（U）球棍模型" src="./assets/U.webp" />
 </div>
 
 动图如下:

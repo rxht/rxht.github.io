@@ -1,4 +1,5 @@
 ---
+title: "linux 版本安装"
 Date: 2026-08-24 14:11:29
 LastEditTime: 2026-08-24 15:04:38
 description: linux 版本安装，出现的问题以及解决方法

@@ -1,4 +1,5 @@
 ---
+title: "论文配色方案"
 Date: 2025-08-06 20:39:31
 LastEditTime: 2025-08-20 22:05:18
 description: 论文配色方案

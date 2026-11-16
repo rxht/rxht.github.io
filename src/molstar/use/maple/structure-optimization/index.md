@@ -1,4 +1,5 @@
 ---
+title: "Qbics-Molstar 结构优化: LBFGS"
 Date: 2025-12-23 10:21:29
 LastEditTime: 2025-12-23 14:57:13
 description: Qbics-Molstar的结构优化功能使用教程

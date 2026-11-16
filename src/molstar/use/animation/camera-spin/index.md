@@ -1,4 +1,5 @@
 ---
+title: "Camera Spin"
 Date: 2025-11-20 18:09:54
 LastEditTime: 2025-11-25 11:20:43
 description: 本文详解 Qbics-MolStar 软件查看.xyz 文件相机旋转动画的操作流程，包括.xyz 文件加载渲染、Camera Spin 动画模式选择及播放，助力科研人员实现分子结构 360° 全方位可视化呈现，适用于科研汇报、教学演示、论文附图等分子结构展示场景。

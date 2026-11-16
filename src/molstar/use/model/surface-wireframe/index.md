@@ -1,4 +1,5 @@
 ---
+title: "wireframe 线框"
 Date: 2026-01-27 14:31:45
 LastEditTime: 2026-01-27 14:55:21
 description: 表面线框是指在模型表面绘制的线框，用于可视化模型的结构。

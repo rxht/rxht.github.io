@@ -45,6 +45,7 @@
         "@vueuse/core": "^15.0.0",
         "canvas-confetti": "^1.9.4",
         "dayjs": "^1.11.23",
+        "markdown-it": "^15.0.3",
         "pagefind": "^1.6.0",
         "tailwindcss": "^4.3.5",
         "viewerjs": "^1.15.2",

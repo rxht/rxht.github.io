@@ -1,4 +1,5 @@
 ---
+title: "Widows 子系统 Ubuntu (WSL2) 安装 NVIDIA-SMI"
 Date: 2025-03-21 20:52:22
 LastEditTime: 2026-08-11 15:57:51
 description: Linux 安装 NVIDIA-SMI

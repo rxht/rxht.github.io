@@ -1,4 +1,5 @@
 ---
+title: "切换显示材质"
 Date: 2026-04-09 10:37:16
 LastEditTime: 2026-04-09 10:54:28
 description: Molstar 编辑功能实践教程，切换显示材质

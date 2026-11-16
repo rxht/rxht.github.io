@@ -1,4 +1,5 @@
 ---
+title: "WFN"
 Date: 2025-08-27 18:12:58
 LastEditTime: 2025-08-28 09:42:03
 description: 完整介绍 WFN 文件结构、字段含义及与 MolStar 的对接要点，含示例与注意事项。

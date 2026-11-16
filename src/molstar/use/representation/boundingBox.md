@@ -1,4 +1,5 @@
 ---
+title: "新建 BoundingBox"
 Date: 2025-07-15 09:52:00
 LastEditTime: 2025-08-22 17:36:34
 description: 在 Qbics-MolStar 中一键开启或关闭分子结构的三维包围盒，帮助快速定位整体范围与边界。

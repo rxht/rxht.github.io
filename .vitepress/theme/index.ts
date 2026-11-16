@@ -11,6 +11,7 @@ import Article from "./components/Article";
 import Archive from "./components/Archive";
 import DocInfo from "./components/DocInfo";
 import SiteInfo from "./components/SiteInfo";
+import RelatedPosts from "./components/RelatedPosts";
 
 import Layout from "./Layout.vue";
 import useVisitData from './hooks/VisitData';
@@ -46,6 +47,7 @@ export default {
         return h(Layout, null, {
             "layout-bottom": () => h(BackToTop),
             "doc-before": () => h(DocInfo),
+            "doc-after": () => h(RelatedPosts),
             "aside-bottom": () => h(SiteInfo),
         });
     },

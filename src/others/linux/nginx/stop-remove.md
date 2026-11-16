@@ -1,4 +1,5 @@
 ---
+title: "Linux 删除 nginx 服务"
 Date: 2025-07-31 18:36:04
 LastEditTime: 2026-08-11 15:57:29
 description: Linux 删除 nginx 服务

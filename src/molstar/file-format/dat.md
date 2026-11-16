@@ -1,4 +1,5 @@
 ---
+title: "DAT"
 Date: 2025-08-26 14:10:42
 LastEditTime: 2026-08-19 17:34:46
 description: 介绍 MolStar 可直接读取的 DAT volume 文件格式（兼容 gnuplot dat），含字段含义、示例与常见注意事项。

@@ -1,4 +1,5 @@
 ---
+title: "Slurm"
 Date: 2026-08-11 17:40:11
 LastEditTime: 2026-08-18 16:17:56
 description: Ubuntu 22.04 单机部署 Slurm 工作负载管理器，并配置任务完成/失败的邮件通知

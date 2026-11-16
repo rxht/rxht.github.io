@@ -1,4 +1,5 @@
 ---
+title: "切换当前的 Representation"
 Date: 2025-07-15 09:52:00
 LastEditTime: 2025-08-22 17:36:06
 description: 在 Qbics-MolStar 中快速切换分子的不同表示方式（Cartoon、Ball-and-Stick、Surface 等），并自定义颜色与透明度。

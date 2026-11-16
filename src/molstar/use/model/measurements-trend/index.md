@@ -1,4 +1,5 @@
 ---
+title: "显示测量趋势"
 Date: 2026-01-28 13:34:59
 LastEditTime: 2026-01-28 13:45:26
 description: Molstar 测量趋势功能实践教程，展示测量趋势

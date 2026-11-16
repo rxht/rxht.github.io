@@ -1,4 +1,5 @@
 ---
+title: "管道函数"
 Date: 2025-03-18 22:10:44
 LastEditTime: 2025-03-27 21:56:18
 description: 管道函数

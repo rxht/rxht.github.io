@@ -1,4 +1,5 @@
 ---
+title: "DeepSeek-R1"
 Date: 2025-03-21 19:47:49
 LastEditTime: 2026-08-11 15:54:59
 description: DeepSeek-R1 大语言模型，它可以在本地运行，也可以在云端运行。

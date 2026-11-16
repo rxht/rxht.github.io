@@ -1,4 +1,5 @@
 ---
+title: "behavior 扩展"
 Date: 2025-08-07 20:17:54
 LastEditTime: 2025-08-16 11:54:33
 description: 详解如何在 Qbics-MolStar 中注册、配置与复用 Behavior，实现自定义交互逻辑与响应式状态管理。

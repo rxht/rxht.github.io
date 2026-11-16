@@ -1,4 +1,5 @@
 ---
+title: "Animate Trajectory"
 Date: 2025-11-20 17:36:55
 LastEditTime: 2025-11-25 11:20:31
 description: 本文详细介绍 Qbics-MolStar 软件查看.xyz 文件分子轨迹并导出动画的完整步骤，涵盖多帧.xyz 文件加载、Dynamic Bonds 动态键连开启、Animate Trajectory 模式选择及动画渲染导出，助力科研人员直观观察原子运动与键连变化，适用于分子动力学模拟数据可视化场景。

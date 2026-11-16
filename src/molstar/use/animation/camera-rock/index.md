@@ -1,4 +1,5 @@
 ---
+title: "Camera Rock"
 Date: 2025-11-21 21:53:51
 LastEditTime: 2025-11-21 22:48:31
 description: 本文提供 Qbics-MolStar 软件查看.xyz 文件相机左右摇摆动画的实操步骤，涵盖.xyz 文件加载渲染、Camera Rock 动画模式选择及播放，助力科研人员快速制作分子结构多角度展示动画，适用于科研汇报、教学演示及论文附图可视化场景。

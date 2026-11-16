@@ -1,5 +1,6 @@
 import { MarkdownOptions } from "vitepress";
 import { groupIconMdPlugin } from "vitepress-plugin-group-icons";
+import { imageSizePlugin } from "./imageSize.mts";
 
 const markdown: MarkdownOptions = {
     math: true,
@@ -17,6 +18,7 @@ const markdown: MarkdownOptions = {
     },
     config(md) {
         md.use(groupIconMdPlugin);
+        md.use(imageSizePlugin);
     },
 };
 export { markdown };

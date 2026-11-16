@@ -1,4 +1,5 @@
 ---
+title: "显示 RMSD 趋势"
 Date: 2026-01-28 11:19:20
 LastEditTime: 2026-01-28 13:39:30
 description: Molstar RMSD 趋势功能实践教程，展示 RMSD 趋势

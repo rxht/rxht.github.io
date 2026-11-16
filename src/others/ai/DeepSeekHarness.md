@@ -1,4 +1,5 @@
 ---
+title: "DeepSeek Harness"
 Date: 2026-08-26 17:40:49
 LastEditTime: 2026-08-26 17:46:15
 description: DeepSeek Harness 安装与使用完全教程
